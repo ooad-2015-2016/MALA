@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 1. Lejla Ze�evi�
+=======
+1. Lejla Zečević
+2. Ajša Terko
+3. Milan Žuža
+>>>>>>> origin/master
