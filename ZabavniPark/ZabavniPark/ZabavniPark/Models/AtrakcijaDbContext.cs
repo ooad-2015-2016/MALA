@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
 
-namespace ZabavniPark.AtrakcijeBaza.Models
+namespace MyApp_OOAD.AtrakcijaBaza.Models
 {
-    class AtrakcijanDbContext : DbContext
+    class AtrakcijaDbContext : DbContext
     {
            
         public DbSet<Atrakcija> SveAtrakcije { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string dataBaseFilePath = "Ooadbaza.db";
+            string dataBaseFilePath = "AtrakcijaBaza.db";
             try
             {
                 dataBaseFilePath = Path.Combine(ApplicationData.Current.LocalFolder.Path, dataBaseFilePath);

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZabavniPark.AtrakcijeBaza.Models
+namespace MyApp_OOAD.AtrakcijaBaza.Models
 {
     class Atrakcija
     {
