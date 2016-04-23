@@ -108,6 +108,8 @@
     <Compile Include="Migrations\ParkDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ZabavniPark\Models\DefaultPodaci.cs" />
+    <Compile Include="ZabavniPark\Models\Osoblje.cs" />
+    <Compile Include="ZabavniPark\Models\OsobljeDbContext.cs" />
     <Compile Include="ZabavniPark\Models\Park.cs" />
     <Compile Include="ZabavniPark\Models\ParkDbContext.cs" />
   </ItemGroup>
