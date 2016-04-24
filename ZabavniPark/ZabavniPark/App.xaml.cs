@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Data.Entity;
+using MyApp_OOAD.ParkBaza.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,6 +16,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using ZabavniPark.ZabavniPark.Models;
 
 namespace ZabavniPark
 {
@@ -33,6 +36,12 @@ namespace ZabavniPark
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            using (var db = new ParkDbContext())
+            {
+                db.Database.ApplyMigrations();
+                ParkDefaultPodaci.Initialize(db);
+            }
         }
 
         /// <summary>
@@ -75,7 +84,7 @@ namespace ZabavniPark
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                rootFrame.Navigate(typeof(ParkoviListView), e.Arguments);
             }
             // Ensure the current window is active
             Window.Current.Activate();
