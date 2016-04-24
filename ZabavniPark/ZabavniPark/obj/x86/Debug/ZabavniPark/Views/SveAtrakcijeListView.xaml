@@ -62,13 +62,18 @@ Margin="5,5,5,0" Grid.Row="7" VerticalAlignment="Top"                           
                 <DataTemplate>
                     <StackPanel Orientation="Vertical" >
 
+                        <TextBlock Text="Naziv:" Margin="5,0,0,0"/>
                         <TextBlock Text="{Binding Naziv}" Margin="5,0,0,0"/>
+                        <TextBlock Text="Kapacitet:" Margin="5,0,0,0" />
                         <TextBlock Text="{Binding Kapacitet}" Margin="5,0,0,0" />
+                        <TextBlock Text="Vrijeme otvaranja:" Margin="5,0,0,0" />
                         <TextBlock Text="{Binding VrijemeOtvaranja}" Margin="5,0,0,0" />
+                        <TextBlock Text="Vrijeme zatvaranja:" Margin="5,0,0,0"/>
                         <TextBlock Text="{Binding VrijemeZatvaranja}" Margin="5,0,0,0"/>
+                        <TextBlock Text="Stanje:" Margin="5,0,0,0" />
                         <TextBlock Text="{Binding Stanje}" Margin="5,0,0,0" />
+                        <TextBlock Text="Cijena ulaznice:" Margin="5,0,0,0" />
                         <TextBlock Text="{Binding Cijena}" Margin="5,0,0,0" />
-
                         <Button x:ConnectionId='16' Content="Delete"                             Margin="5,5,5,5"/>
 
                     </StackPanel>
