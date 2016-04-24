@@ -952,3 +952,8 @@ C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Zab
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.g.cs
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.xaml
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.xbf
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.g.i.cs
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.g.cs
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xaml
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xbf
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xbf

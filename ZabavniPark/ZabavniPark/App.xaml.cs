@@ -18,6 +18,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using ZabavniPark.ZabavniPark.Models;
+using ZabavniPark.ZabavniPark.Views;
 
 namespace ZabavniPark
 {
@@ -89,7 +90,7 @@ namespace ZabavniPark
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                rootFrame.Navigate(typeof(ParkoviListView), e.Arguments);
+                rootFrame.Navigate(typeof(SveAtrakcijeListView), e.Arguments);
             }
             // Ensure the current window is active
             Window.Current.Activate();
