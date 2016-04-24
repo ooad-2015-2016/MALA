@@ -507,13 +507,9 @@ C:\Users\Milan\Documents\Milan\ZabavniPark\ZabavniPark\obj\x86\Debug\ProjectArch
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark.csprojResolveAssemblyReference.cache
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\App.g.i.cs
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\App.g.cs
-C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\MainPage.g.i.cs
-C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\MainPage.g.cs
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\XamlTypeInfo.g.cs
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\App.xaml
-C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\MainPage.xaml
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\App.xbf
-C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\MainPage.xbf
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark.exe
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark.pdb
@@ -521,7 +517,6 @@ C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\App
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\EntityFramework.Commands.dll
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\EntityFramework.Commands.xml
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\App.xbf
-C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\MainPage.xbf
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark.xr.xml
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark.exe
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark.pdb
@@ -952,3 +947,8 @@ C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\qualifiers.txt
 C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark\Views\ParkoviListView.xbf
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.g.i.cs
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.g.cs
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.xaml
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.xbf
