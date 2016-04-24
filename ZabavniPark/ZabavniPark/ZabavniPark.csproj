@@ -102,7 +102,12 @@
     <Compile Include="Migrations\20160423213020_Migracija.designer.cs">
       <DependentUpon>20160423213020_Migracija.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20160424113800_OsobljeMigration.cs" />
+    <Compile Include="Migrations\20160424113800_OsobljeMigration.designer.cs">
+      <DependentUpon>20160424113800_OsobljeMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AtrakcijaDbContextModelSnapshot.cs" />
+    <Compile Include="Migrations\OsobljeDbContextModelSnapshot.cs" />
     <Compile Include="ZabavniPark\Models\Atrakcija.cs" />
     <Compile Include="ZabavniPark\Models\AtrakcijaDbContext.cs" />
     <Compile Include="MainPage.xaml.cs">

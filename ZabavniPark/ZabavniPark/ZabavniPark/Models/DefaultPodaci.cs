@@ -26,5 +26,6 @@ namespace ZabavniPark.ZabavniPark.Models
                 context.SaveChanges();
             }
         }
-    }
+    }
+
 }
