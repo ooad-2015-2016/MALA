@@ -11,6 +11,6 @@
       <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="ZabavniPark.MainPage" />
+    <RootType FullName="ZabavniPark.ParkoviListView" />
   </Roots.RootTypes>
 </Roots>

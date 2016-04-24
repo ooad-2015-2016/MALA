@@ -133,12 +133,12 @@ namespace ZabavniPark.ZabavniPark_XamlTypeInfo
         private void InitTypeTables()
         {
             _typeNameTable = new string[3];
-            _typeNameTable[0] = "ZabavniPark.MainPage";
+            _typeNameTable[0] = "ZabavniPark.ParkoviListView";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
 
             _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::ZabavniPark.MainPage);
+            _typeTable[0] = typeof(global::ZabavniPark.ParkoviListView);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
         }
@@ -175,7 +175,7 @@ namespace ZabavniPark.ZabavniPark_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::ZabavniPark.MainPage(); }
+        private object Activate_0_ParkoviListView() { return new global::ZabavniPark.ParkoviListView(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,9 +187,9 @@ namespace ZabavniPark.ZabavniPark_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  ZabavniPark.MainPage
+            case 0:   //  ZabavniPark.ParkoviListView
                 userType = new global::ZabavniPark.ZabavniPark_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_ParkoviListView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

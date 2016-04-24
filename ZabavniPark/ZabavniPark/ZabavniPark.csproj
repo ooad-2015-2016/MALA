@@ -106,8 +106,13 @@
     <Compile Include="Migrations\20160424113800_OsobljeMigration.designer.cs">
       <DependentUpon>20160424113800_OsobljeMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20160424184203_PosjetilacMigracija.cs" />
+    <Compile Include="Migrations\20160424184203_PosjetilacMigracija.designer.cs">
+      <DependentUpon>20160424184203_PosjetilacMigracija.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AtrakcijaDbContextModelSnapshot.cs" />
     <Compile Include="Migrations\OsobljeDbContextModelSnapshot.cs" />
+    <Compile Include="Migrations\PosjetilacDbContextModelSnapshot.cs" />
     <Compile Include="ZabavniPark\Models\Atrakcija.cs" />
     <Compile Include="ZabavniPark\Models\AtrakcijaDbContext.cs" />
     <Compile Include="Migrations\20160422141912_InitialMigration.cs" />
@@ -122,6 +127,9 @@
     <Compile Include="ZabavniPark\Models\OsobljeDbContext.cs" />
     <Compile Include="ZabavniPark\Models\Park.cs" />
     <Compile Include="ZabavniPark\Models\ParkDbContext.cs" />
+    <Compile Include="ZabavniPark\Models\Posjetilac.cs" />
+    <Compile Include="ZabavniPark\Models\PosjetilacDbContext.cs" />
+    <Compile Include="ZabavniPark\Models\PosjetilacDefaultPodaci.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
