@@ -1,16 +1,17 @@
 -Princip pojedinacne odgovornosti ( eng. Single Responsibility Principle-SRP) glasi:
 KLASA BI TREBALA IMATI SAMO JEDAN RAZLOG ZA PROMJENU.
 U slucaju MALA DK, sve klase zadovoljavaju ovaj princip, jer svaka od njih ima jedan i samo jedan razlog za promjenu, 
-ovo je riješeno korištenjem interfejsa.
+ovo je riješeno korištenjem interfejsa i ne korištenjem višestrukih nacina upisa i citanja podataka iz fajlova.
 -Otvoreno zatvoren princip ( eng. Open Closed Principle-OCP) glasi:
 ENTITETI SOFTVERA (KLASE, MODULI, FUNKCIJE) TREBALI BI BITI OTVORENI ZA
 NADOGRADNJU, ALI ZATVORENI ZA MODIFIKACIJE.
-Svaka od klasa ima samo osnovne informacije koje su potrebne, tako da je u potpunosti nepotrebno vrišiti bilo kakve izmjene,
-ali je moguce vršiti nadogradnju(npr. dodavanjem nove vrste radnika u MALA ZP ne mijenjamo klase, nego vršimo nadogradnju)
+Svaka od klasa ima samo osnovne informacije koje su potrebne, tako da je u potpunosti bespotrebno vrišiti bilo kakve izmjene,
+ali je moguce vršiti nadogradnju(npr. dodavanjem nove vrste radnika u MALA ZP ne mijenjamo klase, nego vršimo nadogradnju
+tj. dodavanjem vrste radnika u enum TipOsoblja)
 -Liskov princip zamjene (eng. Liskov Substitution Principle-LSP) glasi:
 PODTIPOVI MORAJU BITI ZAMJENJIVI NJIHOVIM OSNOVNIM TIPOVIMA.
-U slucaju MALA DK postoje dvije vrste klasa na koje se odnosi ovaj princip. Prvi je klasa Posjetilac, pri cemu sve metode
-iz izvedenih klasa mogu biti zamjenjene sa metodama iz bazne klase.
+U slucaju MALA DK postoji jedna  klasa na koju se odnosi ovaj princip. Klasa Posjetilac je osnovni tip, dok su obicni, gold,
+registrovani posjetioci izvedeni. Jasno je da se ovi tipovi mogu zamjeniti osnovnim tipom-Posjetilac.
 -Princip inverzije ovisnosti (eng. Dependency Inversion Principle-DIP) glasi:
 A. MODULI VISOKOG NIVOA NE BI TREBALI OVISITI OD MODULA NISKOG NIVOA.
 OBA BI TREBALO DA OVISE OD APSTRAKCIJA.
@@ -20,5 +21,5 @@ kao takva ne dopušta instanciranje objekata, pa je uvjet pod A) zadovoljen (jer 
 apstrakcija-klase Posjetilac) kao i pod B) ( detalji se nalaze unutar klase Posjetilac)
 -Princip izoliranja interfejsa ( eng. Interface Segregation Principle-ISP) glasi:
 KLIJENTI NE TREBA DA OVISE O METODAMA KOJE NECE UPOTREBLJAVATI.
-Trenutni Dijagram klasa sadrži samo metode koje citaju i pišu sadržaj u private atribute(getters/setters) pa kao takav
+Trenutni Dijagram klasa sadrži samo metode koje citaju i pišu sadržaj u private atribute(properties) pa kao takav
 zadovoljava ovaj princip.
