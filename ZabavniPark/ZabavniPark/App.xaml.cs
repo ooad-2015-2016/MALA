@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.Entity;
+using MyApp_OOAD.AtrakcijaBaza.Models;
 using MyApp_OOAD.ParkBaza.Models;
 using System;
 using System.Collections.Generic;
@@ -41,6 +42,10 @@ namespace ZabavniPark
             {
                 db.Database.ApplyMigrations();
                 ParkDefaultPodaci.Initialize(db);
+            }            using (var db = new AtrakcijaDbContext())
+            {
+                db.Database.ApplyMigrations();
+                DefaultPodaciAtrakcija.Initialize(db);
             }
         }
 
