@@ -110,16 +110,13 @@
     <Compile Include="Migrations\OsobljeDbContextModelSnapshot.cs" />
     <Compile Include="ZabavniPark\Models\Atrakcija.cs" />
     <Compile Include="ZabavniPark\Models\AtrakcijaDbContext.cs" />
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\20160422141912_InitialMigration.cs" />
     <Compile Include="Migrations\20160422141912_InitialMigration.designer.cs">
       <DependentUpon>20160422141912_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ParkDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ZabavniPark\Models\DefaultPodaci.cs" />
+    <Compile Include="ZabavniPark\Models\ParkDefaultPodaci.cs" />
     <Compile Include="ZabavniPark\Models\DefaultPodaciAtrakcija.cs" />
     <Compile Include="ZabavniPark\Models\Osoblje.cs" />
     <Compile Include="ZabavniPark\Models\OsobljeDbContext.cs" />
@@ -147,13 +144,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="ZabavniPark\Views\" />
+    <Page Include="ZabavniPark\Views\ParkoviListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
