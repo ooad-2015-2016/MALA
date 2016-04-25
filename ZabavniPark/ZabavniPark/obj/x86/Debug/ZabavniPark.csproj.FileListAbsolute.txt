@@ -911,3 +911,11 @@ C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAt
 C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.xbf
 C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xbf
 >>>>>>> origin/master
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.g.i.cs
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.g.cs
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.g.i.cs
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.g.cs
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.xaml
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xaml
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.xbf
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xbf

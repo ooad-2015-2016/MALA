@@ -1,28 +1,30 @@
 ﻿<Page
-    x:Class="ZabavniPark.ParkoviListView"
+    x:Class="ZabavniPark.ZabavniPark.Views.ParkoviListView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:ZabavniPark"
+    xmlns:local="using:ZabavniPark.ZabavniPark.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-          <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="100" />
-        <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="40" />
-            <RowDefinition Height="40" />
-            <RowDefinition Height="40" />
-            <RowDefinition Height="40" />
-            <RowDefinition Height="40" />
-            <RowDefinition Height="40" />
-        </Grid.RowDefinitions> 
-        
-
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-35,305">
+        <TextBlock x:Name="NazivParkaTextBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Naziv parka: " VerticalAlignment="Top" Grid.RowSpan="2"/>
+        <TextBlock x:Name="KapacitetParkaTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Kapacitet parka: " VerticalAlignment="Top" Margin="10,53,0,0" Grid.RowSpan="2"/>
+        <TextBlock x:Name="BrojPosjetilacaTextBlock" HorizontalAlignment="Left" Margin="10,96,0,0" TextWrapping="Wrap" Text="Trenutni broj posjetilaca: " VerticalAlignment="Top" Grid.RowSpan="2"/>
+        <TextBlock x:Name="BrojRadnikaTextBlock" HorizontalAlignment="Left" Text="Broj radnika: " VerticalAlignment="Top" Margin="10, 139, 0, 0" Grid.RowSpan="2" />
+        <TextBox x:Name="NazivParkaTextBox" HorizontalAlignment="Left" Margin="190,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Grid.RowSpan="2"/>
+        <TextBox x:Name="KapacitetParkaTextBox" HorizontalAlignment="Left" Margin="190,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Grid.RowSpan="2"/>
+        <TextBox x:Name="BrojPosjetilacaTextBox" HorizontalAlignment="Left" Margin="190,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Grid.RowSpan="2"/>
+        <TextBox x:Name="BrojRadnikaTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190, 139, 0, 0" Width="180" Grid.RowSpan="2"/>
+        <TextBlock x:Name="AtrakcijeTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 182, 0, 0" Text="Atrakcije: " Grid.RowSpan="2"/>
+        <!--<ComboBox x:Name="comboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="190,183,0,0"/>!-->
+        <Button x:Name="buttonDodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top" Width="110" Grid.RowSpan="2" Click="buttonDodaj_Click"/>
+        <ListBox x:Name="AtrakcijeListBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190, 183, 0, 0" Height="32" Width="180" Grid.RowSpan="2"/>
     </Grid>
 </Page>
+
+
+
+
     
     

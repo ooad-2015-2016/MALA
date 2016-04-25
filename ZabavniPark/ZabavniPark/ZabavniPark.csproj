@@ -113,6 +113,7 @@
     <Compile Include="Migrations\AtrakcijaDbContextModelSnapshot.cs" />
     <Compile Include="Migrations\OsobljeDbContextModelSnapshot.cs" />
     <Compile Include="Migrations\PosjetilacDbContextModelSnapshot.cs" />
+    <Compile Include="Views\ParkoviDbContext.cs" />
     <Compile Include="ZabavniPark\Models\Atrakcija.cs" />
     <Compile Include="ZabavniPark\Models\AtrakcijaDbContext.cs" />
     <Compile Include="Migrations\20160422141912_InitialMigration.cs" />
@@ -130,6 +131,9 @@
     <Compile Include="ZabavniPark\Models\Posjetilac.cs" />
     <Compile Include="ZabavniPark\Models\PosjetilacDbContext.cs" />
     <Compile Include="ZabavniPark\Models\PosjetilacDefaultPodaci.cs" />
+    <Compile Include="ZabavniPark\Views\ParkoviListView.xaml.cs">
+      <DependentUpon>ParkoviListView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ZabavniPark\Views\PosjetiteljiListView.xaml.cs">
       <DependentUpon>PosjetiteljiListView.xaml</DependentUpon>
     </Compile>
