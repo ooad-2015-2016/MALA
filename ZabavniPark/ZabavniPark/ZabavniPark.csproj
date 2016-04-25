@@ -11,7 +11,7 @@
     <AssemblyName>ZabavniPark</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
@@ -113,6 +113,7 @@
     <Compile Include="Migrations\AtrakcijaDbContextModelSnapshot.cs" />
     <Compile Include="Migrations\OsobljeDbContextModelSnapshot.cs" />
     <Compile Include="Migrations\PosjetilacDbContextModelSnapshot.cs" />
+    <Compile Include="Views\ParkoviDbContext.cs" />
     <Compile Include="ZabavniPark\Models\Atrakcija.cs" />
     <Compile Include="ZabavniPark\Models\AtrakcijaDbContext.cs" />
     <Compile Include="Migrations\20160422141912_InitialMigration.cs" />
@@ -130,6 +131,15 @@
     <Compile Include="ZabavniPark\Models\Posjetilac.cs" />
     <Compile Include="ZabavniPark\Models\PosjetilacDbContext.cs" />
     <Compile Include="ZabavniPark\Models\PosjetilacDefaultPodaci.cs" />
+    <Compile Include="ZabavniPark\Views\ParkoviListView.xaml.cs">
+      <DependentUpon>ParkoviListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZabavniPark\Views\PosjetiteljiListView.xaml.cs">
+      <DependentUpon>PosjetiteljiListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZabavniPark\Views\SveAtrakcijeListView.xaml.cs">
+      <DependentUpon>SveAtrakcijeListView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -156,6 +166,14 @@
   <ItemGroup />
   <ItemGroup>
     <Page Include="ZabavniPark\Views\ParkoviListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ZabavniPark\Views\PosjetiteljiListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ZabavniPark\Views\SveAtrakcijeListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

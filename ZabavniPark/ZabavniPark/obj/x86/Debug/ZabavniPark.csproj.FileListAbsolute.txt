@@ -2,7 +2,6 @@ C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ApplicationIns
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\EntityFramework.Commands.dll
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\EntityFramework.Commands.xml
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\App.xbf
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\MainPage.xbf
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark.xr.xml
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark.exe
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark.pdb
@@ -144,13 +143,9 @@ C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\System.Xml.Xml
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\System.Xml.XmlSerializer.dll
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\App.g.i.cs
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\App.g.cs
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\MainPage.g.i.cs
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\MainPage.g.cs
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\XamlTypeInfo.g.cs
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\App.xaml
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\MainPage.xaml
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\App.xbf
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\MainPage.xbf
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark.exe
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark.pdb
@@ -208,66 +203,6 @@ C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Threadi
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Xml.XmlDocument\en-US\FxResources.System.Xml.XmlDocument.SR.resw
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\EntityFramework.Commands\en-US\EntityFramework.Commands.Strings.resw
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark.csproj.GenerateResource.Cache
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.CSharp\layout.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.CSharp\layout.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.CSharp\Resources.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.CSharp\Resources.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.CSharp\pri.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.CSharp\pri.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.CSharp\priconfig.xml
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.CSharp\priconfig.xml.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.CSharp.pri
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.CSharp\qualifiers.txt
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Core\layout.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Core\layout.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Core\Resources.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Core\Resources.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Core\pri.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Core\pri.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Core\priconfig.xml
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Core\priconfig.xml.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Core.pri
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Core\qualifiers.txt
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Runtime.Serialization\layout.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Runtime.Serialization\layout.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Runtime.Serialization\Resources.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Runtime.Serialization\Resources.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Runtime.Serialization\pri.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Runtime.Serialization\pri.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Runtime.Serialization\priconfig.xml
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Runtime.Serialization\priconfig.xml.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Runtime.Serialization.pri
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.Runtime.Serialization\qualifiers.txt
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel\layout.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel\layout.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel\Resources.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel\Resources.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel\pri.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel\pri.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel\priconfig.xml
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel\priconfig.xml.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel.pri
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel\qualifiers.txt
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel.Web\layout.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel.Web\layout.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel.Web\Resources.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel.Web\Resources.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel.Web\pri.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel.Web\pri.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel.Web\priconfig.xml
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel.Web\priconfig.xml.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel.Web.pri
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\System.ServiceModel.Web\qualifiers.txt
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.VisualBasic\layout.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.VisualBasic\layout.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.VisualBasic\Resources.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.VisualBasic\Resources.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.VisualBasic\pri.resfiles
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.VisualBasic\pri.resfiles.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.VisualBasic\priconfig.xml
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.VisualBasic\priconfig.xml.intermediate
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.VisualBasic.pri
-C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Microsoft.VisualBasic\qualifiers.txt
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\priconfig.xml
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\priconfig.xml.intermediate
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\layout.resfiles
@@ -507,13 +442,9 @@ C:\Users\Milan\Documents\Milan\ZabavniPark\ZabavniPark\obj\x86\Debug\ProjectArch
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark.csprojResolveAssemblyReference.cache
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\App.g.i.cs
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\App.g.cs
-C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\MainPage.g.i.cs
-C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\MainPage.g.cs
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\XamlTypeInfo.g.cs
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\App.xaml
-C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\MainPage.xaml
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\App.xbf
-C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\MainPage.xbf
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark.exe
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark.pdb
@@ -521,7 +452,6 @@ C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\App
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\EntityFramework.Commands.dll
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\EntityFramework.Commands.xml
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\App.xbf
-C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\MainPage.xbf
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark.xr.xml
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark.exe
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark.pdb
@@ -952,3 +882,40 @@ C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\qualifiers.txt
 C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ProjectArchitectures.txt
+<<<<<<< HEAD
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark\Views\ParkoviListView.xbf
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark.csprojResolveAssemblyReference.cache
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.g.i.cs
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.g.cs
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.xaml
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.xbf
+=======
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark\Views\ParkoviListView.xbf
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.g.i.cs
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.g.cs
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.xaml
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\ParkoviListView.xbf
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.g.i.cs
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.g.cs
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xaml
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xbf
+C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xbf
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.xbf
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xbf
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.g.i.cs
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.g.cs
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.g.i.cs
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.g.cs
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.xaml
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xaml
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.xbf
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xbf
+>>>>>>> origin/master
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.g.i.cs
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.g.cs
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.g.i.cs
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.g.cs
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.xaml
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xaml
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.xbf
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xbf
