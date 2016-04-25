@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace MyApp_OOAD.AtrakcijaBaza.Models
 {
+    public enum StanjeAtrakcije { Operating, NotOperating };
     class Atrakcija
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -18,7 +19,7 @@ namespace MyApp_OOAD.AtrakcijaBaza.Models
         public TimeSpan VrijemeOtvaranja { get; set; }
         public TimeSpan VrijemeZatvaranja { get; set; }
         public int TrenutniBrojPosjetilaca { get; set; }
-        public bool stanje { get; set; }
+        public StanjeAtrakcije Stanje { get; set; }
         public float Cijena { get; set; }
         public int BrojNaCekanju { get; set; }
 
