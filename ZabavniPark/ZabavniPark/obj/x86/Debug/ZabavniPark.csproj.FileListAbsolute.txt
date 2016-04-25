@@ -957,3 +957,13 @@ C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\Zab
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xaml
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xbf
 C:\Users\API LAB\Documents\GitHub\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xbf
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.xbf
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xbf
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.g.i.cs
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.g.cs
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.g.i.cs
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.g.cs
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.xaml
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xaml
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PosjetiteljiListView.xbf
+C:\Users\User\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\SveAtrakcijeListView.xbf

@@ -130,6 +130,9 @@
     <Compile Include="ZabavniPark\Models\Posjetilac.cs" />
     <Compile Include="ZabavniPark\Models\PosjetilacDbContext.cs" />
     <Compile Include="ZabavniPark\Models\PosjetilacDefaultPodaci.cs" />
+    <Compile Include="ZabavniPark\Views\PosjetiteljiListView.xaml.cs">
+      <DependentUpon>PosjetiteljiListView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ZabavniPark\Views\SveAtrakcijeListView.xaml.cs">
       <DependentUpon>SveAtrakcijeListView.xaml</DependentUpon>
     </Compile>
@@ -159,6 +162,10 @@
   <ItemGroup />
   <ItemGroup>
     <Page Include="ZabavniPark\Views\ParkoviListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ZabavniPark\Views\PosjetiteljiListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
