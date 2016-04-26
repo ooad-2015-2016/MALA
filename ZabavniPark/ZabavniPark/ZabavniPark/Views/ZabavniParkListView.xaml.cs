@@ -26,5 +26,20 @@ namespace ZabavniPark.ZabavniPark.Views
         {
             this.InitializeComponent();
         }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBlock1_Copy2_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void stanje_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

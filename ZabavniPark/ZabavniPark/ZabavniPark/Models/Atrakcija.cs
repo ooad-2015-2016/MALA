@@ -13,15 +13,12 @@ namespace MyApp_OOAD.AtrakcijaBaza.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
         public int AtrakcijaId { get; set; } //primary key u bazi
-        public string fourSqaureId { get; set; } //trebati ce za sihronizaciju kasnije
         public string Naziv { get; set; }
         public int Kapacitet { get; set; }
         public TimeSpan VrijemeOtvaranja { get; set; }
         public TimeSpan VrijemeZatvaranja { get; set; }
         public int TrenutniBrojPosjetilaca { get; set; }
         public StanjeAtrakcije Stanje { get; set; }
-        public float Cijena { get; set; }
-        public int BrojNaCekanju { get; set; }
-
+        public int TrajanjeVoznje{ get; set; }
     }
 }

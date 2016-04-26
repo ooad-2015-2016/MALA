@@ -38,6 +38,7 @@ namespace ZabavniPark
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            using (var db = new ZabavniParkDbContext()) { db.Database.ApplyMigrations(); DefaultPodaci.Initialize(db); }
         }
 
         /// <summary>

@@ -17,15 +17,14 @@ namespace ZabavniPark.ZabavniPark.Models
             {
                 context.Atrakcije.AddRange(new MyApp_OOAD.AtrakcijaBaza.Models.Atrakcija()
                 {
-                    fourSqaureId = "Id",
+              
                     Naziv = "Voz smrti",
                     Kapacitet = 200,
                     VrijemeOtvaranja = TimeSpan.Zero,
                     VrijemeZatvaranja = TimeSpan.Zero,
                     TrenutniBrojPosjetilaca = 56,
                     Stanje = MyApp_OOAD.AtrakcijaBaza.Models.StanjeAtrakcije.Operating,
-                    Cijena = 50,
-                    BrojNaCekanju = 2
+                    TrajanjeVoznje=100
                 });
             }
             if (!context.Osoblja.Any())
