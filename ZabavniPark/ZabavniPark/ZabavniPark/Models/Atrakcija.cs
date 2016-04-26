@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 namespace MyApp_OOAD.AtrakcijaBaza.Models
 {
     public enum StanjeAtrakcije { Operating, NotOperating };
-    class Atrakcija
+    public class Atrakcija
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
-        public int AtrakcijaId { get; set; }//primary key u bazi
-        public string fourSqaureId { get; set; }//trebati ce za sihronizaciju kasnije
+        public int AtrakcijaId { get; set; } //primary key u bazi
+        public string fourSqaureId { get; set; } //trebati ce za sihronizaciju kasnije
         public string Naziv { get; set; }
         public int Kapacitet { get; set; }
         public TimeSpan VrijemeOtvaranja { get; set; }

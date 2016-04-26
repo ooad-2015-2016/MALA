@@ -38,16 +38,6 @@ namespace ZabavniPark
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-
-            using (var db = new ParkDbContext())
-            {
-                db.Database.ApplyMigrations();
-                ParkDefaultPodaci.Initialize(db);
-            }            using (var db = new AtrakcijaDbContext())
-            {
-                db.Database.ApplyMigrations();
-                DefaultPodaciAtrakcija.Initialize(db);
-            }
         }
 
         /// <summary>
@@ -90,7 +80,7 @@ namespace ZabavniPark
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                rootFrame.Navigate(typeof(SveAtrakcijeListView), e.Arguments);
+                rootFrame.Navigate(typeof(ZabavniParkListView), e.Arguments);
             }
             // Ensure the current window is active
             Window.Current.Activate();

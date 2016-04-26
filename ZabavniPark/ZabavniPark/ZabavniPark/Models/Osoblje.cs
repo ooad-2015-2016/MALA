@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace MyApp_OOAD.ParkBaza.Models
 {
     public enum TipOsoblja { Radnik, SalterRadnik, Administrator };
-     class Osoblje
+    public class Osoblje
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int OsobljeId { get; set; }
