@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ZabavniPark.ZabavniPark.Models
 {
     public enum TipPosjetilaca { Obicni, Registrovani, Gold}
-    class Posjetilac
+    public class Posjetilac
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int PosjetilacId { get; set; }

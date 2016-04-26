@@ -98,47 +98,19 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20160423213020_Migracija.cs" />
-    <Compile Include="Migrations\20160423213020_Migracija.designer.cs">
-      <DependentUpon>20160423213020_Migracija.cs</DependentUpon>
+    <Compile Include="Migrations\20160426131832_InitialMigration.cs" />
+    <Compile Include="Migrations\20160426131832_InitialMigration.designer.cs">
+      <DependentUpon>20160426131832_InitialMigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20160424113800_OsobljeMigration.cs" />
-    <Compile Include="Migrations\20160424113800_OsobljeMigration.designer.cs">
-      <DependentUpon>20160424113800_OsobljeMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20160424184203_PosjetilacMigracija.cs" />
-    <Compile Include="Migrations\20160424184203_PosjetilacMigracija.designer.cs">
-      <DependentUpon>20160424184203_PosjetilacMigracija.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\AtrakcijaDbContextModelSnapshot.cs" />
-    <Compile Include="Migrations\OsobljeDbContextModelSnapshot.cs" />
-    <Compile Include="Migrations\PosjetilacDbContextModelSnapshot.cs" />
-    <Compile Include="Views\ParkoviDbContext.cs" />
+    <Compile Include="Migrations\ZabavniParkDbContextModelSnapshot.cs" />
     <Compile Include="ZabavniPark\Models\Atrakcija.cs" />
-    <Compile Include="ZabavniPark\Models\AtrakcijaDbContext.cs" />
-    <Compile Include="Migrations\20160422141912_InitialMigration.cs" />
-    <Compile Include="Migrations\20160422141912_InitialMigration.designer.cs">
-      <DependentUpon>20160422141912_InitialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\ParkDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ZabavniPark\Models\ParkDefaultPodaci.cs" />
-    <Compile Include="ZabavniPark\Models\DefaultPodaciAtrakcija.cs" />
     <Compile Include="ZabavniPark\Models\Osoblje.cs" />
-    <Compile Include="ZabavniPark\Models\OsobljeDbContext.cs" />
     <Compile Include="ZabavniPark\Models\Park.cs" />
-    <Compile Include="ZabavniPark\Models\ParkDbContext.cs" />
     <Compile Include="ZabavniPark\Models\Posjetilac.cs" />
-    <Compile Include="ZabavniPark\Models\PosjetilacDbContext.cs" />
-    <Compile Include="ZabavniPark\Models\PosjetilacDefaultPodaci.cs" />
-    <Compile Include="ZabavniPark\Views\ParkoviListView.xaml.cs">
-      <DependentUpon>ParkoviListView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ZabavniPark\Views\PosjetiteljiListView.xaml.cs">
-      <DependentUpon>PosjetiteljiListView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ZabavniPark\Views\SveAtrakcijeListView.xaml.cs">
-      <DependentUpon>SveAtrakcijeListView.xaml</DependentUpon>
+    <Compile Include="ZabavniPark\Models\ZabavniParkDbContext.cs" />
+    <Compile Include="ZabavniPark\Views\ZabavniParkListView.xaml.cs">
+      <DependentUpon>ZabavniParkListView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -165,15 +137,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Page Include="ZabavniPark\Views\ParkoviListView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ZabavniPark\Views\PosjetiteljiListView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ZabavniPark\Views\SveAtrakcijeListView.xaml">
+    <Page Include="ZabavniPark\Views\ZabavniParkListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
