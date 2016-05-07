@@ -1,10 +1,10 @@
 App.xbf
-AtrakcijaUnos.xbf
-Login.xbf
 MainPage.xbf
-OsobljeUnos.xbf
-PosjetilacUnos.xbf
-PrimjerStranice2.xbf
-PrimjerStranice3.xbf
-PrimjerStranice4.xbf
+ZabavniPark\Views\AtrakcijaUnos.xbf
+ZabavniPark\Views\Login.xbf
+ZabavniPark\Views\OsobljeUnos.xbf
+ZabavniPark\Views\PosjetilacUnos.xbf
+ZabavniPark\Views\PrimjerStranice2.xbf
+ZabavniPark\Views\PrimjerStranice3.xbf
+ZabavniPark\Views\PrimjerStranice4.xbf
 ZabavniPark\Views\ZabavniParkListView.xbf
