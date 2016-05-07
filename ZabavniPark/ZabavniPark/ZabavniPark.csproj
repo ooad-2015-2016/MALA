@@ -98,17 +98,48 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AtrakcijaUnos.xaml.cs">
+      <DependentUpon>AtrakcijaUnos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource\DataSourceMenuMD.cs" />
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\20160426131832_InitialMigration.cs" />
     <Compile Include="Migrations\20160426131832_InitialMigration.designer.cs">
       <DependentUpon>20160426131832_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ZabavniParkDbContextModelSnapshot.cs" />
+    <Compile Include="OsobljeUnos.xaml.cs">
+      <DependentUpon>OsobljeUnos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PosjetilacUnos.xaml.cs">
+      <DependentUpon>PosjetilacUnos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrimjerStranice2.xaml.cs">
+      <DependentUpon>PrimjerStranice2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrimjerStranice3.xaml.cs">
+      <DependentUpon>PrimjerStranice3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrimjerStranice4.xaml.cs">
+      <DependentUpon>PrimjerStranice4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\MeniStavkeViewModel.cs" />
     <Compile Include="ZabavniPark\Models\Atrakcija.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ZabavniPark\Models\DefaultPodaci.cs" />
+    <Compile Include="ZabavniPark\Models\Korisnik.cs" />
+    <Compile Include="ZabavniPark\Models\MeniStavka.cs" />
     <Compile Include="ZabavniPark\Models\Osoblje.cs" />
     <Compile Include="ZabavniPark\Models\Park.cs" />
     <Compile Include="ZabavniPark\Models\Posjetilac.cs" />
+    <Compile Include="ZabavniPark\Models\Uloga.cs" />
+    <Compile Include="ZabavniPark\Models\UlogaKorisnik.cs" />
+    <Compile Include="ZabavniPark\Models\UlogaMeniStavke.cs" />
     <Compile Include="ZabavniPark\Models\ZabavniParkDbContext.cs" />
     <Compile Include="ZabavniPark\Views\ZabavniParkListView.xaml.cs">
       <DependentUpon>ZabavniParkListView.xaml</DependentUpon>
@@ -138,6 +169,38 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Page Include="AtrakcijaUnos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OsobljeUnos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PosjetilacUnos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrimjerStranice2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrimjerStranice3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrimjerStranice4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ZabavniPark\Views\ZabavniParkListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

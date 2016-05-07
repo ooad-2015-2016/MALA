@@ -1,6 +1,4 @@
 ﻿using Microsoft.Data.Entity;
-using MyApp_OOAD.AtrakcijaBaza.Models;
-using MyApp_OOAD.ParkBaza.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -18,7 +16,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using ZabavniPark.ZabavniPark.Models;
-using ZabavniPark.ZabavniPark.Views;
 
 namespace ZabavniPark
 {
@@ -52,7 +49,7 @@ namespace ZabavniPark
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
-                this.DebugSettings.EnableFrameRateCounter = true;
+                this.DebugSettings.EnableFrameRateCounter = false;
             }
 #endif
 
@@ -81,7 +78,9 @@ namespace ZabavniPark
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                rootFrame.Navigate(typeof(ZabavniParkListView), e.Arguments);
+                //cao rootFrame.Navigate(typeof(ZabavniParkListView), e.Arguments);
+                rootFrame.Navigate(typeof(Login), e.Arguments);
+                //kako bi se login otvarao kao početna stranica
             }
             // Ensure the current window is active
             Window.Current.Activate();

@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="ZabavniPark.AtrakcijaUnos"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ZabavniPark"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="25" Margin="141,10,0,0" TextWrapping="Wrap" Text="Atrakcija" VerticalAlignment="Top" Width="68"/>
+        <StackPanel HorizontalAlignment="Left" Height="202" Margin="10,35,0,0" VerticalAlignment="Top" Width="340">
+            <TextBox x:Name="naziv_atrakcije" HorizontalAlignment="Left" Height="11" Margin="108,0,0,0" TextWrapping="Wrap" Text="" Width="108" PlaceholderText="Naziv"/>
+            <TextBox x:Name="kapacitet_atrakcije" HorizontalAlignment="Left" Height="18" Margin="108,0,0,0" TextWrapping="Wrap" Text="" Width="108" PlaceholderText="Kapacitet"/>
+            <TextBox x:Name="vrijeme_otvaranja_atrakcije" HorizontalAlignment="Left" Height="20" Margin="108,0,0,0" TextWrapping="Wrap" Text="" Width="108" PlaceholderText="Vrijeme otvaranja"/>
+            <TextBox x:Name="vrijeme_zatvaranja_atrakcije" HorizontalAlignment="Left" Height="18" Margin="108,0,0,0" TextWrapping="Wrap" Text="" Width="108" PlaceholderText="Vrijeme zatvaranja" TextChanged="vrijeme_zatvaranja_atrakcije_TextChanged"/>
+            <ComboBox x:Name="stanje_atrakcije" HorizontalAlignment="Left" Height="29" Margin="108,0,0,0" Width="108" PlaceholderText="Stanje"/>
+            <TextBox x:Name="kapacitet_atrakcije1" HorizontalAlignment="Left" Height="21" Margin="108,0,0,0" TextWrapping="Wrap" Text="" Width="108" PlaceholderText="Kapacitet"/>
+        </StackPanel>
+        <Button x:Name="unesi_atrakciju" Content="Unesi" HorizontalAlignment="Left" Height="31" Margin="118,253,0,0" VerticalAlignment="Top" Width="108"/>
+
+    </Grid>
+</Page>
