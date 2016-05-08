@@ -13,7 +13,7 @@ namespace ZabavniPark.ZabavniPark.ViewModels
 
         public PosjetilacViewModel()
         {
-
+            Posjetilac = new Posjetilac();
         }
     }
 }

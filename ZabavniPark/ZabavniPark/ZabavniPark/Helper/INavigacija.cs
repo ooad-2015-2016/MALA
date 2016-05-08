@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZabavniPark.ZabavniPark.Helper
 {
-    interface INavigacija
+    public interface INavigacija
     {
         void Navigate(Type sourcePage);
         void Navigate(Type sourcePage, object parameter);
