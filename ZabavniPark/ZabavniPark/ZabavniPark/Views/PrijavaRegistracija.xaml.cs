@@ -31,9 +31,6 @@ namespace ZabavniPark
         public Login()
         {
             this.InitializeComponent();
-            //inicijalizacija data source
-            //var inicijalizacija = new DataSourceMenuMD();
-
             DataContext = new PrijavaRegistracijaViewModel();
             NavigationCacheMode = NavigationCacheMode.Required;
         }
@@ -43,6 +40,23 @@ namespace ZabavniPark
         {
             var currentView = SystemNavigationManager.GetForCurrentView();
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+        }
+
+        private async void button_Click(object sender, RoutedEventArgs e)
+        {
+
+            var korisnickoIme = txtUsername.Text;
+            var sifra = txtPassword.Password;
+            Korisnik korisnik = DataSourceMenuMD.ProvjeraKorisnika(korisnickoIme, sifra);
+            if (korisnik != null && korisnik.KorisnikId > 0)
+            {
+                //this.Frame.Navigate(typeof(MainPage), korisnik);
+            }
+            else
+            {
+                var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna prijava");
+                await dialog.ShowAsync();
+            }
         }
     }
 }
