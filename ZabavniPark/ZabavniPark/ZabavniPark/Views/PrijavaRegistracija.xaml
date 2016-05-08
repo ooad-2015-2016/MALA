@@ -22,11 +22,11 @@
         		Width="150" />
             <PasswordBox x:Name="txtPassword" PlaceholderText="Šifra" Margin="10,10,10,0"
         		Width="150" />
-            <Button x:Name="button" Content="Login" HorizontalAlignment="Center" Margin="135,15,138,15" Width="75" />
+            <Button x:Name="button" Content="Login" HorizontalAlignment="Center" Margin="135,15,138,15" Width="75" Click="button_Click" />
             <Grid Height="80" Width="280" Margin="0,0,0,0" HorizontalAlignment="Left">
                 <TextBlock x:Name="textBox" TextWrapping="Wrap" Text="Novi korisnik?" TextAlignment="Center" HorizontalAlignment="Left" Margin="7,19,0,31" />
                 <Button x:Name="button1" Content="Sign Up" HorizontalAlignment="Center" Width="75" Margin="135,15,70,26" />
             </Grid>
         </StackPanel>
     </Grid>
-</Page>
+</Page>

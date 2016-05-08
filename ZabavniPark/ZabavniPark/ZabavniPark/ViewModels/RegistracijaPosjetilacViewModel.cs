@@ -25,14 +25,15 @@ namespace ZabavniPark.ZabavniPark.ViewModels
 
         public RegistracijaPosjetilacViewModel()
         {
-            Posjetilac = new Posjetilac();
+           // Posjetilac = new Posjetilac();
             NavigationServis = new NavigationService();
             Registracija = new RelayCommand<object>(signup);
-            IDPosjetioca = System.Threading.Interlocked.Increment(ref counter);
+            
         }
 
         private void signup(object obj)
         {
+            IDPosjetioca = System.Threading.Interlocked.Increment(ref counter);
             Posjetilac = new Posjetilac(IDPosjetioca, Ime, Prezime, DatumRodjenja, ClanskiBroj, Tip, Sifra);
             // ovdje treba dodati da korisnika odvede na neku stranicu(napraviti View) da moze da pregleda atrakcije
             // i eventualno rezervise karte

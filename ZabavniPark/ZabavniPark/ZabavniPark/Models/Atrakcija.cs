@@ -20,5 +20,23 @@ namespace MyApp_OOAD.AtrakcijaBaza.Models
         public int TrenutniBrojPosjetilaca { get; set; }
         public StanjeAtrakcije Stanje { get; set; }
         public int TrajanjeVoznje{ get; set; }
+
+        public Atrakcija(int id, string naziv, 
+                        int kapacitet, TimeSpan otvaranje, 
+                         TimeSpan zatvaranje, int trenutniBrPosjetilaca,
+                         StanjeAtrakcije stanje, int trajanje)
+        {
+            AtrakcijaId = id;
+            Naziv = naziv;
+            Kapacitet = kapacitet;
+            VrijemeOtvaranja = otvaranje;
+            VrijemeZatvaranja = zatvaranje;
+            TrenutniBrojPosjetilaca = trenutniBrPosjetilaca;
+            Stanje = stanje;
+            TrajanjeVoznje = trajanje;
+        }
+
+        public Atrakcija() { }
+        
     }
 }
