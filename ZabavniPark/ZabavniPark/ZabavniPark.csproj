@@ -100,14 +100,17 @@
     </Compile>
     <Compile Include="ZabavniPark\Helper\INavigacija.cs" />
     <Compile Include="ZabavniPark\Helper\INavigationService.cs" />
+    <Compile Include="ZabavniPark\Helper\RelayCommand.cs" />
     <Compile Include="ZabavniPark\ViewModels\AtrakcijaViewModel.cs" />
     <Compile Include="ZabavniPark\ViewModels\PosjetilacViewModel.cs" />
+    <Compile Include="ZabavniPark\ViewModels\PrijavaRegistracijaViewModel.cs" />
+    <Compile Include="ZabavniPark\ViewModels\RegistracijaPosjetilacViewModel.cs" />
     <Compile Include="ZabavniPark\Views\AtrakcijaUnos.xaml.cs">
       <DependentUpon>AtrakcijaUnos.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataSource\DataSourceMenuMD.cs" />
-    <Compile Include="ZabavniPark\Views\Login.xaml.cs">
-      <DependentUpon>Login.xaml</DependentUpon>
+    <Compile Include="ZabavniPark\Views\PrijavaRegistracija.xaml.cs">
+      <DependentUpon>PrijavaRegistracija.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -123,15 +126,6 @@
     <Compile Include="ZabavniPark\Views\PosjetilacUnos.xaml.cs">
       <DependentUpon>PosjetilacUnos.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ZabavniPark\Views\PrimjerStranice2.xaml.cs">
-      <DependentUpon>PrimjerStranice2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ZabavniPark\Views\PrimjerStranice3.xaml.cs">
-      <DependentUpon>PrimjerStranice3.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ZabavniPark\Views\PrimjerStranice4.xaml.cs">
-      <DependentUpon>PrimjerStranice4.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ZabavniPark\Models\Atrakcija.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ZabavniPark\Models\DefaultPodaci.cs" />
@@ -144,6 +138,9 @@
     <Compile Include="ZabavniPark\Models\UlogaKorisnik.cs" />
     <Compile Include="ZabavniPark\Models\UlogaMeniStavke.cs" />
     <Compile Include="ZabavniPark\Models\ZabavniParkDbContext.cs" />
+    <Compile Include="ZabavniPark\Views\RegistracijaPosjetilac.xaml.cs">
+      <DependentUpon>RegistracijaPosjetilac.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ZabavniPark\Views\ZabavniParkListView.xaml.cs">
       <DependentUpon>ZabavniParkListView.xaml</DependentUpon>
     </Compile>
@@ -176,7 +173,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ZabavniPark\Views\Login.xaml">
+    <Page Include="ZabavniPark\Views\PrijavaRegistracija.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -192,15 +189,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ZabavniPark\Views\PrimjerStranice2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ZabavniPark\Views\PrimjerStranice3.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ZabavniPark\Views\PrimjerStranice4.xaml">
+    <Page Include="ZabavniPark\Views\RegistracijaPosjetilac.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

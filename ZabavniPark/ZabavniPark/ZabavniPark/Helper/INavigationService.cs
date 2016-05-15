@@ -9,7 +9,7 @@ using ZabavniPark.ZabavniPark.Helper;
 
 namespace ZabavniPark.ZabavniPark
 {
-    class NavigationService : INavigacija
+    public class NavigationService : INavigacija
     {
         //obicna navigacija bez parametra
         public void Navigate(Type sourcePage)

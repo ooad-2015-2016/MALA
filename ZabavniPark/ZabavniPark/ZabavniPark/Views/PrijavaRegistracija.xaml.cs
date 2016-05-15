@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -15,6 +16,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using ZabavniPark.DataSource;
 using ZabavniPark.ZabavniPark.Models;
+using ZabavniPark.ZabavniPark.ViewModels;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -29,11 +31,18 @@ namespace ZabavniPark
         public Login()
         {
             this.InitializeComponent();
-            //inicijalizacija data source
-            var inicijalizacija = new DataSourceMenuMD();
+            DataContext = new PrijavaRegistracijaViewModel();
+            NavigationCacheMode = NavigationCacheMode.Required;
         }
-        //asinhrona metoda za provjeru prijave korisnika
-        private async void btnLogin_Click(object sender, RoutedEventArgs e)
+
+        //Sluzi da kad se dodje na ovu formu, treba onemoguciti back dugme jer se nema gdje vratiti
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            var currentView = SystemNavigationManager.GetForCurrentView();
+            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+        }
+
+        private async void button_Click(object sender, RoutedEventArgs e)
         {
 
             var korisnickoIme = txtUsername.Text;
@@ -41,12 +50,11 @@ namespace ZabavniPark
             Korisnik korisnik = DataSourceMenuMD.ProvjeraKorisnika(korisnickoIme, sifra);
             if (korisnik != null && korisnik.KorisnikId > 0)
             {
-                this.Frame.Navigate(typeof(MainPage), korisnik);
+                //this.Frame.Navigate(typeof(MainPage), korisnik);
             }
             else
             {
-                var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješnaprijava");
-               
+                var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna prijava");
                 await dialog.ShowAsync();
             }
         }

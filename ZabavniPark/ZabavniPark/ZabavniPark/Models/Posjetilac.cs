@@ -14,6 +14,22 @@ namespace ZabavniPark.ZabavniPark.Models
         public int PosjetilacId { get; set; }
         public String Ime { get; set; }
         public String Prezime { get; set; }
-        public TipPosjetilaca tip { get; set; }
+        public DateTime DatumRodjenja { get; set; }
+        public int ClanskiBroj { get; set; }
+        public TipPosjetilaca Tip { get; set; }
+        public String Sifra { get; set; }
+
+        public Posjetilac(int id, String ime, String prezime, DateTime datum, int clanskiBroj, TipPosjetilaca tip, String sifra)
+        {
+            PosjetilacId = id;
+            Ime = ime;
+            Prezime = prezime;
+            DatumRodjenja = datum;
+            ClanskiBroj = clanskiBroj;
+            Tip = tip;
+            Sifra = sifra;         
+        }
+
+        public Posjetilac() { }
     }
 }
