@@ -19,15 +19,13 @@ namespace ZabavniParkMigrations
                     b.Property<int>("AtrakcijaId")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("BrojNaCekanju");
-
-                    b.Property<float>("Cijena");
-
                     b.Property<int>("Kapacitet");
 
                     b.Property<string>("Naziv");
 
                     b.Property<int>("Stanje");
+
+                    b.Property<int>("TrajanjeVoznje");
 
                     b.Property<int>("TrenutniBrojPosjetilaca");
 
@@ -35,29 +33,29 @@ namespace ZabavniParkMigrations
 
                     b.Property<TimeSpan>("VrijemeZatvaranja");
 
-                    b.Property<string>("fourSqaureId");
-
                     b.Key("AtrakcijaId");
                 });
 
-            builder.Entity("MyApp_OOAD.ParkBaza.Models.Osoblje", b =>
+            builder.Entity("MyApp_OOAD.ParkBaza.Models.Radnik", b =>
                 {
-                    b.Property<int>("OsobljeId")
+                    b.Property<int>("RadnikId")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("ime");
+                    b.Property<string>("Ime");
 
-                    b.Property<string>("password");
+                    b.Property<string>("Password");
 
-                    b.Property<string>("prezime");
+                    b.Property<double>("Plata");
 
-                    b.Property<int>("radniStaz");
+                    b.Property<string>("Prezime");
 
-                    b.Property<int>("tip");
+                    b.Property<int>("RadniStaz");
 
-                    b.Property<string>("username");
+                    b.Property<int>("Tip");
 
-                    b.Key("OsobljeId");
+                    b.Property<string>("Username");
+
+                    b.Key("RadnikId");
                 });
 
             builder.Entity("ZabavniPark.ZabavniPark.Models.Posjetilac", b =>
@@ -65,11 +63,17 @@ namespace ZabavniParkMigrations
                     b.Property<int>("PosjetilacId")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<int>("ClanskiBroj");
+
+                    b.Property<DateTime>("DatumRodjenja");
+
                     b.Property<string>("Ime");
 
                     b.Property<string>("Prezime");
 
-                    b.Property<int>("tip");
+                    b.Property<string>("Sifra");
+
+                    b.Property<int>("Tip");
 
                     b.Key("PosjetilacId");
                 });

@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace MyApp_OOAD.ParkBaza.Models
 {
-    public enum TipOsoblja { Radnik, SalterRadnik, Administrator };
-    public class Osoblje
+    public enum TipOsoblja { RadnikTeren, SalterRadnik, Administrator };
+    public class Radnik
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int OsobljeId { get; set; }
+        public int RadnikId { get; set; } 
         public String Ime { get; set; }
         public String Prezime { get; set;}
         public TipOsoblja Tip { get; set;}
@@ -21,13 +21,17 @@ namespace MyApp_OOAD.ParkBaza.Models
         public double Plata { get; set; }
 
 
-        public Osoblje() { }
-
-        // ovdje napraviti konstruktor koji prima sve parametre i postavlja gornje property-je na odgovarajucu vrijednost
-        //public Osoblje()
-        //{
-
-        //}
-       
+        public Radnik() { }
+        public Radnik(int id, String ime, String prezime, TipOsoblja tip, String username, String pass, int god, double plata)
+        {
+            RadnikId = id;
+            Ime = ime;
+            Prezime = prezime;
+            Tip = tip;
+            Username = username;
+            Password = pass;
+            RadniStaz = god;
+            Plata = plata;
+        }    
     }
 }

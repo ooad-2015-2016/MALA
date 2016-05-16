@@ -24,19 +24,20 @@ namespace ZabavniPark.ZabavniPark.Models
                     VrijemeZatvaranja = TimeSpan.Zero,
                     TrenutniBrojPosjetilaca = 56,
                     Stanje = MyApp_OOAD.AtrakcijaBaza.Models.StanjeAtrakcije.Operating,
-                    TrajanjeVoznje=100
+                    TrajanjeVoznje = 15
                 });
             }
             if (!context.Radnici.Any())
             {
-                context.Radnici.AddRange(new MyApp_OOAD.ParkBaza.Models.Osoblje()
+                context.Radnici.AddRange(new MyApp_OOAD.ParkBaza.Models.Radnik()
                 {
                     Ime = "Milan",
                     Prezime = "Zuza",
                     Tip = MyApp_OOAD.ParkBaza.Models.TipOsoblja.Administrator,
                     Username = "mzuza1",
                     Password = "zmilan1",
-                    RadniStaz = 5
+                    RadniStaz = 5,
+                    Plata = 1200
                 });
             }
 
@@ -50,7 +51,7 @@ namespace ZabavniPark.ZabavniPark.Models
 
                 });
             }
-            //context.SaveChanges();
+            context.SaveChanges();
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ZabavniPark.ZabavniPark.Models;
+using ZabavniPark.ZabavniPark.Views;
 
 namespace ZabavniPark.DataSource
 {
@@ -82,15 +83,17 @@ namespace ZabavniPark.DataSource
                  MeniStavkaId=2,
                 Naziv="Unos osoblja",
                  Kod="F2",
-                 Podstranica = typeof(OsobljeUnos)
-                 },
-                 new MeniStavka()
+                 Podstranica = typeof(RadnikUnos)
+                 }/*,
+                 
+                   
+                   new MeniStavka()
                  {
                  MeniStavkaId=3,
                 Naziv="Unos Posjetilaca",
                 Kod="F3",
                  Podstranica = typeof(PosjetilacUnos)
-                 },
+                 },*/
                  
                  };
         public static IList<MeniStavka> DajSveMeniStavke()
@@ -121,5 +124,6 @@ namespace ZabavniPark.DataSource
             k2.DodajUloguKorisnika(u2);
         }
         #endregion
-    }
+    }
+
 }

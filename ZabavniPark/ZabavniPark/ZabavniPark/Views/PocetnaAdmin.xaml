@@ -20,7 +20,7 @@
             </TextBlock>
             <Button x:Name="button" Content="Dodaj atrakciju" HorizontalAlignment="Left" Margin="105,80,0,0" VerticalAlignment="Top" Width="140" Click="button_Click"/>
             <Button x:Name="button1" Content="Izmijeni atrakciju" HorizontalAlignment="Left" Margin="105,140,0,0" VerticalAlignment="Top" Width="140"/>
-            <Button x:Name="button2" Content="Dodaj radnika" HorizontalAlignment="Left" Margin="105,200,0,0" VerticalAlignment="Top" Width="140"/>
+            <Button x:Name="button2" Content="Dodaj radnika" HorizontalAlignment="Left" Margin="105,200,0,0" VerticalAlignment="Top" Width="140" Click="button2_Click"/>
             <Button x:Name="button3" Content="Izmijeni radnika" HorizontalAlignment="Left" Margin="105, 260,0,0" VerticalAlignment="Top" Width="140" />
         </Grid>
 

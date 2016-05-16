@@ -43,6 +43,7 @@
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="Style" />
       <RootProperty Name="IsColorFontEnabled" />
+      <RootProperty Name="FontStyle" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="UseLayoutRounding" />
       <RootProperty Name="RenderTransform" />
@@ -67,7 +68,6 @@
       <RootProperty Name="Name" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="RenderTransformOrigin" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
@@ -78,6 +78,7 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Width" />
       <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
@@ -86,7 +87,6 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
       <RootProperty Name="PlaceholderText" />
-      <RootProperty Name="Items" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="ZabavniPark.AtrakcijaUnos" />
@@ -94,6 +94,8 @@
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
@@ -129,6 +131,11 @@
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="ItemContainerStyle" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
@@ -144,8 +151,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Frame" />
     <RootType FullName="ZabavniPark.MainPage" />
     <RootType FullName="ZabavniPark.ZabavniPark.Views.PocetnaAdmin" />
-    <RootType FullName="ZabavniPark.OsobljeUnos" />
-    <RootType FullName="ZabavniPark.PosjetilacUnos" />
+    <RootType FullName="ZabavniPark.ZabavniPark.Views.RadnikUnos" />
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />

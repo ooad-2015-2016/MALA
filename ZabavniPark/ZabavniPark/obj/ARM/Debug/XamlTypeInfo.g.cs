@@ -132,15 +132,29 @@ namespace ZabavniPark.ZabavniPark_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "ZabavniPark.ZabavniPark.Views.ZabavniParkListView";
+            _typeNameTable = new string[10];
+            _typeNameTable[0] = "ZabavniPark.AtrakcijaUnos";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "ZabavniPark.Login";
+            _typeNameTable[4] = "ZabavniPark.MainPage";
+            _typeNameTable[5] = "ZabavniPark.ZabavniPark.Views.PocetnaAdmin";
+            _typeNameTable[6] = "ZabavniPark.OsobljeUnos";
+            _typeNameTable[7] = "ZabavniPark.PosjetilacUnos";
+            _typeNameTable[8] = "ZabavniPark.ZabavniPark.Views.RegistracijaPosjetilac";
+            _typeNameTable[9] = "ZabavniPark.ZabavniPark.Views.ZabavniParkListView";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::ZabavniPark.ZabavniPark.Views.ZabavniParkListView);
+            _typeTable = new global::System.Type[10];
+            _typeTable[0] = typeof(global::ZabavniPark.AtrakcijaUnos);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::ZabavniPark.Login);
+            _typeTable[4] = typeof(global::ZabavniPark.MainPage);
+            _typeTable[5] = typeof(global::ZabavniPark.ZabavniPark.Views.PocetnaAdmin);
+            _typeTable[6] = typeof(global::ZabavniPark.OsobljeUnos);
+            _typeTable[7] = typeof(global::ZabavniPark.PosjetilacUnos);
+            _typeTable[8] = typeof(global::ZabavniPark.ZabavniPark.Views.RegistracijaPosjetilac);
+            _typeTable[9] = typeof(global::ZabavniPark.ZabavniPark.Views.ZabavniParkListView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,7 +189,14 @@ namespace ZabavniPark.ZabavniPark_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_ZabavniParkListView() { return new global::ZabavniPark.ZabavniPark.Views.ZabavniParkListView(); }
+        private object Activate_0_AtrakcijaUnos() { return new global::ZabavniPark.AtrakcijaUnos(); }
+        private object Activate_3_Login() { return new global::ZabavniPark.Login(); }
+        private object Activate_4_MainPage() { return new global::ZabavniPark.MainPage(); }
+        private object Activate_5_PocetnaAdmin() { return new global::ZabavniPark.ZabavniPark.Views.PocetnaAdmin(); }
+        private object Activate_6_OsobljeUnos() { return new global::ZabavniPark.OsobljeUnos(); }
+        private object Activate_7_PosjetilacUnos() { return new global::ZabavniPark.PosjetilacUnos(); }
+        private object Activate_8_RegistracijaPosjetilac() { return new global::ZabavniPark.ZabavniPark.Views.RegistracijaPosjetilac(); }
+        private object Activate_9_ZabavniParkListView() { return new global::ZabavniPark.ZabavniPark.Views.ZabavniParkListView(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,9 +208,9 @@ namespace ZabavniPark.ZabavniPark_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  ZabavniPark.ZabavniPark.Views.ZabavniParkListView
+            case 0:   //  ZabavniPark.AtrakcijaUnos
                 userType = new global::ZabavniPark.ZabavniPark_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_ZabavniParkListView;
+                userType.Activator = Activate_0_AtrakcijaUnos;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -200,6 +221,55 @@ namespace ZabavniPark.ZabavniPark_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::ZabavniPark.ZabavniPark_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  ZabavniPark.Login
+                userType = new global::ZabavniPark.ZabavniPark_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_Login;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  ZabavniPark.MainPage
+                userType = new global::ZabavniPark.ZabavniPark_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  ZabavniPark.ZabavniPark.Views.PocetnaAdmin
+                userType = new global::ZabavniPark.ZabavniPark_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_PocetnaAdmin;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  ZabavniPark.OsobljeUnos
+                userType = new global::ZabavniPark.ZabavniPark_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_OsobljeUnos;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  ZabavniPark.PosjetilacUnos
+                userType = new global::ZabavniPark.ZabavniPark_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_PosjetilacUnos;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  ZabavniPark.ZabavniPark.Views.RegistracijaPosjetilac
+                userType = new global::ZabavniPark.ZabavniPark_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_RegistracijaPosjetilac;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  ZabavniPark.ZabavniPark.Views.ZabavniParkListView
+                userType = new global::ZabavniPark.ZabavniPark_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_ZabavniParkListView;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;

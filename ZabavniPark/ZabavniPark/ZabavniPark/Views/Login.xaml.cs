@@ -43,7 +43,7 @@ namespace ZabavniPark
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
         }
 
-        private async void button_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PocetnaAdmin), sender);
             //var korisnickoIme = txtUsername.Text;
