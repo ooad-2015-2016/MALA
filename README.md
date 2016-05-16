@@ -1,4 +1,6 @@
-﻿# MALA 
+![alt tag](https://raw.githubusercontent.com/ooad-2015-2016/MALA/master/MALA%20LOGO.png)
+
+# MALA 
 
 Članovi tima: 
 1. Milan Žuža
