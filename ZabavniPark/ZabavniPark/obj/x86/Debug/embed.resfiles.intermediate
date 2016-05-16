@@ -2,9 +2,8 @@ App.xbf
 MainPage.xbf
 ZabavniPark\Views\AtrakcijaUnos.xbf
 ZabavniPark\Views\Login.xbf
-ZabavniPark\Views\OsobljeUnos.xbf
+ZabavniPark\Views\PocetnaAdmin.xbf
 ZabavniPark\Views\PosjetilacUnos.xbf
-ZabavniPark\Views\PrimjerStranice2.xbf
-ZabavniPark\Views\PrimjerStranice3.xbf
-ZabavniPark\Views\PrimjerStranice4.xbf
+ZabavniPark\Views\RadnikUnos.xbf
+ZabavniPark\Views\RegistracijaPosjetilac.xbf
 ZabavniPark\Views\ZabavniParkListView.xbf

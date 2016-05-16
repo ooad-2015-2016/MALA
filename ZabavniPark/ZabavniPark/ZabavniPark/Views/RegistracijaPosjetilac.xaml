@@ -18,10 +18,10 @@
             <TextBlock x:Name="textBlock3" TextWrapping="Wrap" Text="Datum rođenja: " Canvas.Top="140" Canvas.Left="10" />
             <CalendarDatePicker x:Name="datumRodjenjaPicker" Canvas.Left="160" Canvas.Top="135" Width="140"/>
             <TextBlock x:Name="textBlock4" TextWrapping="Wrap" Text="Tip posjetioca: " Canvas.Top="180" Canvas.Left="10" />
-            <ComboBox x:Name="comboBox" Canvas.Left="160" Canvas.Top="175" Width="140" >
-                <ComboBoxItem Name="cbi1">Regular</ComboBoxItem> />
-                <ComboBoxItem Name="cbi2">Gold</ComboBoxItem> />
-            </ComboBox>
+            <ComboBox x:Name="comboBox" Canvas.Left="160" Canvas.Top="175" Width="140" />
+            <!--ComboBoxItem Name="cbi1">Regular</> />
+            <ComboBoxItem Name="cbi2">Gold</ComboBoxItem> -->
+
             <TextBlock x:Name="textBlock5" TextWrapping="Wrap" Text="Šifra: " Canvas.Top="220" Canvas.Left="10" />
             <PasswordBox x:Name="passwordBox" Canvas.Left="160" Canvas.Top="220" Width="140"/>
             <TextBlock x:Name="textBlock6" TextWrapping="Wrap" Text="Ponovite šifru: " Canvas.Top="260" Canvas.Left="10" />

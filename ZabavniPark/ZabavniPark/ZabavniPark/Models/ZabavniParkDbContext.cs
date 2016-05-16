@@ -14,7 +14,7 @@ namespace ZabavniPark.ZabavniPark.Models
     public class ZabavniParkDbContext : DbContext
     {
         public DbSet<Atrakcija> Atrakcije { get; set; }
-        public DbSet<Osoblje> Osoblja { get; set; }
+        public DbSet<Osoblje> Radnici { get; set; }
         public DbSet<Posjetilac> Posjetioci { get; set;  }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

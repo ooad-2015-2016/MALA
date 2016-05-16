@@ -27,16 +27,16 @@ namespace ZabavniPark.ZabavniPark.Models
                     TrajanjeVoznje=100
                 });
             }
-            if (!context.Osoblja.Any())
+            if (!context.Radnici.Any())
             {
-                context.Osoblja.AddRange(new MyApp_OOAD.ParkBaza.Models.Osoblje()
+                context.Radnici.AddRange(new MyApp_OOAD.ParkBaza.Models.Osoblje()
                 {
-                    ime = "Milan",
-                    prezime = "Zuza",
-                    tip = MyApp_OOAD.ParkBaza.Models.TipOsoblja.Administrator,
-                    username = "mzuza1",
-                    password = "zmilan1",
-                    radniStaz = 5
+                    Ime = "Milan",
+                    Prezime = "Zuza",
+                    Tip = MyApp_OOAD.ParkBaza.Models.TipOsoblja.Administrator,
+                    Username = "mzuza1",
+                    Password = "zmilan1",
+                    RadniStaz = 5
                 });
             }
 
@@ -46,13 +46,11 @@ namespace ZabavniPark.ZabavniPark.Models
                 {
                     Ime = "Adnan",
                     Prezime = "Dzelihodzic",
-                    tip = TipPosjetilaca.Gold
+                    Tip = TipPosjetilaca.Gold
 
                 });
             }
-            context.SaveChanges();
-
-
+            //context.SaveChanges();
         }
     }
 }

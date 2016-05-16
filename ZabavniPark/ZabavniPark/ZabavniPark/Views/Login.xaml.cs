@@ -17,6 +17,7 @@ using Windows.UI.Xaml.Navigation;
 using ZabavniPark.DataSource;
 using ZabavniPark.ZabavniPark.Models;
 using ZabavniPark.ZabavniPark.ViewModels;
+using ZabavniPark.ZabavniPark.Views;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -44,19 +45,19 @@ namespace ZabavniPark
 
         private async void button_Click(object sender, RoutedEventArgs e)
         {
-
-            var korisnickoIme = txtUsername.Text;
-            var sifra = txtPassword.Password;
-            Korisnik korisnik = DataSourceMenuMD.ProvjeraKorisnika(korisnickoIme, sifra);
-            if (korisnik != null && korisnik.KorisnikId > 0)
-            {
-                //this.Frame.Navigate(typeof(MainPage), korisnik);
-            }
-            else
-            {
-                var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna prijava");
-                await dialog.ShowAsync();
-            }
+            this.Frame.Navigate(typeof(PocetnaAdmin), sender);
+            //var korisnickoIme = txtUsername.Text;
+            //var sifra = txtPassword.Password;
+            //Korisnik korisnik = DataSourceMenuMD.ProvjeraKorisnika(korisnickoIme, sifra);
+            //if (korisnik != null && korisnik.KorisnikId > 0)
+            //{
+            //    this.Frame.Navigate(typeof(RegistracijaPosjetilac), korisnik);
+            //}
+            //else
+            //{
+            //    var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna prijava");
+            //    await dialog.ShowAsync();
+            //}
         }
     }
 }
