@@ -1,11 +1,14 @@
-﻿using System;
+﻿using MyApp_OOAD.ParkBaza.Models;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -32,6 +35,12 @@ namespace ZabavniPark.ZabavniPark.Views
         public RadnikUnos()
         {
             this.InitializeComponent();
+            List<string> dataList = new List<string>();
+            dataList.Add("Radnik na terenu");
+            dataList.Add("Radnik na šalteru");
+            dataList.Add("Administrator");
+        
+            listViewTip.ItemsSource = dataList;
         }
 
          public async void button_Click(object sender, RoutedEventArgs e)
@@ -48,6 +57,14 @@ namespace ZabavniPark.ZabavniPark.Views
             }
         }
 
+        private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            if (Frame.CanGoBack)
+            {
+                Frame.GoBack();
+                e.Handled = true;
+            }
+        }
 
     }
 }

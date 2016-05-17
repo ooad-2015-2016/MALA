@@ -37,7 +37,7 @@ namespace ZabavniPark.ZabavniPark.ViewModels
         {
             IDRadnika = System.Threading.Interlocked.Increment(ref counter);
             Radnik = new Radnik(IDRadnika, Ime, Prezime, TipRadnika, Username, Password, RadniStaz, Plata);
-            var dialog = new MessageDialog("Uspješno je unesen novi radnik", "Unos radnika");
+            //var dialog = new MessageDialog("Uspješno je unesen novi radnik", "Unos radnika");
         }
     }
 }

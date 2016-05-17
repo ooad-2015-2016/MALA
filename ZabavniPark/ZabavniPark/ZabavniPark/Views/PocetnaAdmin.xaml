@@ -13,15 +13,15 @@
                 <ColumnDefinition Width="76*"/>
                 <ColumnDefinition Width="11*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" IsColorFontEnabled="True" FontWeight="Bold" Text="Odabir opcija" FontSize="25" VerticalAlignment="Top" Height="40" Width="170" Margin="20,10,0,0">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" IsColorFontEnabled="True" FontWeight="Bold" Text="Odabir opcija" FontSize="25" VerticalAlignment="Top" Height="40" Width="170" Margin="550,35,442,0">
                 <TextBlock.Foreground>
                     <SolidColorBrush Color="{ThemeResource SystemBaseMediumColor}"/>
                 </TextBlock.Foreground>
             </TextBlock>
-            <Button x:Name="button" Content="Dodaj atrakciju" HorizontalAlignment="Left" Margin="105,80,0,0" VerticalAlignment="Top" Width="140" Click="button_Click"/>
-            <Button x:Name="button1" Content="Izmijeni atrakciju" HorizontalAlignment="Left" Margin="105,140,0,0" VerticalAlignment="Top" Width="140"/>
-            <Button x:Name="button2" Content="Dodaj radnika" HorizontalAlignment="Left" Margin="105,200,0,0" VerticalAlignment="Top" Width="140" Click="button2_Click"/>
-            <Button x:Name="button3" Content="Izmijeni radnika" HorizontalAlignment="Left" Margin="105, 260,0,0" VerticalAlignment="Top" Width="140" />
+            <Button x:Name="button" Content="Dodaj atrakciju" HorizontalAlignment="Left" Margin="550,130,0,0" VerticalAlignment="Top" Width="160" Click="button_Click"/>
+            <Button x:Name="button1" Content="Izmijeni atrakciju" HorizontalAlignment="Left" Margin="550,200,0,0" VerticalAlignment="Top" Width="160"/>
+            <Button x:Name="button2" Content="Dodaj radnika" HorizontalAlignment="Left" Margin="550,270,0,0" VerticalAlignment="Top" Width="160" Click="button2_Click"/>
+            <Button x:Name="button3" Content="Izmijeni radnika" HorizontalAlignment="Left" Margin="550, 340,0,0" VerticalAlignment="Top" Width="160" />
         </Grid>
 
     </Grid>
