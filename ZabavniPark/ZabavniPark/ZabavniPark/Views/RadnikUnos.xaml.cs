@@ -1,14 +1,11 @@
-﻿using MyApp_OOAD.ParkBaza.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI.Core;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -33,10 +30,13 @@ namespace ZabavniPark.ZabavniPark.Views
         public RadnikUnos()
         {
             this.InitializeComponent();
+<<<<<<< HEAD
             DataContext = new PocetnaAdmin();
             var currentView = SystemNavigationManager.GetForCurrentView();
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
             SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;
+=======
+>>>>>>> origin/HEAD
         }
 
          public async void button_Click(object sender, RoutedEventArgs e)
@@ -53,14 +53,6 @@ namespace ZabavniPark.ZabavniPark.Views
             }
         }
 
-        private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
-        {
-            if (Frame.CanGoBack)
-            {
-                Frame.GoBack();
-                e.Handled = true;
-            }
-        }
 
     }
 }

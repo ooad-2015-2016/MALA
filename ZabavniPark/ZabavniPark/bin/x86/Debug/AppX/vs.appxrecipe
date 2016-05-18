@@ -22,13 +22,21 @@
     <AppXManifest Include="C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+<<<<<<< HEAD
       <Modified>2016-05-18T22:18:27.091</Modified>
+=======
+      <Modified>2016-05-16T23:02:45.402</Modified>
+>>>>>>> origin/HEAD
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark.exe">
       <PackagePath>entrypoint\ZabavniPark.exe</PackagePath>
+<<<<<<< HEAD
       <Modified>2016-05-18T22:18:25.951</Modified>
+=======
+      <Modified>2016-05-16T23:02:44.482</Modified>
+>>>>>>> origin/HEAD
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -582,7 +590,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark.xr.xml">
       <PackagePath>ZabavniPark.xr.xml</PackagePath>
+<<<<<<< HEAD
       <Modified>2016-05-18T22:17:24.848</Modified>
+=======
+      <Modified>2016-05-16T22:40:33.651</Modified>
+>>>>>>> origin/HEAD
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -590,11 +602,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
+<<<<<<< HEAD
       <Modified>2016-05-18T22:17:27.584</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\Core\ZabavniPark.exe">
       <PackagePath>ZabavniPark.exe</PackagePath>
       <Modified>2016-05-18T22:18:27.086</Modified>
+=======
+      <Modified>2016-05-16T22:44:28.138</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\Core\ZabavniPark.exe">
+      <PackagePath>ZabavniPark.exe</PackagePath>
+      <Modified>2016-05-16T23:02:45.394</Modified>
+>>>>>>> origin/HEAD
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

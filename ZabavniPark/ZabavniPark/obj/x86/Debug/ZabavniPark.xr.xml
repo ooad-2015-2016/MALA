@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+<<<<<<< HEAD
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="TrajanjeVoznje" />
     <RootPropertyPathName Name="TrenutniBrojPosjetilaca" />
@@ -15,6 +16,8 @@
     <RootPropertyPathName Name="Prezime" />
     <RootPropertyPathName Name="Ime" />
   </Roots.PropertyPathNames>
+=======
+>>>>>>> origin/HEAD
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="RequestedTheme" />
@@ -28,16 +31,17 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="ColumnDefinitions" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Width" />
       <RootProperty Name="RenderTransformOrigin" />
-      <RootMethod Name="GetRow" />
-      <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumnSpan" />
       <RootMethod Name="SetColumnSpan" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
       <RootMethod Name="GetRowSpan" />
       <RootMethod Name="SetRowSpan" />
     </RootType>
@@ -46,9 +50,15 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="VerticalAlignment" />
+<<<<<<< HEAD
       <RootProperty Name="Text" />
+=======
+      <RootProperty Name="Width" />
+>>>>>>> origin/HEAD
       <RootProperty Name="FontSize" />
+      <RootProperty Name="FontWeight" />
       <RootProperty Name="Foreground" />
+<<<<<<< HEAD
       <RootProperty Name="FontStyle" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Style" />
@@ -56,11 +66,17 @@
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+=======
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="IsColorFontEnabled" />
+      <RootProperty Name="FontStyle" />
+>>>>>>> origin/HEAD
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="UseLayoutRounding" />
       <RootProperty Name="RenderTransform" />
       <RootProperty Name="SelectionHighlightColor" />
-      <RootProperty Name="Inlines" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
@@ -110,6 +126,20 @@
       <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="ZabavniPark.AtrakcijaUnos" />
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="ZabavniPark.Login" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
@@ -144,6 +174,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame" />
     <RootType FullName="ZabavniPark.MainPage" />
+<<<<<<< HEAD
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="Password" />
       <RootProperty Name="HorizontalAlignment" />
@@ -158,6 +189,9 @@
     </RootType>
     <RootType FullName="ZabavniPark.ZabavniPark.Views.PocetnaAdmin" />
     <RootType FullName="ZabavniPark.ZabavniPark.Views.PocetnaRadnik" />
+=======
+    <RootType FullName="ZabavniPark.ZabavniPark.Views.PocetnaAdmin" />
+>>>>>>> origin/HEAD
     <RootType FullName="ZabavniPark.ZabavniPark.Views.RadnikUnos" />
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootProperty Name="HorizontalAlignment" />
@@ -185,9 +219,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.Run">
-      <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="ZabavniPark.ZabavniPark.Views.ZabavniParkListView" />
   </Roots.RootTypes>

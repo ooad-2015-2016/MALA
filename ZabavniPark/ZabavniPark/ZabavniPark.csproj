@@ -118,11 +118,11 @@
       <DependentUpon>AtrakcijaUnos.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataSource\DataSourceMenuMD.cs" />
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ZabavniPark\Views\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ZabavniPark\Views\PocetnaAdmin.xaml.cs">
       <DependentUpon>PocetnaAdmin.xaml</DependentUpon>
@@ -182,11 +182,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="ZabavniPark\Views\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ZabavniPark\Views\Login.xaml">
+    <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
