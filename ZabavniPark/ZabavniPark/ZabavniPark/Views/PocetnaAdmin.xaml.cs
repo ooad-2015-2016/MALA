@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,10 @@ namespace ZabavniPark.ZabavniPark.Views
         public PocetnaAdmin()
         {
             this.InitializeComponent();
+            var currentView = SystemNavigationManager.GetForCurrentView();
+            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;
+
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -35,6 +40,15 @@ namespace ZabavniPark.ZabavniPark.Views
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(RadnikUnos), sender);
+        }
+        
+        private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            if (Frame.CanGoBack)
+            {
+                Frame.GoBack();
+                e.Handled = true;
+            }
         }
     }
 }

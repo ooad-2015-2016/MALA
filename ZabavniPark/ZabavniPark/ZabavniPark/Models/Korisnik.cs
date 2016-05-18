@@ -24,6 +24,17 @@ namespace ZabavniPark.ZabavniPark.Models
         {
             UlogaKorisnika = new List<UlogaKorisnik>();
         }
+        public Korisnik(Korisnik k)
+        {
+            KorisnickoIme = k.KorisnickoIme;
+            k.Sifra = k.Sifra;
+        }
+
+        public Korisnik(string username, string password)
+        {
+            KorisnickoIme = username;
+            Sifra = password;
+        }
         //dodavanje uloga korisniku
         public void DodajUloguKorisnika(Uloga uloga)
         {

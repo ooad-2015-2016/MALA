@@ -4,11 +4,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ZabavniPark.ZabavniPark.Models;
 
 namespace MyApp_OOAD.ParkBaza.Models
 {
     public enum TipOsoblja { RadnikTeren, SalterRadnik, Administrator };
-    public class Radnik
+    public class Radnik : Korisnik
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int RadnikId { get; set; } 

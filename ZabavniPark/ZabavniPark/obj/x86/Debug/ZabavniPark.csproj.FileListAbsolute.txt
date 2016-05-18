@@ -516,3 +516,8 @@ C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Vi
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PocetnaAdmin.g.cs
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PocetnaAdmin.xaml
 C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PocetnaAdmin.xbf
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PocetnaRadnik.g.i.cs
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PocetnaRadnik.g.cs
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PocetnaRadnik.xaml
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\obj\x86\Debug\ZabavniPark\Views\PocetnaRadnik.xbf
+C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark\Views\PocetnaRadnik.xbf

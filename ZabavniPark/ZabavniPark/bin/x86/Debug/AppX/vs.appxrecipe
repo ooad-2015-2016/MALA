@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-17T08:37:44.700</Modified>
+      <Modified>2016-05-18T22:18:27.091</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark.exe">
       <PackagePath>entrypoint\ZabavniPark.exe</PackagePath>
-      <Modified>2016-05-17T08:37:41.226</Modified>
+      <Modified>2016-05-18T22:18:25.951</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -582,7 +582,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\ZabavniPark.xr.xml">
       <PackagePath>ZabavniPark.xr.xml</PackagePath>
-      <Modified>2016-05-17T08:20:17.553</Modified>
+      <Modified>2016-05-18T22:17:24.848</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -590,11 +590,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-17T08:37:44.173</Modified>
+      <Modified>2016-05-18T22:17:27.584</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lejla\Desktop\MALA\ZabavniPark\ZabavniPark\bin\x86\Debug\Core\ZabavniPark.exe">
       <PackagePath>ZabavniPark.exe</PackagePath>
-      <Modified>2016-05-17T08:37:44.696</Modified>
+      <Modified>2016-05-18T22:18:27.086</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

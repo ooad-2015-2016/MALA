@@ -17,6 +17,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using ZabavniPark.ZabavniPark.Models;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -27,25 +28,20 @@ namespace ZabavniPark.ZabavniPark.Views
     /// </summary>
     public sealed partial class RadnikUnos : Page
     {
-        private String ime;
-        private String prezime;
-        private double plata;
-        private int brojStaza;
+        double plata; int brojStaza;
 
         public RadnikUnos()
         {
             this.InitializeComponent();
-            List<string> dataList = new List<string>();
-            dataList.Add("Radnik na terenu");
-            dataList.Add("Radnik na šalteru");
-            dataList.Add("Administrator");
-        
-            listViewTip.ItemsSource = dataList;
+            DataContext = new PocetnaAdmin();
+            var currentView = SystemNavigationManager.GetForCurrentView();
+            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;
         }
 
          public async void button_Click(object sender, RoutedEventArgs e)
         {
-            if(textBoxIme.Text == "" || textBoxPrezime.Text == "" || textBoxPlata.Text == "" || textBoxStaz.Text == "" || textBoxUsername.Text == "")
+            if (textBoxIme.Text == "" || textBoxPrezime.Text == "" || textBoxPlata.Text == "" || textBoxStaz.Text == "" || textBoxUsername.Text == "")
             {
                 var dialog = new MessageDialog("Podaci nisu potpuni!", "Neuspješna prijava");
                 await dialog.ShowAsync();

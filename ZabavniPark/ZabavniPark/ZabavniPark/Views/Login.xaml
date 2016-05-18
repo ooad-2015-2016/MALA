@@ -10,11 +10,11 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="textBlock"  HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top"
                    Text="Dobrodošli na MALA sistem!" FontSize="45" Foreground="SlateGray" FontStyle="Normal"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="710,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="160"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="710,275,0,0" VerticalAlignment="Top" Height="32" Width="160"/>
+        <TextBox x:Name="textBoxUsername" Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="710,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="160"/>
+        <PasswordBox x:Name="passwordBox" Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="710,275,0,0" VerticalAlignment="Top" Height="32" Width="160"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="510,210,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="515,280,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top"/>
-        <Button x:Name="button" Content="Login" HorizontalAlignment="Left" Margin="580,380,0,0" VerticalAlignment="Top" Height="32" Width="150" Click="button_Click"/>
+        <Button x:Name="button"  Command="{Binding LoginRadnik}" Content="Login" HorizontalAlignment="Left" Margin="580,380,0,0" VerticalAlignment="Top" Height="32" Width="150" Click="button_Click"/>
 
 
     </Grid>

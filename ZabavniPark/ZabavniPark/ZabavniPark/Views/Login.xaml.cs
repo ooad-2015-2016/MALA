@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using ZabavniPark.ZabavniPark.ViewModels;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,21 +26,24 @@ namespace ZabavniPark.ZabavniPark.Views
     {
         public Login()
         {
-            this.InitializeComponent();
-            DataContext = new PocetnaAdmin();
+            InitializeComponent();
+            DataContext = new LoginViewModel();
             NavigationCacheMode = NavigationCacheMode.Required;
         }
 
-        //Sluzi da kad se dodje na ovu formu, treba onemoguciti back dugme jer se nema gdje vratiti
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             var currentView = SystemNavigationManager.GetForCurrentView();
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+            //DataContext = (LoginViewModel)e.Parameter;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PocetnaAdmin), sender);
+            //this.Frame.Navigate(typeof(PocetnaAdmin), sender);
+            string username = textBoxUsername.Text;
+            string sifra = passwordBox.Password;
         }
+
     }
 }

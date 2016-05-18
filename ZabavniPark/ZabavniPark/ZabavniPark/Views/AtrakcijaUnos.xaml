@@ -8,16 +8,25 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="25" Margin="141,10,0,0" TextWrapping="Wrap" Text="Atrakcija" VerticalAlignment="Top" Width="68"/>
-        <StackPanel HorizontalAlignment="Left" Height="202" Margin="10,35,0,0" VerticalAlignment="Top" Width="340">
-            <TextBox x:Name="naziv_atrakcije" HorizontalAlignment="Left" Height="11" Margin="108,0,0,0" TextWrapping="Wrap" Text="" Width="142" PlaceholderText="Naziv"/>
-            <TextBox x:Name="kapacitet_atrakcije" HorizontalAlignment="Left" Height="18" Margin="108,0,0,0" TextWrapping="Wrap" Text="" Width="142" PlaceholderText="Kapacitet"/>
-            <TextBox x:Name="vrijeme_otvaranja_atrakcije" HorizontalAlignment="Left" Height="20" Margin="108,0,0,0" TextWrapping="Wrap" Text="" Width="142" PlaceholderText="Vrijeme otvaranja"/>
-            <TextBox x:Name="vrijeme_zatvaranja_atrakcije" HorizontalAlignment="Left" Height="18" Margin="108,0,0,0" TextWrapping="Wrap" Text="" Width="142" PlaceholderText="Vrijeme zatvaranja" TextChanged="vrijeme_zatvaranja_atrakcije_TextChanged"/>
-            <ComboBox x:Name="stanje_atrakcije" HorizontalAlignment="Left" Height="29" Margin="108,0,0,0" Width="142" PlaceholderText="Stanje"/>
-            <TextBox x:Name="kapacitet_atrakcije1" HorizontalAlignment="Left" Height="21" Margin="108,0,0,0" TextWrapping="Wrap" Text="" Width="142" PlaceholderText="Kapacitet"/>
-        </StackPanel>
-        <Button x:Name="unesi_atrakciju" Content="Unesi" HorizontalAlignment="Left" Height="31" Margin="118,253,0,0" VerticalAlignment="Top" Width="108"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top"
+                   Text="Unos nove atrakcije" FontSize="45" Foreground="SlateGray" FontStyle="Normal" />
 
+        <TextBlock x:Name="textBlockNaziv" HorizontalAlignment="Left" Margin="555,145,0,0" TextWrapping="Wrap" FontSize="17" Text ="Naziv:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockKapacitet" HorizontalAlignment="Left" Margin="525,195,0,0" TextWrapping="Wrap" FontSize="17" Text="Kapacitet:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockOtvaranje" HorizontalAlignment="Left" Margin="461,245,0,0" TextWrapping="Wrap" FontSize="17" Text="Vrijeme otvaranja:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockZatvaranje" HorizontalAlignment="Left" Margin="457,295,0,0" TextWrapping="Wrap" FontSize="17" Text="Vrijeme zatvaranja:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockBrojPosjetilaca" HorizontalAlignment="Left" Margin="415,345,0,0" TextWrapping="Wrap" FontSize="17" Text="Trenutni broj posjetilaca:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockStanje" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="550,395,0,0" FontSize="17" Text="Stanje:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockTrajanje" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="484,445,0,0" FontSize="17" Text="Trajanje vožnje:" VerticalAlignment="Top"/>
+
+
+        <TextBox x:Name="textBoxNaziv" Text="{Binding Naziv,  UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  HorizontalAlignment="Left" Margin="620,145,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="textBoxKapacitet" Text="{Binding Kapacitet, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Left" Margin="620,195,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="150"/>
+        <TimePicker x:Name="timePickerOtvaranje" HorizontalAlignment="Left" Time="{Binding VrijemeOtvaranja, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Margin="620,245,0,0" VerticalAlignment="Top" Width="165" Height="32"/>
+        <TimePicker x:Name="timePickerZatvaranje" HorizontalAlignment="Left" Time="{Binding VrijemeZatvaranja, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Margin="620,295,0,0" VerticalAlignment="Top" Width="150" Height="32"/>
+        <TextBox x:Name="textBoxBrojPosjetilaca" Text="{Binding TrenutniBrojPosjetilaca, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Margin="620,345,0,0" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="150"/>
+        <ListView x:Name="listView" Margin="620,395,0,0" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="textBoxTrajanjeVoznje" Text="{Binding TrajanjeVoznje, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  HorizontalAlignment="Left" Margin="620,445,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="button" Content="Unesi atrakciju" HorizontalAlignment="Left" Margin="560,520,0,0" VerticalAlignment="Top" Width="150" Click="button_Click"/>
     </Grid>
 </Page>
