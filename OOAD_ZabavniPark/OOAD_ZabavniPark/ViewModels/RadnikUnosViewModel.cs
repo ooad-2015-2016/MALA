@@ -11,7 +11,7 @@ using Windows.UI.Popups;
 
 namespace OOAD_ZabavniPark.ViewModels
 {
-    public class RadnikViewModel
+    public class RadnikUnosViewModel
     {
         //private Image image;
 
@@ -31,7 +31,7 @@ namespace OOAD_ZabavniPark.ViewModels
 
         ObservableCollection<Radnik> radnici = new ObservableCollection<Radnik>();
 
-        public RadnikViewModel()
+        public RadnikUnosViewModel()
         {
             NavigationServis = new NavigationService();
             using (var db = new ZabavniParkDbContext())

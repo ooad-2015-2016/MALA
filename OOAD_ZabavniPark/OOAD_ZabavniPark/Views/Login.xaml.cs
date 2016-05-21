@@ -33,18 +33,6 @@ namespace OOAD_ZabavniPark.Views
         {
             var currentView = SystemNavigationManager.GetForCurrentView();
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
-            //DataContext = (LoginViewModel)e.Parameter;
         }
-
-        private async void button_Click(object sender, RoutedEventArgs e)
-        {
-            if(textBoxUsername.Text == "" || passwordBox.Password == "")
-            {
-                var message = new MessageDialog("Nisu uneseni svi podaci!", "Neuspješna prijava");
-                await message.ShowAsync();
-            }
-
-        }
-
     }
 }

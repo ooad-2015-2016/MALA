@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="OOAD_ZabavniPark.Views.AtrakcijaIzmjena"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OOAD_ZabavniPark.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top"
+                   Text="Izmjena atrakcije" FontSize="45" Foreground="SlateGray" FontStyle="Normal" />
+        <TextBlock x:Name="textBlockListaAtrakcija" HorizontalAlignment="Left" Margin="135,80,0,0" TextWrapping="Wrap" Text="Lista atrakcija:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockNaziv" HorizontalAlignment="Left" Margin="401,140,0,0" TextWrapping="Wrap" Text="Naziv atrakcije:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockKapacitet" HorizontalAlignment="Left" Margin="435,180,0,0" TextWrapping="Wrap" Text="Kapacitet:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockOtvaranje" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Vrijeme otvaranja:" VerticalAlignment="Top" Margin="382,220,0,0"/>
+        <TextBlock x:Name="textBlockZatvaranje" HorizontalAlignment="Left" Margin="376,260,0,0" TextWrapping="Wrap" Text="Vrijeme zatvaranja:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Stanje atrakcije:" VerticalAlignment="Top" Margin="397,300,0,0"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="399,340,0,0" TextWrapping="Wrap" Text="Trajanje vožnje:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="338,380,0,0" TextWrapping="Wrap" Text="Trenutni broj posjetilaca:" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxNaziv" Text="{Binding Naziv, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="565,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="242"/>
+        <TextBox x:Name="textBoxKapacitet" Text="{Binding Kapacitet, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="565,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+        <TimePicker x:Name="timePickerOtvaranje" Time="{Binding VrijemeOtvaranja, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="565,215,0,0" VerticalAlignment="Top" Width="160"/>
+        <TimePicker x:Name="timePickerZatvaranje" Time="{Binding VrijemeZatvaranja, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="565,255,0,0" VerticalAlignment="Top" Width="160"/>
+        <ComboBox x:Name="comboBoxStanje" SelectedItem="{Binding Stanje}" HorizontalAlignment="Left" Margin="565,295,0,0" VerticalAlignment="Top" Width="242">
+            <ComboBoxItem Content="Operating"/>
+            <ComboBoxItem Content="NotOperating"/>
+        </ComboBox>
+        <TextBox x:Name="textBoxTrajanje" Text="{Binding TrajanjeVoznje, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="565,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+        <TextBox x:Name="textBoxBrojPosjetilaca" Text="{Binding TrenutniBrojPosjetilaca, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="565,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+        <Button x:Name="buttonSpasi" Content="Spasi" Command="{Binding Spasi}" HorizontalAlignment="Left" Margin="505,460,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="130">
+        </Button>
+
+    </Grid>
+</Page>

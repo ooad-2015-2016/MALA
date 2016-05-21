@@ -11,7 +11,7 @@ using Windows.UI.Popups;
 
 namespace OOAD_ZabavniPark.ViewModels
 {
-    public class AtrakcijaViewModel
+    public class AtrakcijaUnosViewModel
     {
         private static int counter = 0;
         public Atrakcija Atrakcija { get; set; }
@@ -30,7 +30,7 @@ namespace OOAD_ZabavniPark.ViewModels
         ObservableCollection<Atrakcija> atrakcije = new ObservableCollection<Atrakcija>();
 
 
-        public AtrakcijaViewModel()
+        public AtrakcijaUnosViewModel()
         {
             //Atrakcija = new Atrakcija();
             NavigationServis = new NavigationService();

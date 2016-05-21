@@ -10,6 +10,6 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" IsColorFontEnabled="True" FontWeight="Bold" Text="Odabir opcija" FontSize="25" VerticalAlignment="Top" Height="40" Width="170" Margin="545,5,0,0"/>
         <Button x:Name="button" Content="Dodaj atrakciju" HorizontalAlignment="Left" Margin="555,70,0,0" VerticalAlignment="Top" Width="140" Click="button_Click"/>
-        <Button x:Name="button1" Content="Izmijeni atrakciju" HorizontalAlignment="Left" Margin="555,140,0,0" VerticalAlignment="Top" Width="140"/>
+        <Button x:Name="button1" Content="Izmijeni atrakciju" HorizontalAlignment="Left" Margin="555,140,0,0" VerticalAlignment="Top" Width="140" Click="button1_Click"/>
     </Grid>
 </Page>

@@ -33,6 +33,13 @@ namespace OOAD_ZabavniPark.ViewModels
 
         private async void loginRadnik(object obj)
         {
+            if (Username == "" || Password == "")
+            {
+                var message = new MessageDialog("Nisu uneseni svi podaci!", "Neuspješna prijava");
+                await message.ShowAsync();
+            }
+
+
             using (var db = new ZabavniParkDbContext())
             {
                 Korisnik = DataSourcePark.ProvjeraKorisnika(Username, Password);

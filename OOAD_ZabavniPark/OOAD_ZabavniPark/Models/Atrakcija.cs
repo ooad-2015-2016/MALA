@@ -34,7 +34,21 @@ namespace OOAD_ZabavniPark.Models
             Stanje = stanje;
             TrajanjeVoznje = trajanje;
         }
-
+        public Atrakcija(Atrakcija a)
+        {
+            Naziv = a.Naziv;
+            Kapacitet = a.Kapacitet;
+            VrijemeOtvaranja = a.VrijemeOtvaranja;
+            VrijemeZatvaranja = a.VrijemeZatvaranja;
+            TrenutniBrojPosjetilaca = a.TrenutniBrojPosjetilaca;
+            Stanje = a.Stanje;
+            TrajanjeVoznje = a.TrajanjeVoznje;
+        }
         public Atrakcija() { }
+
+        public override string ToString()
+        {
+            return Naziv;
+        }
     }
 }

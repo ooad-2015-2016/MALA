@@ -26,7 +26,7 @@ namespace OOAD_ZabavniPark.Views
         public AtrakcijaUnos()
         {
             this.InitializeComponent();
-            DataContext = new AtrakcijaViewModel();
+            DataContext = new AtrakcijaUnosViewModel();
             var currentView = SystemNavigationManager.GetForCurrentView();
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
             SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;

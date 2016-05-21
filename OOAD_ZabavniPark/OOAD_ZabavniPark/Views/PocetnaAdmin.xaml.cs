@@ -22,7 +22,7 @@ namespace OOAD_ZabavniPark.Views
     {
         public PocetnaAdmin()
         {
-            this.InitializeComponent();
+            InitializeComponent();
             var currentView = SystemNavigationManager.GetForCurrentView();
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
             SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;
@@ -47,5 +47,11 @@ namespace OOAD_ZabavniPark.Views
                 e.Handled = true;
             }
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(AtrakcijaIzmjena));
+        }
+    
     }
 }
