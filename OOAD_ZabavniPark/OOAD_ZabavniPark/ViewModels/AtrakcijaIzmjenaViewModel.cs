@@ -17,11 +17,11 @@ namespace OOADZabavniPark.ViewModels
         #region Privatni atributi
         private string naziv;
         private int kapacitet;
-        TimeSpan vrijemeOtvaranja;
-        TimeSpan vrijemeZatvaranja;
-        int brPosjetilaca;
-        StanjeAtrakcije stanje;
-        int trajanjeVoznje;
+        private TimeSpan vrijemeOtvaranja;
+        private TimeSpan vrijemeZatvaranja;
+        private int brPosjetilaca;
+        private StanjeAtrakcije stanje;
+        private int trajanjeVoznje;
         #endregion
 
         #region Postavljanje Property-a

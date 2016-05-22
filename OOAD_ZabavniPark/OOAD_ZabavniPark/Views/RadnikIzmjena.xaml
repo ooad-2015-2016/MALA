@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="OOADZabavniPark.Views.RadnikIzmjena"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OOADZabavniPark.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top"
+			Text="Izmjena radnika" FontSize="45" Foreground="SlateGray" FontStyle="Normal" />
+        <TextBlock x:Name="textBlockListaRadnika" HorizontalAlignment="Left" Margin="135,80,0,0" TextWrapping="Wrap" Text="Lista radnika:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockIme" HorizontalAlignment="Left" Margin="415,140,0,0" TextWrapping="Wrap" Text="Ime radnika:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockPrezime" HorizontalAlignment="Left" Margin="391,180,0,0" TextWrapping="Wrap" Text="Prezime radnika:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockUsername" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" Margin="430,220,0,0"/>
+        <TextBlock x:Name="textBlockRadniStaz" HorizontalAlignment="Left" Margin="359,260,0,0" TextWrapping="Wrap" Text="Godine radnog staža:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockPlata" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Plata:" VerticalAlignment="Top" Margin="464,300,0,0"/>
+        <TextBlock x:Name="textBlockTip" HorizontalAlignment="Left" Margin="423,340,0,0" TextWrapping="Wrap" Text="Tip radnika:" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxIme" Text="{Binding Ime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="565,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="242"/>
+        <TextBox x:Name="textBoxPrezime" Text="{Binding Prezime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="565,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+        <TextBox x:Name="textBoxUsername" Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="565,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+        <TextBox x:Name="textBoxRadniStaz" Text="{Binding RadniStaz, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="565,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+        <TextBox x:Name="textBoxPlata" Text="{Binding Plata, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Left" Margin="565,295,0,0" TextWrapping="Wrap" Width="242" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBoxTip" HorizontalAlignment="Left" Margin="565,335,0,0" VerticalAlignment="Top" Width="242">
+            <ComboBoxItem>Content = "Radnik na šalteru"</ComboBoxItem>
+            <ComboBoxItem>Content="Terenski radnik"</ComboBoxItem>
+            <ComboBoxItem>Content="Administrator"</ComboBoxItem>
+        </ComboBox>
+
+        <Button x:Name="buttonSpasi" Content="Spasi" Command="{Binding Spasi}" HorizontalAlignment="Left" Margin="505,460,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="130"/>
+
+    </Grid>
+</Page>
