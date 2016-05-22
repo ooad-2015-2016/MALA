@@ -1,7 +1,7 @@
-﻿using OOAD_ZabavniPark.DataSource;
-using OOAD_ZabavniPark.Helper;
-using OOAD_ZabavniPark.Models;
-using OOAD_ZabavniPark.Views;
+﻿using OOADZabavniPark.DataSource;
+using OOADZabavniPark.Helper;
+using OOADZabavniPark.Models;
+using OOADZabavniPark.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Windows.UI.Popups;
 
-namespace OOAD_ZabavniPark.ViewModels
+namespace OOADZabavniPark.ViewModels
 {
     public class LoginViewModel
     {

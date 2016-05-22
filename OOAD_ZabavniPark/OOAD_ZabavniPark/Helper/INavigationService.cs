@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-namespace OOAD_ZabavniPark.Helper
+namespace OOADZabavniPark.Helper
 {
     public class NavigationService : INavigacija
     {

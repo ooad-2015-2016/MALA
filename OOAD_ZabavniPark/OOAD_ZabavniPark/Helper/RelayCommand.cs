@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace OOAD_ZabavniPark.Helper
+namespace OOADZabavniPark.Helper
 {
     public class RelayCommand<T> : ICommand
     {

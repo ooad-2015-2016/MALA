@@ -1,4 +1,4 @@
-﻿using OOAD_ZabavniPark.Views;
+﻿using OOADZabavniPark.Views;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -16,7 +16,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace OOAD_ZabavniPark
+namespace OOADZabavniPark
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.

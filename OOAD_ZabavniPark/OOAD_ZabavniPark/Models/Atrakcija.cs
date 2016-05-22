@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOAD_ZabavniPark.Models
+namespace OOADZabavniPark.Models
 {
     public enum StanjeAtrakcije { Operating, NotOperating };
-    public class Atrakcija
+    public class Atrakcija 
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int AtrakcijaId { get; set; } //primary key u bazi

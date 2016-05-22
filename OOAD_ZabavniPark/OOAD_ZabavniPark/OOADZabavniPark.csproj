@@ -7,8 +7,8 @@
     <ProjectGuid>{D9984D9D-8590-4893-A9CD-80C5F33BA91D}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OOAD_ZabavniPark</RootNamespace>
-    <AssemblyName>OOAD_ZabavniPark</AssemblyName>
+    <RootNamespace>OOADZabavniPark</RootNamespace>
+    <AssemblyName>OOADZabavniPark</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>

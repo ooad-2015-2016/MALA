@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOAD_ZabavniPark.Models
+namespace OOADZabavniPark.Models
 {
     public class Radnik : Korisnik
     {

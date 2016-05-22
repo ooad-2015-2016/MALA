@@ -1,5 +1,5 @@
-﻿using OOAD_ZabavniPark.Helper;
-using OOAD_ZabavniPark.Models;
+﻿using OOADZabavniPark.Helper;
+using OOADZabavniPark.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Windows.UI.Popups;
 
-namespace OOAD_ZabavniPark.ViewModels
+namespace OOADZabavniPark.ViewModels
 {
     public class RadnikUnosViewModel
     {

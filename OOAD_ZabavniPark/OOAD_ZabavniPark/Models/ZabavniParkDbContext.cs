@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
 
-namespace OOAD_ZabavniPark.Models
+namespace OOADZabavniPark.Models
 {
     public class ZabavniParkDbContext : DbContext
     {

@@ -1,11 +1,11 @@
-﻿using OOAD_ZabavniPark.Models;
+﻿using OOADZabavniPark.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOAD_ZabavniPark.DataSource
+namespace OOADZabavniPark.DataSource
 {
     public class DataSourcePark
     {

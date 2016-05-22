@@ -1,6 +1,6 @@
-﻿using OOAD_ZabavniPark.Helper;
-using OOAD_ZabavniPark.Models;
-using OOAD_ZabavniPark.ViewModels;
+﻿using OOADZabavniPark.Helper;
+using OOADZabavniPark.Models;
+using OOADZabavniPark.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,18 +15,14 @@ using Windows.UI.Xaml.Controls;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace OOAD_ZabavniPark.Views
+namespace OOADZabavniPark.Views
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class AtrakcijaIzmjena : Page
     { 
         public AtrakcijaIzmjena()
         {
             this.InitializeComponent();
             DataContext = new AtrakcijaIzmjenaViewModel();
-
             var currentView = SystemNavigationManager.GetForCurrentView();
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
             currentView.BackRequested += ThisPage_BackRequested;
