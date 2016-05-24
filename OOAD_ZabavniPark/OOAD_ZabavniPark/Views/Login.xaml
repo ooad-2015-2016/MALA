@@ -14,7 +14,7 @@
         <PasswordBox x:Name="passwordBox" Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="710,275,0,0" VerticalAlignment="Top" Height="32" Width="160"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="510,210,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="515,280,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top"/>
-        <Button x:Name="button" Command="{Binding LoginRadnik}" Content="Login" HorizontalAlignment="Left" Margin="580,380,0,0" VerticalAlignment="Top" Height="32" Width="150"/>
+        <Button x:Name="button" Command="{Binding LoginKorisnik}" Content="Login" HorizontalAlignment="Left" Margin="580,380,0,0" VerticalAlignment="Top" Height="32" Width="150"/>
         <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="479,461,0,0" TextWrapping="Wrap" Text="Novi posjetilac?" VerticalAlignment="Top"/>
         <Button x:Name="button1" Content="Registruj se!"  HorizontalAlignment="Left" Margin="628,454,0,0" VerticalAlignment="Top" Width="106" Click="button1_Click"/>
     </Grid>

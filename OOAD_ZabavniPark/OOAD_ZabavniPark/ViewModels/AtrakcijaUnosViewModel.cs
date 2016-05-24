@@ -14,6 +14,18 @@ namespace OOADZabavniPark.ViewModels
 {
     public class AtrakcijaUnosViewModel : INotifyPropertyChanged
     {
+
+        #region PropertyChanged
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void NotifyPropertyChanged(String info)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(info));
+            }
+        }
+        #endregion
+
         private static int counter = 0;
 
         #region Privatni Atributi
@@ -102,16 +114,7 @@ namespace OOADZabavniPark.ViewModels
 
         ObservableCollection<Atrakcija> atrakcije = new ObservableCollection<Atrakcija>();
 
-        #region PropertyChanged
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void NotifyPropertyChanged(String info)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(info));
-            }
-        }
-        #endregion
+
 
         public AtrakcijaUnosViewModel()
         {

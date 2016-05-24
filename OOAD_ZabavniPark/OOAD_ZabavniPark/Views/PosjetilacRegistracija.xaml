@@ -20,18 +20,18 @@
         <TextBlock x:Name="textBlockEmail" HorizontalAlignment="Left" Margin="541,380,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlockTip" HorizontalAlignment="Left" Margin="482,460,0,0" TextWrapping="Wrap" FontSize="17" Text ="Tip korisnika:" VerticalAlignment="Top" Height="20"/>
         <TextBlock x:Name="textBlockBrojKartice" HorizontalAlignment="Left" Margin="426,420,0,0" TextWrapping="Wrap" FontSize="17" Text ="Broj kreditne kartice:" VerticalAlignment="Top" Height="20"/>
-        <TextBox x:Name="textBoxIme" HorizontalAlignment="Left" Margin="610,135,0,0" TextWrapping="Wrap" Text="{Binding Ime}" VerticalAlignment="Top" Width="190"/>
-        <TextBox x:Name="textBoxPrezime" HorizontalAlignment="Left" Margin="611,175,0,0" TextWrapping="Wrap" Text="{Binding Prezime}" VerticalAlignment="Top" Width="190"/>
-        <DatePicker HorizontalAlignment="Left" Margin="610,215,0,0" Date="{Binding DatumRodjenja}" VerticalAlignment="Top" Width="292"/>
-        <TextBox x:Name="textBoxUsername" HorizontalAlignment="Left" Text="{Binding KorisnickoIme}" Margin="610,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
-        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Password="{Binding Sifra}" Margin="610,295,0,0" VerticalAlignment="Top" Height="25" Width="190"/>
-        <PasswordBox x:Name="passwordBox2" HorizontalAlignment="Left" Margin="610,335,0,0" VerticalAlignment="Top" Height="25" Width="190"/>
-        <TextBox x:Name="textBoxEmail" HorizontalAlignment="Left" Margin="610,375,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190"/>
-        <TextBox x:Name="textBoxBrojKartice" HorizontalAlignment="Left" Margin="610,415,0,0" Width="190" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="610,455,0,0" VerticalAlignment="Top" Width="190">
+        <TextBox x:Name="textBoxIme" HorizontalAlignment="Left" Margin="610,135,0,0" TextWrapping="Wrap" Text="{Binding Ime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="textBoxPrezime" HorizontalAlignment="Left" Margin="611,175,0,0" TextWrapping="Wrap" Text="{Binding Prezime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="190"/>
+        <DatePicker HorizontalAlignment="Left" Margin="610,215,0,0" Date="{Binding DatumRodjenja, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="292"/>
+        <TextBox x:Name="textBoxUsername" HorizontalAlignment="Left" Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="610,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="610,295,0,0" VerticalAlignment="Top" Height="25" Width="190"/>
+        <PasswordBox x:Name="passwordBox2" HorizontalAlignment="Left" Password ="{Binding Password2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="610,335,0,0" VerticalAlignment="Top" Height="25" Width="190"/>
+        <TextBox x:Name="textBoxEmail" HorizontalAlignment="Left" Margin="610,375,0,0" TextWrapping="Wrap" Text ="{Binding EMail, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="textBoxBrojKartice" HorizontalAlignment="Left" Margin="610,415,0,0" Width="190" Text="{Binding BrojKartice, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" SelectedValue="{Binding Tip, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="610,455,0,0" VerticalAlignment="Top" Width="190">
             <ComboBoxItem>Regular</ComboBoxItem>
             <ComboBoxItem>Gold</ComboBoxItem>
         </ComboBox>
-        <Button x:Name="button" Content="Registruj se" HorizontalAlignment="Left" Margin="561,527,0,0" VerticalAlignment="Top" Width="140"/>
+        <Button x:Name="button" Command="{Binding Dodaj}" Content="Registruj se" HorizontalAlignment="Left" Margin="561,527,0,0" VerticalAlignment="Top" Width="140"/>
     </Grid>
 </Page>

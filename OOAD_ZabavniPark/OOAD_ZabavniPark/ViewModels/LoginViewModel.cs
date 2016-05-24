@@ -86,7 +86,7 @@ namespace OOADZabavniPark.ViewModels
                 else
                 {
                     if (Korisnik is Administrator) { NavigationServis.Navigate(typeof(PocetnaAdmin)); }
-                    //else if(Korisnik is Posjetilac) { NavigationServis.Navigate(typeof(PocetnaPosjetilac)); }
+                    else if(Korisnik is Posjetilac) { NavigationServis.Navigate(typeof(PocetnaPosjetilac)); }
                     else { NavigationServis.Navigate(typeof(PocetnaRadnik)); }
                 }
             //}

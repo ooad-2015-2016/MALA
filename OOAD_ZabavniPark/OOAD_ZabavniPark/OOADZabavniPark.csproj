@@ -136,6 +136,9 @@
     <Compile Include="Views\PocetnaAdmin.xaml.cs">
       <DependentUpon>PocetnaAdmin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\PocetnaPosjetilac.xaml.cs">
+      <DependentUpon>PocetnaPosjetilac.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\PocetnaRadnik.xaml.cs">
       <DependentUpon>PocetnaRadnik.xaml</DependentUpon>
     </Compile>
@@ -187,6 +190,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\PocetnaAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PocetnaPosjetilac.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

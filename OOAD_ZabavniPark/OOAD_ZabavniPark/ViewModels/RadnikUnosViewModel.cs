@@ -11,7 +11,20 @@ namespace OOADZabavniPark.ViewModels
 {
     public class RadnikUnosViewModel : INotifyPropertyChanged
     {
+        #region NotifyPropertyChanged
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void NotifyPropertyChanged(String info)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(info));
+            }
+        }
+        #endregion
+
         #region Privatni atributi
+        private static int counter = 0;
+        private int radnikID;
         private string ime;
         private string prezime;
         private TipOsoblja tip;
@@ -21,12 +34,12 @@ namespace OOADZabavniPark.ViewModels
         double plata;
         #endregion
 
-        private static int counter = 0;
-        public int IDRadnika { get; set; } //mislim da se IDRadnika postavlja u konstruktoru
-
-        public Radnik Radnik { get; set; }
-
         #region Postavljanje Property-a
+        public int IDRadnika
+        {
+            get { return radnikID; }
+            set { radnikID = value; }
+        }
         public string Ime
         {
             get { return ime; }
@@ -94,19 +107,8 @@ namespace OOADZabavniPark.ViewModels
 
         //public INavigacija NavigationServis { get; set; }
         public ICommand Dodaj { get; set; }
-
+        public Radnik Radnik { get; set; }
         public ObservableCollection<Radnik> Radnici { get; set; }
-
-        #region NotifyPropertyChanged
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void NotifyPropertyChanged(String info)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(info));
-            }
-        }
-        #endregion
 
         public RadnikUnosViewModel()
         {
@@ -116,6 +118,7 @@ namespace OOADZabavniPark.ViewModels
 
         private async void unosRadnika(object obj)
         {
+            IDRadnika = System.Threading.Interlocked.Increment(ref counter);
             using (var db = new ZabavniParkDbContext())
             {
                 var uneseniRadnik = new Radnik(IDRadnika, Ime, Prezime, TipOsoblja.SalterRadnik, Username, Password, RadniStaz, Plata);

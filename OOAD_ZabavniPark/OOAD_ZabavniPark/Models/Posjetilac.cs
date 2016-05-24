@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace OOADZabavniPark.Models
 {
-    public enum TipPosjetilaca { Obicni, Registrovani, Gold }
+    public enum TipPosjetilaca { Regular, Gold }
 
     public class Posjetilac : Korisnik
     {
         #region Properties
         public DateTime DatumRodjenja { get; set; }
-        public int BrojKartice { get; set; }
+        public string BrojKartice { get; set; }
         public TipPosjetilaca Tip { get; set; }
         public string EMail { get; set; }
         #endregion
 
         #region Konstruktori
-        public Posjetilac(int id, string ime, string prezime, DateTime datum, int brojKartice, string username, string password, TipPosjetilaca tip, string email)
+        public Posjetilac(int id, string ime, string prezime, DateTime datum, string brojKartice, string username, string password, TipPosjetilaca tip, string email)
             :base(id, username, password, ime, prezime)
         {
             DatumRodjenja = datum;

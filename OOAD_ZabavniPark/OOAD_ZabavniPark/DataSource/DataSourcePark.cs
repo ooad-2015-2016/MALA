@@ -12,7 +12,8 @@ namespace OOADZabavniPark.DataSource
         private static List<Korisnik> korisnici = new List<Korisnik>()
         {
             new Administrator(1, "Admin", "Adminić", "admin1","adminpass", 10, 1100),
-            new Radnik(2, "Mujo", "Mujić", TipOsoblja.SalterRadnik, "mmujic1", "12345",  5, 1000)
+            new Radnik(2, "Mujo", "Mujić", TipOsoblja.SalterRadnik, "mmujic1", "12345",  5, 1000),
+            new Posjetilac(3, "Pero", "Perić", new DateTime(1996, 3, 5), "123456789", "pperic1", "123", TipPosjetilaca.Regular, "pperic1@hotmail.com")
         };
 
         public static IList<Korisnik> DajSveKorisnike() { return korisnici; }

@@ -1,12 +1,10 @@
-﻿using OOADZabavniPark.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,24 +20,11 @@ namespace OOADZabavniPark.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class PosjetilacRegistracija : Page
+    public sealed partial class PocetnaPosjetilac : Page
     {
-        public PosjetilacRegistracija()
+        public PocetnaPosjetilac()
         {
             this.InitializeComponent();
-            DataContext = new PosjetilacRegistracijaViewModel();
-            var currentView = SystemNavigationManager.GetForCurrentView();
-            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
-            currentView.BackRequested += ThisPage_BackRequested;
-        }
-
-        private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
-        {
-            if (Frame.CanGoBack)
-            {
-                Frame.GoBack();
-                e.Handled = true;
-            }
         }
     }
 }
