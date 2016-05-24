@@ -123,6 +123,7 @@
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\RadnikIzmjenaViewModel.cs" />
     <Compile Include="ViewModels\RadnikUnosViewModel.cs" />
+    <Compile Include="ViewModels\PosjetilacRegistracijaViewModel.cs" />
     <Compile Include="Views\AtrakcijaIzmjena.xaml.cs">
       <DependentUpon>AtrakcijaIzmjena.xaml</DependentUpon>
     </Compile>
@@ -137,6 +138,9 @@
     </Compile>
     <Compile Include="Views\PocetnaRadnik.xaml.cs">
       <DependentUpon>PocetnaRadnik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PosjetilacRegistracija.xaml.cs">
+      <DependentUpon>PosjetilacRegistracija.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\RadnikIzmjena.xaml.cs">
       <DependentUpon>RadnikIzmjena.xaml</DependentUpon>
@@ -187,6 +191,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\PocetnaRadnik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PosjetilacRegistracija.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

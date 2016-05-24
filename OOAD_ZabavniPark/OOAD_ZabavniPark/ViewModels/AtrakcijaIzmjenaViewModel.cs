@@ -110,6 +110,7 @@ namespace OOADZabavniPark.ViewModels
             KlikNaListu = new RelayCommand<ItemClickEventArgs>(klikNaListu);
         }
 
+        #region NotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(String info)
         {
@@ -118,6 +119,7 @@ namespace OOADZabavniPark.ViewModels
                 PropertyChanged(this, new PropertyChangedEventArgs(info));
             }
         }
+        #endregion
 
         private void klikNaListu(ItemClickEventArgs args)
         {

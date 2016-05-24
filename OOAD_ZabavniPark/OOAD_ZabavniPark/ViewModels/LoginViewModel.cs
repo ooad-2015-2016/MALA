@@ -4,6 +4,7 @@ using OOADZabavniPark.Models;
 using OOADZabavniPark.Views;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,26 +13,58 @@ using Windows.UI.Popups;
 
 namespace OOADZabavniPark.ViewModels
 {
-    public class LoginViewModel
+    public class LoginViewModel : INotifyPropertyChanged
     {
-        public string Username { get; set; }
-        public string Password { get; set; }
+        #region Privatni atributi
+        private string username;
+        private string password;
+        #endregion
+
+        #region Properties
+        public string Username
+        {
+            get { return username; }
+            set
+            {
+                username = value;
+                NotifyPropertyChanged("Username"); 
+            }
+        }
+        public string Password
+        {
+            get { return password; }
+            set
+            {
+                password = value;
+                NotifyPropertyChanged("Password");
+            }
+        }
+        #endregion
+
+        #region PropertyChanged
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void NotifyPropertyChanged(String info)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(info));
+            }
+        }
+        #endregion
 
         public Korisnik Korisnik { get; set; }
 
-        public ICommand LoginRadnik { get; set; }
-        //public ICommand LoginAdmin { get; set; }
+        public ICommand LoginKorisnik { get; set; }
 
         public INavigacija NavigationServis { get; set; }
 
         public LoginViewModel()
         {
             NavigationServis = new NavigationService();
-            LoginRadnik = new RelayCommand<object>(loginRadnik, mozeLiSePrijavitiRadnik);
-            //LoginAdmin = new RelayCommand<object>(loginAdmin, mozeLiSePrijavitiAdmin);
+            LoginKorisnik = new RelayCommand<object>(loginKorisnik, mozeLiSePrijaviti);
         }
 
-        private async void loginRadnik(object obj)
+        private async void loginKorisnik(object obj)
         {
             if (Username == "" || Password == "")
             {
@@ -39,9 +72,10 @@ namespace OOADZabavniPark.ViewModels
                 await message.ShowAsync();
             }
 
+            //TODO: Dobavljanje podataka iz baze 
 
-            using (var db = new ZabavniParkDbContext())
-            {
+            //using (var db = new ZabavniParkDbContext())
+            //{
                 Korisnik = DataSourcePark.ProvjeraKorisnika(Username, Password);
 
                 if (Korisnik == null)
@@ -52,17 +86,13 @@ namespace OOADZabavniPark.ViewModels
                 else
                 {
                     if (Korisnik is Administrator) { NavigationServis.Navigate(typeof(PocetnaAdmin)); }
+                    //else if(Korisnik is Posjetilac) { NavigationServis.Navigate(typeof(PocetnaPosjetilac)); }
                     else { NavigationServis.Navigate(typeof(PocetnaRadnik)); }
                 }
-            }
+            //}
         }
 
-        //private bool mozeLiSePrijavitiAdmin(object arg)
-        //{
-        //    return true;
-        //}
-
-        private bool mozeLiSePrijavitiRadnik(object arg)
+        private bool mozeLiSePrijaviti(object arg)
         {
             return true;
         }

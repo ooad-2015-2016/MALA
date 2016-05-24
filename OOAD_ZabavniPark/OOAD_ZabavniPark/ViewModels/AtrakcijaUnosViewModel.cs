@@ -102,6 +102,7 @@ namespace OOADZabavniPark.ViewModels
 
         ObservableCollection<Atrakcija> atrakcije = new ObservableCollection<Atrakcija>();
 
+        #region PropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(String info)
         {
@@ -110,6 +111,7 @@ namespace OOADZabavniPark.ViewModels
                 PropertyChanged(this, new PropertyChangedEventArgs(info));
             }
         }
+        #endregion
 
         public AtrakcijaUnosViewModel()
         {
@@ -122,16 +124,24 @@ namespace OOADZabavniPark.ViewModels
         {
             // ovdje ide kod koji vrši spašavanje nove atrakcije u bazu podataka
             AtrakcijaId = System.Threading.Interlocked.Increment(ref counter);
-            Atrakcija = new Atrakcija(AtrakcijaId, Naziv, Kapacitet, VrijemeOtvaranja, VrijemeZatvaranja, TrenutniBrojPosjetilaca, Stanje, TrajanjeVoznje);
-            using (var db = new ZabavniParkDbContext())
-            {
-                db.Atrakcije.ToList().ForEach(atrakcije.Add);
+            Atrakcija = new Atrakcija(AtrakcijaId, Naziv, Kapacitet, VrijemeOtvaranja, VrijemeZatvaranja, TrenutniBrojPosjetilaca, StanjeAtrakcije.Operating, TrajanjeVoznje);
+            //using (var db = new ZabavniParkDbContext())
+            //{
+            //    db.Atrakcije.Add(Atrakcija);
+            //    db.SaveChanges();
+            //    var message = new MessageDialog("Uspješno je unesena nova atrakcija!", "Unos atrakcije");
+            //    await message.ShowAsync();
+            //}
 
-                db.Atrakcije.Add(Atrakcija);
-            }
+            Naziv = string.Empty;
+            Kapacitet = 0;
+            VrijemeOtvaranja = TimeSpan.Zero;
+            VrijemeZatvaranja = TimeSpan.Zero;
+            TrenutniBrojPosjetilaca = 0;
+            TrajanjeVoznje = 0;
+
             var message = new MessageDialog("Uspješno je unesena nova atrakcija!", "Unos atrakcije");
             await message.ShowAsync();
-
         }
     }
 }

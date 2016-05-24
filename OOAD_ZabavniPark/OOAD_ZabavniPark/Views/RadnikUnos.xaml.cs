@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOADZabavniPark.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,7 +27,7 @@ namespace OOADZabavniPark.Views
         public RadnikUnos()
         {
             this.InitializeComponent();
-            DataContext = new PocetnaAdmin();
+            DataContext = new RadnikUnosViewModel();
             var currentView = SystemNavigationManager.GetForCurrentView();
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
             SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;

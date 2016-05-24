@@ -18,16 +18,16 @@
         <TextBlock x:Name="textBlockStaz" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="388,395,0,0" FontSize="17" Text="Broj godina radnog staža:" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlockPlata" HorizontalAlignment="Left" TextWrapping="Wrap" Margin="540,445,0,0" FontSize="17" Text="Plata:" VerticalAlignment="Top"/>
 
-
         <TextBox x:Name="textBoxIme" Text="{Binding Ime,  UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  HorizontalAlignment="Left" Margin="620,145,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="150"/>
         <TextBox x:Name="textBoxPrezime" Text="{Binding Prezime, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Left" Margin="620,195,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"  Width="150"/>
-
-        <ListView x:Name="listViewTip" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Width="150" Margin="620,245,0,0"  />
-
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="620,245,0,0" VerticalAlignment="Top" Width="150">
+            <ComboBoxItem>Šalter radnik</ComboBoxItem>
+            <ComboBoxItem>Terenski radnik</ComboBoxItem>
+        </ComboBox>
         <TextBox x:Name="textBoxUsername" Text="{Binding Username, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Left" Margin="620,295,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="150"/>
-        <PasswordBox x:Name="passwordBox" Password="{Binding Password, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Left" Margin="620,345,0,0" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="textBox" Text="{Binding Password, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" HorizontalAlignment="Left" Margin="620,345,0,0" VerticalAlignment="Top" Width="150"/>
         <TextBox x:Name="textBoxStaz" Text="{Binding RadniStaz, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  HorizontalAlignment="Left" Margin="620,395,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
         <TextBox x:Name="textBoxPlata" Text="{Binding Plata, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  HorizontalAlignment="Left" Margin="620,445,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <Button x:Name="button" Content="Unesi radnika" HorizontalAlignment="Left" Margin="560,520,0,0" VerticalAlignment="Top" Width="150" Click="button_Click"/>
+        <Button x:Name="button" Content="Unesi radnika" HorizontalAlignment="Left" Margin="560,520,0,0" VerticalAlignment="Top" Width="150" Command="{Binding Dodaj}"/>
     </Grid>
 </Page>

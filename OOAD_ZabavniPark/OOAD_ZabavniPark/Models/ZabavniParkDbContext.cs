@@ -26,5 +26,7 @@ namespace OOADZabavniPark.Models
             catch (InvalidOperationException) { }
             optionsBuilder.UseSqlite($"Data source={databaseFilePath}");
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        { }
     }
 }

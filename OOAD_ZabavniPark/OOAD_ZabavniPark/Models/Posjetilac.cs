@@ -8,28 +8,33 @@ using System.Threading.Tasks;
 namespace OOADZabavniPark.Models
 {
     public enum TipPosjetilaca { Obicni, Registrovani, Gold }
-    public class Posjetilac
-    {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int PosjetilacId { get; set; }
-        public String Ime { get; set; }
-        public String Prezime { get; set; }
-        public DateTime DatumRodjenja { get; set; }
-        public int ClanskiBroj { get; set; }
-        public TipPosjetilaca Tip { get; set; }
-        public String Sifra { get; set; }
 
-        public Posjetilac(int id, String ime, String prezime, DateTime datum, int clanskiBroj, TipPosjetilaca tip, String sifra)
+    public class Posjetilac : Korisnik
+    {
+        #region Properties
+        public DateTime DatumRodjenja { get; set; }
+        public int BrojKartice { get; set; }
+        public TipPosjetilaca Tip { get; set; }
+        public string EMail { get; set; }
+        #endregion
+
+        #region Konstruktori
+        public Posjetilac(int id, string ime, string prezime, DateTime datum, int brojKartice, string username, string password, TipPosjetilaca tip, string email)
+            :base(id, username, password, ime, prezime)
         {
-            PosjetilacId = id;
-            Ime = ime;
-            Prezime = prezime;
             DatumRodjenja = datum;
-            ClanskiBroj = clanskiBroj;
+            BrojKartice = brojKartice;
             Tip = tip;
-            Sifra = sifra;
+            EMail = email;
         }
 
-        public Posjetilac() { }
+        public Posjetilac(Posjetilac p) : base(p.KorisnikId, p.KorisnickoIme, p.Sifra, p.Ime, p.Prezime)
+        {
+            DatumRodjenja = p.DatumRodjenja;
+            BrojKartice = p.BrojKartice;
+            Tip = p.Tip;
+            EMail = p.EMail;
+        }
+        #endregion
     }
 }

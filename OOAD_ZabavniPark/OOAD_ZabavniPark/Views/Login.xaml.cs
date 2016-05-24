@@ -34,5 +34,10 @@ namespace OOADZabavniPark.Views
             var currentView = SystemNavigationManager.GetForCurrentView();
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PosjetilacRegistracija));
+        }
     }
 }

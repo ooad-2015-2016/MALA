@@ -11,8 +11,8 @@ namespace OOADZabavniPark.DataSource
     {
         private static List<Korisnik> korisnici = new List<Korisnik>()
         {
-            new Administrator(1, "Admin", "Adminić", TipOsoblja.Administrator, "admin1","adminpass", 10, 1100),
-            new Korisnik(2, "mmujic1", "12345", "Mujo", "Mujic", 5, 1000)
+            new Administrator(1, "Admin", "Adminić", "admin1","adminpass", 10, 1100),
+            new Radnik(2, "Mujo", "Mujić", TipOsoblja.SalterRadnik, "mmujic1", "12345",  5, 1000)
         };
 
         public static IList<Korisnik> DajSveKorisnike() { return korisnici; }

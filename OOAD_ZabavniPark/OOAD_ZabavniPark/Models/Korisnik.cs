@@ -9,19 +9,16 @@ namespace OOADZabavniPark.Models
 {
     public class Korisnik
     {
+        #region Properties
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int KorisnikId { get; set; }
         public string KorisnickoIme { get; set; }
         public string Sifra { get; set; }
         public string Ime { get; set; }
         public string Prezime { get; set; }
-        public int RadniStaz { get; set; }
-        public double Plata { get; set; }
+        #endregion
 
-       // public DateTime? DatumVrijemeZadnjegPristupa { get; set; }
-       // public bool? Aktivan { get; set; }
-
-
+        #region Konstruktori
         public Korisnik(Korisnik k)
         {
             KorisnikId = k.KorisnikId;
@@ -29,19 +26,16 @@ namespace OOADZabavniPark.Models
             Sifra = k.Sifra;
             Ime = k.Ime;
             Prezime = k.Prezime;
-            RadniStaz = k.RadniStaz;
-            Plata = k.Plata;
         }
 
-        public Korisnik(int ID, string username, string password, string ime, string prezime, int radniStaz, double plata)
+        public Korisnik(int ID, string username, string password, string ime, string prezime)
         {
             KorisnikId = ID;
             KorisnickoIme = username;
             Sifra = password;
             Ime = ime;
             Prezime = prezime;
-            RadniStaz = radniStaz;
-            Plata = plata;
         }
+        #endregion
     }
 }

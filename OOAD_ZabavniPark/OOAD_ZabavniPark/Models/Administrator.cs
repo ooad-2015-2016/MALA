@@ -7,15 +7,18 @@ using System.Threading.Tasks;
 
 namespace OOADZabavniPark.Models
 {
-    public enum TipOsoblja { RadnikTeren, SalterRadnik, Administrator };
-
     public class Administrator : Korisnik
     {
-        TipOsoblja Tip { get; set; }
-        public Administrator(int id, string ime, string prezime, TipOsoblja tip, string username, string pass, int god, double plata)
-            : base(id, username, pass, ime, prezime, god, plata)
+        //TipOsoblja Tip { get; set; } tip osoblja treba promijeniti, tako da nema polje administrator, posto je to vec klasa za sebe
+        public int RadniStaz { get; set; }
+        public double Plata { get; set; }
+
+        public Administrator(int id, string ime, string prezime, string username, string pass, int godStaza, double plata)
+            : base(id, username, pass, ime, prezime)
         {
-            Tip = TipOsoblja.Administrator;
+            RadniStaz = godStaza;
+            Plata = plata;
         }
     }
 }
+
