@@ -13,12 +13,11 @@ namespace OOADZabavniPark.Models
     {
         public DbSet<Atrakcija> Atrakcije { get; set; }
         public DbSet<Radnik> Radnici { get; set; }
-        // ovdje treba biti DbSet<Korisnik> Korisnici { get; set; } koja se odnosi na korisnike sistema
         public DbSet<Posjetilac> Posjetioci { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string databaseFilePath = "ParkBaza.db";
+            string databaseFilePath = "ZabavniPark.db";
             try
             {
                 databaseFilePath = Path.Combine(ApplicationData.Current.LocalFolder.Path, databaseFilePath);

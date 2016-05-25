@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ namespace OOADZabavniPark.Models
     {
         #region Properties
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int KorisnikId { get; set; }
+        public int ID { get; set; }
         public string KorisnickoIme { get; set; }
         public string Sifra { get; set; }
         public string Ime { get; set; }
@@ -21,16 +22,19 @@ namespace OOADZabavniPark.Models
         #region Konstruktori
         public Korisnik(Korisnik k)
         {
-            KorisnikId = k.KorisnikId;
+            ID = k.ID;
             KorisnickoIme = k.KorisnickoIme;
             Sifra = k.Sifra;
             Ime = k.Ime;
             Prezime = k.Prezime;
         }
+        public Korisnik()
+        {
 
+        }
         public Korisnik(int ID, string username, string password, string ime, string prezime)
         {
-            KorisnikId = ID;
+            this.ID = ID;
             KorisnickoIme = username;
             Sifra = password;
             Ime = ime;

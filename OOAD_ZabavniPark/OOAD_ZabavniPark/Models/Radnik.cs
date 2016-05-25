@@ -26,7 +26,7 @@ namespace OOADZabavniPark.Models
             Tip = tip;
         }
 
-        public Radnik(Radnik r) : base(r.KorisnikId, r.KorisnickoIme, r.Sifra, r.Ime, r.Prezime)
+        public Radnik(Radnik r) : base(r.ID, r.KorisnickoIme, r.Sifra, r.Ime, r.Prezime)
         {
             Plata = r.Plata;
             RadniStaz = r.RadniStaz;

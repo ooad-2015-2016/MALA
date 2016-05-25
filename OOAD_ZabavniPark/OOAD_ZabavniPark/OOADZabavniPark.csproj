@@ -105,14 +105,10 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20160520132235_InitialMigration.cs" />
-    <Compile Include="Migrations\20160520132235_InitialMigration.designer.cs">
-      <DependentUpon>20160520132235_InitialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\ZabavniParkDbContextModelSnapshot.cs" />
     <Compile Include="Models\Administrator.cs" />
     <Compile Include="Models\Atrakcija.cs" />
     <Compile Include="Models\DefaultPodaci.cs" />
+    <Compile Include="Models\Karta.cs" />
     <Compile Include="Models\Korisnik.cs" />
     <Compile Include="Models\Posjetilac.cs" />
     <Compile Include="Models\Radnik.cs" />
@@ -120,6 +116,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AtrakcijaIzmjenaViewModel.cs" />
     <Compile Include="ViewModels\AtrakcijaUnosViewModel.cs" />
+    <Compile Include="ViewModels\KupovinaKarteViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\RadnikIzmjenaViewModel.cs" />
     <Compile Include="ViewModels\RadnikUnosViewModel.cs" />
@@ -129,6 +126,9 @@
     </Compile>
     <Compile Include="Views\AtrakcijaUnos.xaml.cs">
       <DependentUpon>AtrakcijaUnos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\KupovinaKarte.xaml.cs">
+      <DependentUpon>KupovinaKarte.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -182,6 +182,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\AtrakcijaUnos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\KupovinaKarte.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

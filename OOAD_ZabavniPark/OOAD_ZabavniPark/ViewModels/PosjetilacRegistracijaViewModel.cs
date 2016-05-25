@@ -35,8 +35,6 @@ namespace OOADZabavniPark.ViewModels
         private string password2;
         private DateTime datumRodjenja;
         private string email;
-        private string brojKartice;
-        private string tip;
         #endregion
 
         #region Properties
@@ -99,24 +97,6 @@ namespace OOADZabavniPark.ViewModels
                 NotifyPropertyChanged("EMail");
             }
         }
-        public string BrojKartice
-        {
-            get { return brojKartice; }
-            set
-            {
-                brojKartice = value;
-                NotifyPropertyChanged("BrojKartice");
-            }
-        }
-        public string Tip
-        {
-            get { return tip; }
-            set
-            {
-                tip = value;
-                NotifyPropertyChanged("Tip");
-            }
-        }
         public string Password2
         {
             get { return password2; }
@@ -138,7 +118,7 @@ namespace OOADZabavniPark.ViewModels
 
         private async void unosPosjetioca(object obj)
         {
-            if(Ime == null || Prezime == null || EMail == null || Password == null || Password2 == null || BrojKartice == null)
+            if(Ime == null || Prezime == null || EMail == null || Password == null || Password2 == null)
             {
                 var poruka = new MessageDialog("Uneseni podaci nisu potpuni", "Greška!");
                 await poruka.ShowAsync();
@@ -160,11 +140,8 @@ namespace OOADZabavniPark.ViewModels
             else
             {
                 ID = System.Threading.Interlocked.Increment(ref counter);
-                TipPosjetilaca tip;
-                if (Tip == "Regular") tip = TipPosjetilaca.Regular;
-                else tip = TipPosjetilaca.Gold;
 
-                Posjetilac = new Posjetilac(ID, Ime, Prezime, DatumRodjenja, BrojKartice, Username, Password, tip, EMail);
+                Posjetilac = new Posjetilac(ID, Ime, Prezime, DatumRodjenja, Username, Password, EMail, new List<Karta>());
 
                 // ovdje ide kod koji dodaje novog posjetioca u bazu
                 //using (var db = new ZabavniParkDbContext())
@@ -183,8 +160,6 @@ namespace OOADZabavniPark.ViewModels
                 Password2 = string.Empty;
                 DatumRodjenja = DateTime.Today;
                 EMail = string.Empty;
-                BrojKartice = string.Empty;
-                Tip = string.Empty;
             }
         }
     }

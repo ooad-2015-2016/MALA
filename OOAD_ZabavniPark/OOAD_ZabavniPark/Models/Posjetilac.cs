@@ -7,33 +7,31 @@ using System.Threading.Tasks;
 
 namespace OOADZabavniPark.Models
 {
-    public enum TipPosjetilaca { Regular, Gold }
-
     public class Posjetilac : Korisnik
     {
         #region Properties
         public DateTime DatumRodjenja { get; set; }
-        public string BrojKartice { get; set; }
-        public TipPosjetilaca Tip { get; set; }
         public string EMail { get; set; }
+        public List<Karta> KupljeneKarte { get; set; }
         #endregion
 
         #region Konstruktori
-        public Posjetilac(int id, string ime, string prezime, DateTime datum, string brojKartice, string username, string password, TipPosjetilaca tip, string email)
+
+        public Posjetilac():base() { }
+    
+        public Posjetilac(int id, string ime, string prezime, DateTime datum, string username, string password,  string email, List<Karta> karte)
             :base(id, username, password, ime, prezime)
         {
             DatumRodjenja = datum;
-            BrojKartice = brojKartice;
-            Tip = tip;
             EMail = email;
+            KupljeneKarte = new List<Karta>(karte);
         }
 
-        public Posjetilac(Posjetilac p) : base(p.KorisnikId, p.KorisnickoIme, p.Sifra, p.Ime, p.Prezime)
+        public Posjetilac(Posjetilac p) : base(p.ID, p.KorisnickoIme, p.Sifra, p.Ime, p.Prezime)
         {
             DatumRodjenja = p.DatumRodjenja;
-            BrojKartice = p.BrojKartice;
-            Tip = p.Tip;
             EMail = p.EMail;
+            KupljeneKarte = new List<Karta>(p.KupljeneKarte);
         }
         #endregion
     }

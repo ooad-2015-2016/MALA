@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ namespace OOADZabavniPark.Models
     public class Atrakcija 
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int AtrakcijaId { get; set; } //primary key u bazi
+        public int ID { get; set; } //primary key u bazi
         public string Naziv { get; set; }
         public int Kapacitet { get; set; }
         public TimeSpan VrijemeOtvaranja { get; set; }
@@ -25,7 +26,7 @@ namespace OOADZabavniPark.Models
                          TimeSpan zatvaranje, int trenutniBrPosjetilaca,
                          StanjeAtrakcije stanje, int trajanje)
         {
-            AtrakcijaId = id;
+            ID = id;
             Naziv = naziv;
             Kapacitet = kapacitet;
             VrijemeOtvaranja = otvaranje;
@@ -36,6 +37,7 @@ namespace OOADZabavniPark.Models
         }
         public Atrakcija(Atrakcija a)
         {
+            this.ID = ID;
             Naziv = a.Naziv;
             Kapacitet = a.Kapacitet;
             VrijemeOtvaranja = a.VrijemeOtvaranja;
