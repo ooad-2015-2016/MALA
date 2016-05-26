@@ -107,6 +107,7 @@
     </Compile>
     <Compile Include="Models\Administrator.cs" />
     <Compile Include="Models\Atrakcija.cs" />
+    <Compile Include="Models\Coordinates.cs" />
     <Compile Include="Models\DefaultPodaci.cs" />
     <Compile Include="Models\Karta.cs" />
     <Compile Include="Models\Korisnik.cs" />

@@ -20,11 +20,12 @@ namespace OOADZabavniPark.Models
         public int TrenutniBrojPosjetilaca { get; set; }
         public StanjeAtrakcije Stanje { get; set; }
         public int TrajanjeVoznje { get; set; } // u minutama
+        public Coordinates koordinate { get; set; }
 
         public Atrakcija(int id, string naziv,
                         int kapacitet, TimeSpan otvaranje,
                          TimeSpan zatvaranje, int trenutniBrPosjetilaca,
-                         StanjeAtrakcije stanje, int trajanje)
+                         StanjeAtrakcije stanje, int trajanje, Coordinates koordinate_)
         {
             ID = id;
             Naziv = naziv;
@@ -34,7 +35,9 @@ namespace OOADZabavniPark.Models
             TrenutniBrojPosjetilaca = trenutniBrPosjetilaca;
             Stanje = stanje;
             TrajanjeVoznje = trajanje;
+            koordinate = koordinate_;
         }
+
         public Atrakcija(Atrakcija a)
         {
             this.ID = ID;
@@ -45,6 +48,7 @@ namespace OOADZabavniPark.Models
             TrenutniBrojPosjetilaca = a.TrenutniBrojPosjetilaca;
             Stanje = a.Stanje;
             TrajanjeVoznje = a.TrajanjeVoznje;
+            koordinate = a.koordinate;
         }
         public Atrakcija() { }
 
