@@ -14,6 +14,7 @@ namespace OOADZabavniPark.Models
         public DbSet<Atrakcija> Atrakcije { get; set; }
         public DbSet<Radnik> Radnici { get; set; }
         public DbSet<Posjetilac> Posjetioci { get; set; }
+        public DbSet<Karta> Karte { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

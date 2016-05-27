@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +10,7 @@ namespace OOADZabavniPark.Models
 {
     public class Coordinates
     {
+
         public double Latitude { get; private set; }
         public double Longitude { get; private set; }
 

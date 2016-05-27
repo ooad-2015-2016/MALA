@@ -102,8 +102,8 @@ namespace OOADZabavniPark.ViewModels
         {
             Atrakcije = new List<Atrakcija>()
             {
-                new Atrakcija(0, "Rollercoaster", 100, new TimeSpan(8, 0, 0), new TimeSpan(22, 0, 0), 0, StanjeAtrakcije.Operating, 10),
-                new Atrakcija(1, "Tobogan", 50, new TimeSpan(8, 0, 0), new TimeSpan(23, 0, 0), 0, StanjeAtrakcije.Operating, 10)
+                new Atrakcija(0, "Rollercoaster", 100, new TimeSpan(8, 0, 0), new TimeSpan(22, 0, 0), 0, StanjeAtrakcije.Operating, 10, new Coordinates(0, 0)),
+                new Atrakcija(1, "Tobogan", 50, new TimeSpan(8, 0, 0), new TimeSpan(23, 0, 0), 0, StanjeAtrakcije.Operating, 10, new Coordinates(10, 50))
             };
             //KliknutaAtrakcija = new Atrakcija();
             Spasi = new RelayCommand<object>(spasiAtrakciju);

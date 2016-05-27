@@ -127,7 +127,7 @@ namespace OOADZabavniPark.ViewModels
         {
             // ovdje ide kod koji vrši spašavanje nove atrakcije u bazu podataka
             AtrakcijaId = System.Threading.Interlocked.Increment(ref counter);
-            Atrakcija = new Atrakcija(AtrakcijaId, Naziv, Kapacitet, VrijemeOtvaranja, VrijemeZatvaranja, TrenutniBrojPosjetilaca, StanjeAtrakcije.Operating, TrajanjeVoznje);
+            Atrakcija = new Atrakcija(AtrakcijaId, Naziv, Kapacitet, VrijemeOtvaranja, VrijemeZatvaranja, TrenutniBrojPosjetilaca, StanjeAtrakcije.Operating, TrajanjeVoznje, new Coordinates(50, 50));
             //using (var db = new ZabavniParkDbContext())
             //{
             //    db.Atrakcije.Add(Atrakcija);

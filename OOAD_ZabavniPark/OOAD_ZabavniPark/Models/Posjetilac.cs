@@ -12,7 +12,7 @@ namespace OOADZabavniPark.Models
         #region Properties
         public DateTime DatumRodjenja { get; set; }
         public string EMail { get; set; }
-        public List<Karta> KupljeneKarte { get; set; }
+        public ICollection<Karta> KupljeneKarte { get; set; }
         #endregion
 
         #region Konstruktori
