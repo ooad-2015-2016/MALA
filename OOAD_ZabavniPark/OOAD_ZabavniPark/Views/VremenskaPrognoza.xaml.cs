@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -21,28 +22,20 @@ namespace OOADZabavniPark.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class PocetnaPosjetilac : Page
+    public sealed partial class VremenskaPrognoza : Page
     {
-        Posjetilac p;
-        public PocetnaPosjetilac()
+        public VremenskaPrognoza()
         {
             this.InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(KupovinaKarte), p);
-        }
+            RootObject myWeather = await OpenWeatherMapProxy.GetWeather(new Coordinates(20.0, 30.0));
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            p = e.Parameter as Posjetilac;
-            base.OnNavigatedTo(e);
-        }
-
-        private void buttonWeather_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(VremenskaPrognoza), p);
+            ResultTextBlock.Text = myWeather.name + " - " + myWeather.main.temp + " - " + myWeather.weather[0].description;
+            string icon = String.Format("http://openweathermap.org/img/w/{0}.png", myWeather.weather[0].icon);
+            ResultImage.Source = new BitmapImage(new Uri(icon, UriKind.Absolute));
         }
     }
 }

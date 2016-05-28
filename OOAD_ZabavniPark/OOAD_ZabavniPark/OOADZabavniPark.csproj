@@ -111,6 +111,7 @@
     <Compile Include="Models\DefaultPodaci.cs" />
     <Compile Include="Models\Karta.cs" />
     <Compile Include="Models\Korisnik.cs" />
+    <Compile Include="Models\OpenWeatherMapProxy.cs" />
     <Compile Include="Models\Posjetilac.cs" />
     <Compile Include="Models\Radnik.cs" />
     <Compile Include="Models\ZabavniParkDbContext.cs" />
@@ -151,6 +152,9 @@
     </Compile>
     <Compile Include="Views\RadnikUnos.xaml.cs">
       <DependentUpon>RadnikUnos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VremenskaPrognoza.xaml.cs">
+      <DependentUpon>VremenskaPrognoza.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -215,6 +219,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\RadnikUnos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VremenskaPrognoza.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
