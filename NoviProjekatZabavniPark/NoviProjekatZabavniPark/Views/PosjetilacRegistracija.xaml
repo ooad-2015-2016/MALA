@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="NoviProjekatZabavniPark.Views.PosjetilacRegistracija"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NoviProjekatZabavniPark.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock"  HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top"
+                   Text="Registracija novog posjetioca" FontSize="45" Foreground="SlateGray" FontStyle="Normal" Margin="361,20,217,0" Width="702"/>
+
+        <TextBlock x:Name="textBlockIme" HorizontalAlignment="Left" Margin="548,155,0,0" TextWrapping="Wrap" FontSize="17" Text ="Ime:" VerticalAlignment="Top" Height="20"/>
+        <TextBlock x:Name="textBlockPrezime" HorizontalAlignment="Left" Margin="517,205,0,0" TextWrapping="Wrap" FontSize="17" Text ="Prezime:" VerticalAlignment="Top" Height="20"/>
+        <TextBlock x:Name="textBlockDatumRodjenja" HorizontalAlignment="Left" Margin="464,255,0,0" TextWrapping="Wrap" FontSize="17" Text ="Datum rođenja:" VerticalAlignment="Top" Height="26"/>
+        <TextBlock x:Name="textBlockUsername" HorizontalAlignment="Left" Margin="501,310,0,0" TextWrapping="Wrap" FontSize="17" Text ="Username:" VerticalAlignment="Top" Height="20"/>
+        <TextBlock x:Name="textBlockPassword1" HorizontalAlignment="Left" Margin="506,360,0,0" TextWrapping="Wrap" FontSize="17" Text ="Password:" VerticalAlignment="Top" Height="20"/>
+        <TextBlock x:Name="textBlockPassword2" HorizontalAlignment="Left" Margin="435,411,0,0" TextWrapping="Wrap" FontSize="17" Text ="Ponovite password:" VerticalAlignment="Top" Height="25"/>
+        <TextBlock x:Name="textBlockEmail" HorizontalAlignment="Left" Margin="540,464,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" RenderTransformOrigin="0.385,1.35"/>
+        <TextBox x:Name="textBoxIme" HorizontalAlignment="Left" Margin="612,148,0,0" TextWrapping="Wrap" Text="{Binding Ime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="textBoxPrezime" HorizontalAlignment="Left" Margin="612,198,0,0" TextWrapping="Wrap" Text="{Binding Prezime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="190"/>
+        <DatePicker HorizontalAlignment="Left" Margin="611,253,0,0" Date="{Binding DatumRodjenja, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="292"/>
+        <TextBox x:Name="textBoxUsername" HorizontalAlignment="Left" Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="612,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="612,353,0,0" VerticalAlignment="Top" Height="25" Width="190"/>
+        <PasswordBox x:Name="passwordBox2" HorizontalAlignment="Left" Password ="{Binding Password2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="611,408,0,0" VerticalAlignment="Top" Height="25" Width="190"/>
+        <TextBox x:Name="textBoxEmail" HorizontalAlignment="Left" Margin="611,459,0,0" TextWrapping="Wrap" Text ="{Binding EMail, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="190"/>
+        <Button x:Name="button" Command="{Binding Dodaj}" Content="Registruj se" HorizontalAlignment="Left" Margin="561,527,0,0" VerticalAlignment="Top" Width="140"/>
+    </Grid>
+</Page>

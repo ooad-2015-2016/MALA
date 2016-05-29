@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="NoviProjekatZabavniPark.Views.PregledAtrakcija"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NoviProjekatZabavniPark.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel>
+        <ListView x:Name="listView"  ItemsSource="{Binding Atrakcije, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsItemClickEnabled="True" SelectedItem="{Binding KliknutaAtrakcijaIme, Mode=TwoWay}"  HorizontalAlignment="Left" Height="195" Margin="50,125,0,0" VerticalAlignment="Top" Width="245"/>
+        <TextBlock x:Name="textBlockCekanjeLabel" Text="Prosječno vrijeme čekanja:" />
+        <TextBlock x:Name="textBlockCekanje"  Text ="{Binding VrijemeCekanja, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+    
+    </StackPanel>
+</Page>
