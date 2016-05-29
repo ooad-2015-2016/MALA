@@ -7,8 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <StackPanel Background="LightBlue">
-        <Button Content="Get Weather" Click="Button_Click" Margin="20, 20, 0, 0"/>
-        <TextBlock Name="ResultTextBlock" />
-        <Image Name="ResultImage" Width="40" Height="40" Margin="20, 40, 0, 0" />
+        <Button Content="Get Weather" Click="Button_Click" Margin="620, 50, 600, 0" />
+        <TextBlock Name="ResultTextBlock" Margin="620, 80, 600, 0" />
+        <Image Name="ResultImage"  Width ="60" Height="60"/>
     </StackPanel>
 </Page>

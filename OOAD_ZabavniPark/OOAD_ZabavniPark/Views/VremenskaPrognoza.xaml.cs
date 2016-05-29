@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -27,13 +28,25 @@ namespace OOADZabavniPark.Views
         public VremenskaPrognoza()
         {
             this.InitializeComponent();
+            var currentView = SystemNavigationManager.GetForCurrentView();
+            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            currentView.BackRequested += ThisPage_BackRequested;
+        }
+
+        private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            if (Frame.CanGoBack)
+            {
+                Frame.GoBack();
+                e.Handled = true;
+            }
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             RootObject myWeather = await OpenWeatherMapProxy.GetWeather(new Coordinates(20.0, 30.0));
 
-            ResultTextBlock.Text = myWeather.name + " - " + myWeather.main.temp + " - " + myWeather.weather[0].description;
+            ResultTextBlock.Text = "Vaša pozicija: " +  myWeather.name + "\nTemperatura: " + myWeather.main.temp + "\nOpis: " + myWeather.weather[0].description;
             string icon = String.Format("http://openweathermap.org/img/w/{0}.png", myWeather.weather[0].icon);
             ResultImage.Source = new BitmapImage(new Uri(icon, UriKind.Absolute));
         }
