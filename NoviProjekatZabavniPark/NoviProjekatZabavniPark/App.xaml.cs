@@ -30,6 +30,7 @@ namespace NoviProjekatZabavniPark
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
         }
 
         /// <summary>

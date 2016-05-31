@@ -148,32 +148,32 @@ namespace NoviProjekatZabavniPark.ViewModels
                 }
                 else
                 {
-                    if (int.Parse(BrojKartiDjecijeGold) > 0)
-                    {
-                        Karta k = new Karta(new DateTime(), TipKarte.GoldDjecija);
-                        posjetilac.KupljeneKarte.Add(k);
-                    }
-                    if (int.Parse(BrojKartiOdrasliGold) > 0)
-                    {
-                        {
-                            Karta k = new Karta(new DateTime(), TipKarte.GoldOdrasli);
-                            posjetilac.KupljeneKarte.Add(k);
-                        }
-                    }
-                    if (int.Parse(BrojKartiStandardDjecije) > 0)
-                    {
-                        {
-                            Karta k = new Karta(new DateTime(), TipKarte.StandardDjecija);
-                            posjetilac.KupljeneKarte.Add(k);
-                        }
-                    }
-                    if (int.Parse(BrojKartiStandardOdrasli) > 0)
-                    {
-                        {
-                            Karta k = new Karta(new DateTime(), TipKarte.StandardOdrasli);
-                            posjetilac.KupljeneKarte.Add(k);
-                        }
-                    }
+                    //if (int.Parse(BrojKartiDjecijeGold) > 0)
+                    //{
+                    //    Karta k = new Karta(new DateTime(), TipKarte.GoldDjecija);
+                    //    posjetilac.KupljeneKarte.Add(k);
+                    //}
+                    //if (int.Parse(BrojKartiOdrasliGold) > 0)
+                    //{
+                    //    {
+                    //        Karta k = new Karta(new DateTime(), TipKarte.GoldOdrasli);
+                    //        posjetilac.KupljeneKarte.Add(k);
+                    //    }
+                    //}
+                    //if (int.Parse(BrojKartiStandardDjecije) > 0)
+                    //{
+                    //    {
+                    //        Karta k = new Karta(new DateTime(), TipKarte.StandardDjecija);
+                    //        posjetilac.KupljeneKarte.Add(k);
+                    //    }
+                    //}
+                    //if (int.Parse(BrojKartiStandardOdrasli) > 0)
+                    //{
+                    //    {
+                    //        Karta k = new Karta(new DateTime(), TipKarte.StandardOdrasli);
+                    //        posjetilac.KupljeneKarte.Add(k);
+                    //    }
+                    //}
                 }
 
                 var message = new MessageDialog("Uspješno ste kupili kartu za Zabavni park MALA!", "Kupovina karte uspješna");

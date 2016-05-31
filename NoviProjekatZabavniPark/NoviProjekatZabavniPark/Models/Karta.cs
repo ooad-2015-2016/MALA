@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,15 +14,16 @@ namespace NoviProjekatZabavniPark.Models
         //private static int djecijaKarta = 10;
         //private static int odrasliKarta = 20;
 
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { get; set; }
-        public DateTime Datum { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int KartaId { get; set; }
+        public DateTime Datum { get; set; } 
         public bool Iskoristena { get; set; }
         public TipKarte Tip { get; set; }
-        public Image Kod { get; set; }
+        public string Kod { get; set; }
 
-        public Karta(DateTime datum, TipKarte tip)
+        public Karta(int Id, DateTime datum, TipKarte tip)
         {
+            KartaId = Id;
             Datum = datum;
             Iskoristena = false;
             Tip = tip;

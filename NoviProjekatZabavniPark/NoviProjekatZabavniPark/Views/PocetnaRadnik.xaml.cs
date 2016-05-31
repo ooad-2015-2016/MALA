@@ -42,7 +42,7 @@ namespace NoviProjekatZabavniPark.Views
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(AtrakcijaUnos));
+            this.Frame.Navigate(typeof(KreiranjeKarte));
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)

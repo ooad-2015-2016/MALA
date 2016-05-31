@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace NoviProjekatZabavniPark.Models
         public int PosjetilacId { get; set; }
         public DateTime DatumRodjenja { get; set; }
         public string EMail { get; set; }
-        public ICollection<Karta> KupljeneKarte { get; set; }
+        public List<Karta> KupljeneKarte { get; set; }
         #endregion
 
         #region Konstruktori
