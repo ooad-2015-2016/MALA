@@ -18,8 +18,8 @@ namespace NoviProjekatZabavniPark.ViewModels
         private string prezime;
         private string username;
         private string password;
-        private double plata;
-        private int radniStaz;
+        private string plata;
+        private string radniStaz;
         private TipOsoblja tip;
         #endregion
 
@@ -68,7 +68,7 @@ namespace NoviProjekatZabavniPark.ViewModels
                 NotifyPropertyChanged("Password");
             }
         }
-        public double Plata
+        public string Plata
         {
             get { return plata; }
             set
@@ -77,7 +77,7 @@ namespace NoviProjekatZabavniPark.ViewModels
                 NotifyPropertyChanged("Plata");
             }
         }
-        public int RadniStaz
+        public string RadniStaz
         {
             get { return radniStaz; }
             set
@@ -95,6 +95,8 @@ namespace NoviProjekatZabavniPark.ViewModels
                 NotifyPropertyChanged("TipRadnika");
             }
         }
+
+        public Radnik KliknutiRadnik { get; set; }
         #endregion
 
         public ICommand Spasi { get; set; }
@@ -108,9 +110,32 @@ namespace NoviProjekatZabavniPark.ViewModels
             KlikNaListu = new RelayCommand<ItemClickEventArgs>(klikNaListu);
         }
 
+        //update radnika
         private void klikNaListu(ItemClickEventArgs args)
         {
+            KliknutiRadnik = args.ClickedItem as Radnik;
+            Radnik rad;
 
+            using (var context = new ZabavniParkDbContext())
+            {
+                rad = context.Radnici.Where(a => a.KorisnickoIme == KliknutiRadnik.KorisnickoIme).FirstOrDefault<Radnik>();
+            }
+
+            if (rad != null)
+            {
+                rad.Ime = Ime;
+                rad.Prezime = Prezime;
+                rad.KorisnickoIme = Username;
+                rad.Sifra = Password;
+                rad.RadniStaz = Convert.ToInt32(RadniStaz);
+                rad.Plata = Convert.ToDouble(Plata);
+            }
+            using (var context = new ZabavniParkDbContext())
+            {
+                //Mark entity as modified
+                context.Entry(rad).State = Microsoft.Data.Entity.EntityState.Modified;
+                context.SaveChanges();
+            }
         }
 
 

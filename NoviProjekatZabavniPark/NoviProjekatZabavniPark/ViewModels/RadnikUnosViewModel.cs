@@ -33,8 +33,8 @@ namespace NoviProjekatZabavniPark.ViewModels
         private TipOsoblja tip;
         string username;
         string password;
-        int staz;
-        double plata;
+        string staz;
+        string plata;
         #endregion
 
         #region Postavljanje Property-a
@@ -88,7 +88,7 @@ namespace NoviProjekatZabavniPark.ViewModels
                 NotifyPropertyChanged("Password");
             }
         }
-        public int RadniStaz
+        public string RadniStaz
         {
             get { return staz; }
             set
@@ -97,7 +97,7 @@ namespace NoviProjekatZabavniPark.ViewModels
                 NotifyPropertyChanged("RadniStaz");
             }
         }
-        public double Plata
+        public string Plata
         {
             get { return plata; }
             set
@@ -108,47 +108,32 @@ namespace NoviProjekatZabavniPark.ViewModels
         }
         #endregion
 
-        //public INavigacija NavigationServis { get; set; }
         public ICommand Dodaj { get; set; }
         public Radnik Radnik { get; set; }
-        public ObservableCollection<Radnik> Radnici { get; set; }
 
         public RadnikUnosViewModel()
         {
-            //ovdje treba popuniti listu iz baze
             Dodaj = new RelayCommand<object>(unosRadnika);
         }
 
         private async void unosRadnika(object obj)
         {
-            //IDRadnika = System.Threading.Interlocked.Increment(ref counter);
-            //using (var db = new ZabavniParkDbContext())
-            //{
-            //    var uneseniRadnik = new Radnik(IDRadnika, Ime, Prezime, TipOsoblja.RadnikSalter, Username, Password, RadniStaz, Plata);
-            //    db.Radnici.Add(uneseniRadnik);
-            //    db.SaveChanges();
-               var message = new MessageDialog("Uspješno je unesen novi radnik", "Unos radnika");
-               await message.ShowAsync();
-            //}
+            using (var db = new ZabavniParkDbContext())
+            {
+                var uneseniRadnik = new Radnik(Ime, Prezime, TipOsoblja.RadnikSalter, Username, Password, Convert.ToInt32(RadniStaz), Convert.ToDouble(Plata));
+                db.Radnici.Add(uneseniRadnik);
+                db.SaveChanges();
+
+                var message = new MessageDialog("Uspješno je unesen novi radnik", "Unos radnika");
+                await message.ShowAsync();
+
+                Ime = string.Empty;
+                Prezime = string.Empty;
+                Username = string.Empty;
+                Password = string.Empty; 
+                RadniStaz = string.Empty;
+                Plata = string.Empty;
+            }
         }
-        //try
-        //{
-        //    db.SaveChanges();
-        //    var message = new MessageDialog("Uspješno je unesen novi radnik", "Unos radnika");
-        //    await message.ShowAsync();
-        //}
-        //catch (Exception e)
-        //{
-        //    if (System.Diagnostics.Debugger.IsAttached)
-        //    {
-        //        string exc = e.InnerException.GetBaseException().ToString();
-        //        var message = new MessageDialog(exc, "Greška!");
-
-        //    }
-        //}
-
-        //IDRadnika = System.Threading.Interlocked.Increment(ref counter);
-        //Radnik = new Radnik(IDRadnika, Ime, Prezime, TipRadnika, Username, Password, RadniStaz, Plata);
-
     }
 }

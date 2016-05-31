@@ -18,10 +18,11 @@ namespace NoviProjekatZabavniPark.Models
         #endregion
 
         #region Konstruktori
-        public Radnik(int id, string ime, string prezime, TipOsoblja tip, string username, string pass, int godStaza, double plata)
+        public Radnik() { }
+       
+        public Radnik(string ime, string prezime, TipOsoblja tip, string username, string pass, int godStaza, double plata)
             : base(username, pass, ime, prezime)
         {
-            RadnikId = id;
             RadniStaz = godStaza;
             Plata = plata;
             Tip = tip;
@@ -29,7 +30,6 @@ namespace NoviProjekatZabavniPark.Models
 
         public Radnik(Radnik r) : base(r.KorisnickoIme, r.Sifra, r.Ime, r.Prezime)
         {
-            RadnikId = r.RadnikId;
             Plata = r.Plata;
             RadniStaz = r.RadniStaz;
             Tip = r.Tip;

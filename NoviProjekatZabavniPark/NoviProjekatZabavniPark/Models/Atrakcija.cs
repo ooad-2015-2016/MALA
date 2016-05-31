@@ -21,13 +21,12 @@ namespace NoviProjekatZabavniPark.Models
         public double Latitude { get; set; }
         public double Longitude { get; set; }
 
-        public Atrakcija(int id, string naziv,
+        public Atrakcija(string naziv,
                         int kapacitet, TimeSpan otvaranje,
                          TimeSpan zatvaranje, int trenutniBrPosjetilaca,
                          StanjeAtrakcije stanje, int trajanje,
                          double latitude, double longitude)
         {
-            AtrakcijaId = id;
             Naziv = naziv;
             Kapacitet = kapacitet;
             VrijemeOtvaranja = otvaranje;
@@ -41,7 +40,6 @@ namespace NoviProjekatZabavniPark.Models
 
         public Atrakcija(Atrakcija a)
         {
-            this.AtrakcijaId = AtrakcijaId;
             Naziv = a.Naziv;
             Kapacitet = a.Kapacitet;
             VrijemeOtvaranja = a.VrijemeOtvaranja;

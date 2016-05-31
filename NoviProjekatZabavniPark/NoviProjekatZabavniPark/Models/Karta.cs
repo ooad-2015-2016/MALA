@@ -21,12 +21,19 @@ namespace NoviProjekatZabavniPark.Models
         public TipKarte Tip { get; set; }
         public string Kod { get; set; }
 
-        public Karta(int Id, DateTime datum, TipKarte tip)
+        public Karta() { }
+   
+        public Karta(DateTime datum, TipKarte tip)
         {
-            KartaId = Id;
             Datum = datum;
             Iskoristena = false;
             Tip = tip;
+        }
+
+        public Karta(Karta k)
+        {
+            Datum = k.Datum;
+            Tip = k.Tip;
         }
 
         void IskoristiKartu()

@@ -13,7 +13,6 @@ namespace NoviProjekatZabavniPark.ViewModels
 {
     public class PosjetilacRegistracijaViewModel : INotifyPropertyChanged
     {
-        private static int counter = 0;
 
         #region PropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
@@ -38,11 +37,6 @@ namespace NoviProjekatZabavniPark.ViewModels
         #endregion
 
         #region Properties
-        public int ID
-        {
-            get { return id; }
-            set { id = value; }
-        }
         public string Ime
         {
             get { return ime; }
@@ -140,9 +134,8 @@ namespace NoviProjekatZabavniPark.ViewModels
 
             else
             {
-                ID = System.Threading.Interlocked.Increment(ref counter);
 
-                Posjetilac = new Posjetilac(ID, Ime, Prezime, DatumRodjenja, Username, Password, EMail, new List<Karta>());
+                Posjetilac = new Posjetilac(Ime, Prezime, DatumRodjenja, Username, Password, EMail, new List<Karta>());
 
                 // ovdje ide kod koji dodaje novog posjetioca u bazu
                 //using (var db = new ZabavniParkDbContext())

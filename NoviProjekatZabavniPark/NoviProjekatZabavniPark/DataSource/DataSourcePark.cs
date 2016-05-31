@@ -11,9 +11,9 @@ namespace NoviProjekatZabavniPark.DataSource
         {
             private static List<Korisnik> korisnici = new List<Korisnik>()
             {
-                new Administrator(1, "Admin", "Adminić", "admin1","adminpass", 10, 1100),
-                new Radnik(2, "Mujo", "Mujić", TipOsoblja.RadnikSalter, "mmujic1", "12345",  5, 1000),
-                new Posjetilac(3, "Pero", "Perić", new DateTime(1996, 3, 5), "pperic1", "123", "pperic1@hotmail.com", new List<Karta>())
+                new Administrator(0, "Admin", "Adminić", "admin1","adminpass", 10, 1100),
+                new Radnik("Mujo", "Mujić", TipOsoblja.RadnikSalter, "mmujic1", "12345",  5, 1000),
+                new Posjetilac("Pero", "Perić", new DateTime(1996, 3, 5), "pperic1", "123", "pperic1@hotmail.com", new List<Karta>())
             };
 
         public static IList<Korisnik> DajSveKorisnike() { return korisnici; }

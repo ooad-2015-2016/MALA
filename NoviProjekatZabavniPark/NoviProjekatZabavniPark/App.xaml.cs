@@ -1,10 +1,13 @@
-﻿using System;
+﻿using Windows.System;
 using NoviProjekatZabavniPark.Views;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using System;
+using NoviProjekatZabavniPark.Models;
+using Microsoft.Data.Entity;
 
 namespace NoviProjekatZabavniPark
 {
@@ -21,6 +24,11 @@ namespace NoviProjekatZabavniPark
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            using (var db = new ZabavniParkDbContext())
+            {
+                db.Database.ApplyMigrations();
+                DefaultPodaci.Initialize(db);
+            }
 
         }
 

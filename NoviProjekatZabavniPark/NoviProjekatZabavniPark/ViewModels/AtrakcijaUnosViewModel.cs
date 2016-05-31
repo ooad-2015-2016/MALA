@@ -26,7 +26,6 @@ namespace NoviProjekatZabavniPark.ViewModels
         }
         #endregion
 
-        private static int counter = 0;
 
         #region Privatni Atributi
         string naziv;
@@ -126,8 +125,7 @@ namespace NoviProjekatZabavniPark.ViewModels
         private async void unosAtrakcije(object obj)
         {
             // ovdje ide kod koji vrši spašavanje nove atrakcije u bazu podataka
-            AtrakcijaId = System.Threading.Interlocked.Increment(ref counter);
-            Atrakcija = new Atrakcija(AtrakcijaId, Naziv, Kapacitet, VrijemeOtvaranja, VrijemeZatvaranja, TrenutniBrojPosjetilaca, StanjeAtrakcije.Operating, TrajanjeVoznje, 50.0, 50.0);
+            Atrakcija = new Atrakcija( Naziv, Kapacitet, VrijemeOtvaranja, VrijemeZatvaranja, TrenutniBrojPosjetilaca, StanjeAtrakcije.Operating, TrajanjeVoznje, 50.0, 50.0);
             //using (var db = new ZabavniParkDbContext())
             //{
             //    db.Atrakcije.Add(Atrakcija);

@@ -22,10 +22,9 @@ namespace NoviProjekatZabavniPark.Models
 
         public Posjetilac() : base() { }
 
-        public Posjetilac(int id, string ime, string prezime, DateTime datum, string username, string password, string email, List<Karta> karte)
+        public Posjetilac(string ime, string prezime, DateTime datum, string username, string password, string email, List<Karta> karte)
             : base(username, password, ime, prezime)
         {
-            PosjetilacId = id;
             DatumRodjenja = datum;
             EMail = email;
             KupljeneKarte = new List<Karta>(karte);
@@ -33,7 +32,6 @@ namespace NoviProjekatZabavniPark.Models
 
         public Posjetilac(Posjetilac p) : base(p.KorisnickoIme, p.Sifra, p.Ime, p.Prezime)
         {
-            PosjetilacId = p.PosjetilacId;
             DatumRodjenja = p.DatumRodjenja;
             EMail = p.EMail;
             KupljeneKarte = new List<Karta>(p.KupljeneKarte);
