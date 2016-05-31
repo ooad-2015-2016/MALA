@@ -17,12 +17,14 @@ namespace NoviProjekatZabavniPark.Models
         public int TrenutniBrojPosjetilaca { get; set; }
         public StanjeAtrakcije Stanje { get; set; }
         public int TrajanjeVoznje { get; set; } // u minutama
-        public Coordinates koordinate { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
 
         public Atrakcija(int id, string naziv,
                         int kapacitet, TimeSpan otvaranje,
                          TimeSpan zatvaranje, int trenutniBrPosjetilaca,
-                         StanjeAtrakcije stanje, int trajanje, Coordinates koordinate_)
+                         StanjeAtrakcije stanje, int trajanje,
+                         double latitude, double longitude)
         {
             AtrakcijaId = id;
             Naziv = naziv;
@@ -32,7 +34,8 @@ namespace NoviProjekatZabavniPark.Models
             TrenutniBrojPosjetilaca = trenutniBrPosjetilaca;
             Stanje = stanje;
             TrajanjeVoznje = trajanje;
-            koordinate = koordinate_;
+            Latitude = latitude;
+            Longitude = longitude;
         }
 
         public Atrakcija(Atrakcija a)
@@ -45,7 +48,8 @@ namespace NoviProjekatZabavniPark.Models
             TrenutniBrojPosjetilaca = a.TrenutniBrojPosjetilaca;
             Stanje = a.Stanje;
             TrajanjeVoznje = a.TrajanjeVoznje;
-            koordinate = a.koordinate;
+            Latitude = a.Latitude;
+            Longitude = a.Longitude;
         }
         public Atrakcija() { }
 

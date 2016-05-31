@@ -12,7 +12,7 @@ namespace NoviProjekatZabavniPark.Models
 {
     class OpenWeatherMapProxy
     {
-        public async static Task<RootObject> GetWeather(Coordinates coordinates)
+        public async static Task<RootObject> GetWeather(double lat, double lon)
         {
             // ovdje se obavlja poziv upucen web servisu
             var http = new HttpClient();

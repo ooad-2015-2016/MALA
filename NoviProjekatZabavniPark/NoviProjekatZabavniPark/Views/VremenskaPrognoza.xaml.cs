@@ -44,7 +44,7 @@ namespace NoviProjekatZabavniPark.Views
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            RootObject myWeather = await OpenWeatherMapProxy.GetWeather(new Coordinates(20.0, 30.0));
+            RootObject myWeather = await OpenWeatherMapProxy.GetWeather(20.0, 30.0);
 
             ResultTextBlock.Text = "Vaša pozicija: " + myWeather.name + "\nTemperatura: " + myWeather.main.temp + "\nOpis: " + myWeather.weather[0].description;
             string icon = String.Format("http://openweathermap.org/img/w/{0}.png", myWeather.weather[0].icon);

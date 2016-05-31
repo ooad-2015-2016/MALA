@@ -127,8 +127,8 @@ namespace NoviProjekatZabavniPark.ViewModels
             //    var uneseniRadnik = new Radnik(IDRadnika, Ime, Prezime, TipOsoblja.RadnikSalter, Username, Password, RadniStaz, Plata);
             //    db.Radnici.Add(uneseniRadnik);
             //    db.SaveChanges();
-            //    var message = new MessageDialog("Uspješno je unesen novi radnik", "Unos radnika");
-            //    await message.ShowAsync();
+               var message = new MessageDialog("Uspješno je unesen novi radnik", "Unos radnika");
+               await message.ShowAsync();
             //}
         }
         //try
