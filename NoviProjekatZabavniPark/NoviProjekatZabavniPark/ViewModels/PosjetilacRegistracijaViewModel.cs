@@ -114,6 +114,7 @@ namespace NoviProjekatZabavniPark.ViewModels
         public PosjetilacRegistracijaViewModel()
         {
             Dodaj = new RelayCommand<object>(unosPosjetioca);
+            DatumRodjenja = DateTime.Now;
         }
 
         private async void unosPosjetioca(object obj)
@@ -129,11 +130,11 @@ namespace NoviProjekatZabavniPark.ViewModels
                 var poruka = new MessageDialog("Unesene šifre se ne podudaraju", "Greška!");
                 await poruka.ShowAsync();
             }
-            if ((((DateTime.Today - DatumRodjenja).TotalDays) / 365) < 13)
-            {
-                var poruka = new MessageDialog("Morate biti stariji od 13 godina da bi se registrovali na MALA sistem!", "Greška!");
-                await poruka.ShowAsync();
-            }
+            //if ((((DateTime.Today - DatumRodjenja).TotalDays) / 365) < 13)
+            //{
+            //    var poruka = new MessageDialog("Morate biti stariji od 13 godina da bi se registrovali na MALA sistem!", "Greška!");
+            //    await poruka.ShowAsync();
+            //}
 
 
 

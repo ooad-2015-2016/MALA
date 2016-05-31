@@ -1,5 +1,4 @@
 ﻿using NoviProjekatZabavniPark.ViewModels;
-using NoviProjekatZabavniPark.Helper;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,9 +22,9 @@ namespace NoviProjekatZabavniPark.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class PosjetilacRegistracija : Page
+    public sealed partial class RegistracijaPosjetilac : Page
     {
-        public PosjetilacRegistracija()
+        public RegistracijaPosjetilac()
         {
             this.InitializeComponent();
             DataContext = new PosjetilacRegistracijaViewModel();

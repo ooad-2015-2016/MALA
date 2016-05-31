@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,7 @@ namespace NoviProjekatZabavniPark.Models
     public class Posjetilac : Korisnik
     {
         #region Properties
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int PosjetilacId { get; set; }
         public DateTime DatumRodjenja { get; set; }
         public string EMail { get; set; }

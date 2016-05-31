@@ -103,6 +103,11 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20160531184412_InitialMigration.cs" />
+    <Compile Include="Migrations\20160531184412_InitialMigration.designer.cs">
+      <DependentUpon>20160531184412_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ZabavniParkDbContextModelSnapshot.cs" />
     <Compile Include="Models\Administrator.cs" />
     <Compile Include="Models\Atrakcija.cs" />
     <Compile Include="Models\DefaultPodaci.cs" />
@@ -150,9 +155,6 @@
     <Compile Include="Views\PocetnaRadnik.xaml.cs">
       <DependentUpon>PocetnaRadnik.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\PosjetilacRegistracija.xaml.cs">
-      <DependentUpon>PosjetilacRegistracija.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\PregledAtrakcija.xaml.cs">
       <DependentUpon>PregledAtrakcija.xaml</DependentUpon>
     </Compile>
@@ -161,6 +163,9 @@
     </Compile>
     <Compile Include="Views\RadnikUnos.xaml.cs">
       <DependentUpon>RadnikUnos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegistracijaPosjetilac.xaml.cs">
+      <DependentUpon>RegistracijaPosjetilac.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\VremenskaPrognoza.xaml.cs">
       <DependentUpon>VremenskaPrognoza.xaml</DependentUpon>
@@ -222,10 +227,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\PosjetilacRegistracija.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\PregledAtrakcija.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -235,6 +236,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\RadnikUnos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RegistracijaPosjetilac.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

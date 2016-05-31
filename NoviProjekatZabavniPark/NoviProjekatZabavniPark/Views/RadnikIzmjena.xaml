@@ -27,5 +27,6 @@
             <ComboBoxItem>Content="Terenski radnik"</ComboBoxItem>
         </ComboBox>
         <Button x:Name="buttonSpasi" Content="Spasi" Command="{Binding Spasi}" HorizontalAlignment="Left" Margin="505,460,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="130"/>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="225" Margin="60,135,0,0" VerticalAlignment="Top" Width="175"/>
     </Grid>
 </Page>

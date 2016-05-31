@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,7 @@ namespace NoviProjekatZabavniPark.Models
 {
     public class Atrakcija
     {
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int AtrakcijaId { get; set; } //primary key u bazi
         public string Naziv { get; set; }
         public int Kapacitet { get; set; }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace NoviProjekatZabavniPark.Models
     public class Radnik : Korisnik
     {
         #region Properties
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int RadnikId { get; set; }
         public int RadniStaz { get; set; }
         public double Plata { get; set; }
