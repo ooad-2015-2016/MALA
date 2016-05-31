@@ -96,6 +96,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataSource\DataSourcePark.cs" />
+    <Compile Include="Helper\DateConverter.cs" />
     <Compile Include="Helper\INavigacija.cs" />
     <Compile Include="Helper\NavigationService.cs" />
     <Compile Include="Helper\RelayCommand.cs" />
@@ -118,6 +119,7 @@
     <Compile Include="ViewModels\AtrakcijaIzmjenaViewModel.cs" />
     <Compile Include="ViewModels\AtrakcijaUnosViewModel.cs" />
     <Compile Include="ViewModels\GpsViewModel.cs" />
+    <Compile Include="ViewModels\KreiranjeKarteViewModel.cs" />
     <Compile Include="ViewModels\KupovinaKarteViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\PosjetilacRegistracijaViewModel.cs" />
@@ -129,6 +131,9 @@
     </Compile>
     <Compile Include="Views\AtrakcijaUnos.xaml.cs">
       <DependentUpon>AtrakcijaUnos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\KreiranjeKarte.xaml.cs">
+      <DependentUpon>KreiranjeKarte.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\KupovinaKarte.xaml.cs">
       <DependentUpon>KupovinaKarte.xaml</DependentUpon>
@@ -190,6 +195,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\AtrakcijaUnos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\KreiranjeKarte.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

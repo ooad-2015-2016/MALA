@@ -5,7 +5,13 @@
     xmlns:local="using:NoviProjekatZabavniPark.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converter="using:NoviProjekatZabavniPark.Helper" 
     mc:Ignorable="d">
+
+    <Page.Resources>
+        <!--converter namespace definiran u Page-->
+        <converter:DateConverter x:Key="theDateConverter"/>
+    </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="textBlock"  HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top"
@@ -20,7 +26,7 @@
         <TextBlock x:Name="textBlockEmail" HorizontalAlignment="Left" Margin="540,464,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" RenderTransformOrigin="0.385,1.35"/>
         <TextBox x:Name="textBoxIme" HorizontalAlignment="Left" Margin="612,148,0,0" TextWrapping="Wrap" Text="{Binding Ime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="190"/>
         <TextBox x:Name="textBoxPrezime" HorizontalAlignment="Left" Margin="612,198,0,0" TextWrapping="Wrap" Text="{Binding Prezime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="190"/>
-        <DatePicker HorizontalAlignment="Left" Margin="611,253,0,0" Date="{Binding DatumRodjenja, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="292"/>
+        <DatePicker HorizontalAlignment="Left" Margin="611,253,0,0" Date="{Binding Path=DatumRodjenja, Mode=TwoWay, Converter={StaticResource theDateConverter}}" VerticalAlignment="Top" Width="292"/>
         <TextBox x:Name="textBoxUsername" HorizontalAlignment="Left" Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="612,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
         <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="612,353,0,0" VerticalAlignment="Top" Height="25" Width="190"/>
         <PasswordBox x:Name="passwordBox2" HorizontalAlignment="Left" Password ="{Binding Password2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="611,408,0,0" VerticalAlignment="Top" Height="25" Width="190"/>
