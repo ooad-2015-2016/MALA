@@ -111,6 +111,7 @@
     <Compile Include="Models\Administrator.cs" />
     <Compile Include="Models\Atrakcija.cs" />
     <Compile Include="Models\DefaultPodaci.cs" />
+    <Compile Include="Models\GeoCodeCalc.cs" />
     <Compile Include="Models\Karta.cs" />
     <Compile Include="Models\Korisnik.cs" />
     <Compile Include="Models\OpenWeatherMapProxy.cs" />
@@ -129,6 +130,7 @@
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\PosjetilacRegistracijaViewModel.cs" />
     <Compile Include="ViewModels\PregledAtrakcijaViewModel.cs" />
+    <Compile Include="ViewModels\PregledMapeViewModel.cs" />
     <Compile Include="ViewModels\RadnikIzmjenaViewModel.cs" />
     <Compile Include="ViewModels\RadnikUnosViewModel.cs" />
     <Compile Include="Views\AtrakcijaIzmjena.xaml.cs">
@@ -158,6 +160,9 @@
     <Compile Include="Views\PregledAtrakcija.xaml.cs">
       <DependentUpon>PregledAtrakcija.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\PregledMape.xaml.cs">
+      <DependentUpon>PregledMape.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\RadnikIzmjena.xaml.cs">
       <DependentUpon>RadnikIzmjena.xaml</DependentUpon>
     </Compile>
@@ -177,6 +182,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Zabavni_park_ETF.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -228,6 +234,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\PregledAtrakcija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PregledMape.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
