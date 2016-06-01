@@ -35,6 +35,7 @@ namespace NoviProjekatZabavniPark.ViewModels
         private string plata;
         private string radniStaz;
         private TipOsoblja tip;
+        private ObservableCollection<Radnik> radnici;
         #endregion
         
         #region Postavljanje property-a
@@ -103,7 +104,16 @@ namespace NoviProjekatZabavniPark.ViewModels
         }
 
         public Radnik KliknutiRadnik { get; set; }
-        public ObservableCollection<Radnik> Radnici { get; set; }
+            
+        public ObservableCollection<Radnik> Radnici
+        {
+            get { return radnici; }
+            set
+            {
+                radnici = value;
+                NotifyPropertyChanged("Radnici");
+            }
+        }
 
         #endregion
 
