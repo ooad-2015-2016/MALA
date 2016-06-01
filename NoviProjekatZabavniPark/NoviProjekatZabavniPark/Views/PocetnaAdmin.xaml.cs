@@ -54,5 +54,11 @@ namespace NoviProjekatZabavniPark.Views
         {
             this.Frame.Navigate(typeof(AtrakcijaIzmjena));
         }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(RadnikIzmjena));
+
+        }
     }
 }

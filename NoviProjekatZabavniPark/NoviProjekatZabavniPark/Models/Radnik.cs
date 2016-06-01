@@ -36,5 +36,10 @@ namespace NoviProjekatZabavniPark.Models
         }
         #endregion
 
+        public override string ToString()
+        {
+            return Ime + " " + Prezime;
+        }
+
     }
 }
