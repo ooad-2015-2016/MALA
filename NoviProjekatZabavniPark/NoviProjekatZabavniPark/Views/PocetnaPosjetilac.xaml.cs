@@ -52,6 +52,7 @@ namespace NoviProjekatZabavniPark.Views
 
         private void buttonMap_Click(object sender, RoutedEventArgs e)
         {
+            this.Frame.Navigate(typeof(PregledMape), p);
         }
     }
 }

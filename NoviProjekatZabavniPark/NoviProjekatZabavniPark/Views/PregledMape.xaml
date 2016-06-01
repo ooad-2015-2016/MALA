@@ -10,6 +10,29 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Image x:Name="image" HorizontalAlignment="Left" Height="720" VerticalAlignment="Top" Width="528" Source="ms-appx:///Assets/Zabavni_park_ETF.jpg"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="552,32,0,0" TextWrapping="Wrap" Text="Vaša trenutna lokacija:" VerticalAlignment="Top" Height="28" Width="160" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="552,64,0,0" TextWrapping="Wrap" Text="Latitude:" VerticalAlignment="Top" Height="28" Width="70" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="636,64,0,0" TextWrapping="Wrap" Text="{Binding Latitude}" VerticalAlignment="Top" Height="28" Width="100" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="754,64,0,0" TextWrapping="Wrap" Text="Longitude:" VerticalAlignment="Top" Height="28" Width="79" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="844,64,0,0" TextWrapping="Wrap" Text="{Binding Longitude}"  VerticalAlignment="Top" Height="28" Width="100" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="552,94,0,0" TextWrapping="Wrap" Text="Adresa:" VerticalAlignment="Top" Height="28" Width="70" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="614,94,0,0" TextWrapping="Wrap" Text="{Binding Adresa}" VerticalAlignment="Top" Height="28" Width="278" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Margin="552,190,0,0" TextWrapping="Wrap" Text="Udaljenost atrakcija:" VerticalAlignment="Top" Height="28" Width="244" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy7" HorizontalAlignment="Left" Margin="552,230,0,0" TextWrapping="Wrap" Text="Cryptzone:" VerticalAlignment="Top" Height="28" Width="131" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Cryptzone" HorizontalAlignment="Left" Margin="690,230,0,0" TextWrapping="Wrap" Text="{Binding Cryptzone}" VerticalAlignment="Top" Height="28" Width="278" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy9" HorizontalAlignment="Left" Margin="552,260,0,0" TextWrapping="Wrap" Text="Dreamville:" VerticalAlignment="Top" Height="28" Width="131" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Dreamville" HorizontalAlignment="Left" Margin="690,260,0,0" TextWrapping="Wrap" Text="{Binding Dreamville}" VerticalAlignment="Top" Height="28" Width="278" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy11" HorizontalAlignment="Left" Margin="552,290,0,0" TextWrapping="Wrap" Text="Fun Dome:" VerticalAlignment="Top" Height="28" Width="131" FontSize="16"/>
+        <TextBlock x:Name="textBlock_FunDome" HorizontalAlignment="Left" Margin="690,290,0,0" TextWrapping="Wrap" Text="{Binding FunDome}" VerticalAlignment="Top" Height="28" Width="278" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy13" HorizontalAlignment="Left" Margin="552,320,0,0" TextWrapping="Wrap" Text="Phantomtown:" VerticalAlignment="Top" Height="28" Width="131" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Phantomtown" HorizontalAlignment="Left" Margin="690,320,0,0" TextWrapping="Wrap" Text="{Binding Phantomtown}" VerticalAlignment="Top" Height="28" Width="278" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy15" HorizontalAlignment="Left" Margin="552,350,0,0" TextWrapping="Wrap" Text="Shockland:" VerticalAlignment="Top" Height="28" Width="131" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Shockland" HorizontalAlignment="Left" Margin="690,350,0,0" TextWrapping="Wrap" Text="{Binding Shockland}" VerticalAlignment="Top" Height="28" Width="278" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy17" HorizontalAlignment="Left" Margin="552,380,0,0" TextWrapping="Wrap" Text="Ghost Paradise:" VerticalAlignment="Top" Height="28" Width="131" FontSize="16"/>
+        <TextBlock x:Name="textBlock_GhostParadise" HorizontalAlignment="Left" Margin="690,380,0,0" TextWrapping="Wrap" Text="{Binding GhostParadise}" VerticalAlignment="Top" Height="28" Width="278" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy19" HorizontalAlignment="Left" Margin="552,410,0,0" TextWrapping="Wrap" Text="Evertown:" VerticalAlignment="Top" Height="28" Width="131" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Evertown" HorizontalAlignment="Left" Margin="690,410,0,0" TextWrapping="Wrap" Text="{Binding Evertown}" VerticalAlignment="Top" Height="28" Width="278" FontSize="16"/>
+        <TextBlock x:Name="textBlock_Copy21" HorizontalAlignment="Left" Margin="552,440,0,0" TextWrapping="Wrap" Text="Play Realm:" VerticalAlignment="Top" Height="28" Width="131" FontSize="16"/>
+        <TextBlock x:Name="textBlock_PlayRealm" HorizontalAlignment="Left" Margin="690,440,0,0" TextWrapping="Wrap" Text="{Binding PlayRealm}" VerticalAlignment="Top" Height="28" Width="278" FontSize="16"/>
 
     </Grid>
 </Page>
