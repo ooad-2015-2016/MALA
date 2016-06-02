@@ -27,5 +27,8 @@
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="80" Margin="235,393,0,0" TextWrapping="Wrap" Text="Kreirajte neprocjenjive uspomene i provedite fanatstičan dan u našem parku bez čekanja u redovima. Kupovinom Gold karte dobijate pristup brzim ulazima na svim atrakcijama što vam ostavlja mnogo više vremena za uživanje u svemu što park 'MALA' nudi." VerticalAlignment="Top" Width="785" FontSize="15.067" IsReadOnly="True"/>
         <TextBox x:Name="textBox_Otvaranje" HorizontalAlignment="Left" Margin="778,209,0,0" TextWrapping="Wrap" Text="{Binding VrijemeOtvaranja, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="242" IsTapEnabled="False" IsRightTapEnabled="False" IsHoldingEnabled="False" IsDoubleTapEnabled="False" IsReadOnly="True"/>
         <TextBox x:Name="textBox_Zatvaranje" HorizontalAlignment="Left" Margin="778,249,0,0" TextWrapping="Wrap" Text="{Binding VrijemeZatvaranja, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="242" IsTapEnabled="False" IsRightTapEnabled="False" IsHoldingEnabled="False" IsDoubleTapEnabled="False" IsReadOnly="True"/>
+        <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="235,521,0,0" TextWrapping="Wrap" Text="Prostor za vaš feedback:" VerticalAlignment="Top" Height="25" Width="224" FontWeight="Bold"/>
+        <Button x:Name="button" Content="Pošalji" HorizontalAlignment="Left" Margin="929,714,0,0" VerticalAlignment="Top" Width="91" Click="button_Click"/>
+        <TextBox x:Name="textBox_feedback" HorizontalAlignment="Left" Margin="235,551,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="1.063,0.516" Height="143" Width="785"/>
     </Grid>
 </Page>

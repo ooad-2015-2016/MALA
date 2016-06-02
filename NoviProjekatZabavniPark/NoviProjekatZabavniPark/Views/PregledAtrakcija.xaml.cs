@@ -8,6 +8,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Core;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -51,5 +52,14 @@ namespace NoviProjekatZabavniPark.Views
             }
         }
 
+        private async void button_Click(object sender, RoutedEventArgs e)
+        {
+            if (textBox_feedback.Text != "")
+            {
+                var message = new MessageDialog("Vaš feedback je zabilježen!");
+                message.ShowAsync();
+                textBox_feedback.Text = "";
+            }
+        }
     }
 }
