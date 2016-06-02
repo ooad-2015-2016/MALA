@@ -41,17 +41,18 @@ namespace NoviProjekatZabavniPark.Views
 
         private void buttonWeather_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(VremenskaPrognoza), p);
+            this.Frame.Navigate(typeof(VremenskaPrognoza));
         }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(PregledAtrakcija), p);
-        }
+              
 
         private void buttonMap_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PregledMape), p);
+        }
+
+        private void buttonKompas_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Kompas));
         }
     }
 }
