@@ -8,19 +8,24 @@
     x:Class="NoviProjekatZabavniPark.Views.PregledAtrakcija"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-        <ListView x:Name="listView"  ItemsSource="{Binding Atrakcije, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsItemClickEnabled="True" SelectedItem="{Binding KliknutaAtrakcijaIme, Mode=TwoWay}"  HorizontalAlignment="Left" Height="350" Margin="10,10,0,0" VerticalAlignment="Top" Width="290">
-             <Interactivity:Interaction.Behaviors>
-                <Core:EventTriggerBehavior EventName="ItemClick">
-                    <Core:InvokeCommandAction Command="{Binding KlikNaListu}" />
-                </Core:EventTriggerBehavior>
-            </Interactivity:Interaction.Behaviors> 
-        </ListView>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="400,40,0,0" TextWrapping="Wrap" Text="Odabrana atrakcija:" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="600,40,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-
-
-
+    <Grid Margin="0,-94,0,-9">
+        <FlyoutBase.AttachedFlyout>
+            <TimePickerFlyout/>
+        </FlyoutBase.AttachedFlyout>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Assets/circus_21.jpg"/>
+        </Grid.Background>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="191" Margin="235,167,0,0" VerticalAlignment="Top" Width="252" IsHitTestVisible="False" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" RequestedTheme="Dark" Source="ms-appx:///Assets/amusementpark_1x.jpg"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="641,173,0,0" TextWrapping="Wrap" Text="Naziv atrakcije: " VerticalAlignment="Top" Height="25" Width="109" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="620,213,0,0" TextWrapping="Wrap" Text="Vrijeme otvaranja: " VerticalAlignment="Top" Height="25" Width="136" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="614,253,0,0" TextWrapping="Wrap" Text="Vrijeme zatvaranja: " VerticalAlignment="Top" Height="25" Width="136" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="701,293,0,0" TextWrapping="Wrap" Text="Stanje: " VerticalAlignment="Top" Height="25" Width="51" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="526,333,0,0" TextWrapping="Wrap" Text="Aproksimirano vrijeme čekanja: " VerticalAlignment="Top" Height="25" Width="224" FontWeight="Bold"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="778,169,0,0" TextWrapping="Wrap" Text="{Binding Naziv, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="242" IsTapEnabled="False" IsRightTapEnabled="False" IsHoldingEnabled="False" IsDoubleTapEnabled="False" IsReadOnly="True"/>
+        <TextBox x:Name="textBox_stanje" HorizontalAlignment="Left" Margin="778,289,0,0" TextWrapping="Wrap" Text="{Binding Stanje, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="242" IsTapEnabled="False" IsRightTapEnabled="False" IsHoldingEnabled="False" IsDoubleTapEnabled="False" IsReadOnly="True"/>
+        <TextBox x:Name="textBox_vrijeme" HorizontalAlignment="Left" Margin="778,329,0,0" TextWrapping="Wrap" Text="{Binding VrijemeCekanja, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="242" IsTapEnabled="False" IsRightTapEnabled="False" IsHoldingEnabled="False" IsDoubleTapEnabled="False" IsReadOnly="True"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="80" Margin="235,393,0,0" TextWrapping="Wrap" Text="Kreirajte neprocjenjive uspomene i provedite fanatstičan dan u našem parku bez čekanja u redovima. Kupovinom Gold karte dobijate pristup brzim ulazima na svim atrakcijama što vam ostavlja mnogo više vremena za uživanje u svemu što park 'MALA' nudi." VerticalAlignment="Top" Width="785" FontSize="15.067" IsReadOnly="True"/>
+        <TextBox x:Name="textBox_Otvaranje" HorizontalAlignment="Left" Margin="778,209,0,0" TextWrapping="Wrap" Text="{Binding VrijemeOtvaranja, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="242" IsTapEnabled="False" IsRightTapEnabled="False" IsHoldingEnabled="False" IsDoubleTapEnabled="False" IsReadOnly="True"/>
+        <TextBox x:Name="textBox_Zatvaranje" HorizontalAlignment="Left" Margin="778,249,0,0" TextWrapping="Wrap" Text="{Binding VrijemeZatvaranja, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="242" IsTapEnabled="False" IsRightTapEnabled="False" IsHoldingEnabled="False" IsDoubleTapEnabled="False" IsReadOnly="True"/>
     </Grid>
 </Page>

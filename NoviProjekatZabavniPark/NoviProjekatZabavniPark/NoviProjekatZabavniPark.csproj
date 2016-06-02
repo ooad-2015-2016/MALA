@@ -99,6 +99,7 @@
     <Compile Include="Helper\DateConverter.cs" />
     <Compile Include="Helper\INavigacija.cs" />
     <Compile Include="Helper\NavigationService.cs" />
+    <Compile Include="Helper\PictureConverter.cs" />
     <Compile Include="Helper\RelayCommand.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -182,6 +183,16 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\amusementpark_1x.jpg" />
+    <Content Include="Assets\circus_21.jpg" />
+    <Content Include="Assets\Cryptzone.png" />
+    <Content Include="Assets\Dreamwille.png" />
+    <Content Include="Assets\Evertown.png" />
+    <Content Include="Assets\Fun Dome.png" />
+    <Content Include="Assets\Ghost Paradise.png" />
+    <Content Include="Assets\Phantomtown.png" />
+    <Content Include="Assets\Play Realm.png" />
+    <Content Include="Assets\Shockland.png" />
     <Content Include="Assets\Zabavni_park_ETF.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

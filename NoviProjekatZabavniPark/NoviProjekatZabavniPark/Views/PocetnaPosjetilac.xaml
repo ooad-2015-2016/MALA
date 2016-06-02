@@ -12,8 +12,7 @@
                    Text="Dobrodošli!" FontSize="45" Foreground="SlateGray" FontStyle="Normal" Margin="485,0,562,0" />
         <Button x:Name="button" Content="Kupovina karte" HorizontalAlignment="Left" Margin="533,125,0,0" VerticalAlignment="Top" Height="37" Width="142" Click="button_Click"/>
         <Button x:Name="buttonWeather" Content="Weather" HorizontalAlignment="Left" Margin="533,185,0,0" VerticalAlignment="Top" Height="37" Width="142" Click="buttonWeather_Click"/>
-        <Button x:Name="button1" Content="Pregled atrakcija" HorizontalAlignment="Left" Margin="533,245,0,0" VerticalAlignment="Top" Height="37" Width="142" Click="button1_Click"/>
-        <Button x:Name="buttonMap" Content="Pregled mape" HorizontalAlignment="Left" Margin="533,303,0,0" VerticalAlignment="Top" Height="37" Width="142" Click="buttonMap_Click"/>
+        <Button x:Name="buttonMap" Content="Pregled mape" HorizontalAlignment="Left" Margin="533,245,0,0" VerticalAlignment="Top" Height="37" Width="142" Click="buttonMap_Click"/>
     </Grid>
     
 </Page>

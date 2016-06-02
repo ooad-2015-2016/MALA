@@ -1,10 +1,13 @@
-﻿using System;
+﻿using NoviProjekatZabavniPark.Models;
+using NoviProjekatZabavniPark.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,9 +25,31 @@ namespace NoviProjekatZabavniPark.Views
     /// </summary>
     public sealed partial class PregledAtrakcija : Page
     {
+        private Atrakcija a;
+
         public PregledAtrakcija()
         {
             this.InitializeComponent();
+            var currentView = SystemNavigationManager.GetForCurrentView();
+            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;
         }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            a = e.Parameter as Atrakcija;
+            base.OnNavigatedTo(e);
+            DataContext = new PregledAtrakcijaViewModel(a);
+        }
+
+        private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            if (Frame.CanGoBack)
+            {
+                Frame.GoBack();
+                e.Handled = true;
+            }
+        }
+
     }
 }

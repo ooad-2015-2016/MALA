@@ -33,6 +33,94 @@
         <TextBlock x:Name="textBlock_Evertown" HorizontalAlignment="Left" Margin="690,410,0,0" TextWrapping="Wrap" Text="{Binding Evertown}" VerticalAlignment="Top" Height="28" Width="278" FontSize="16"/>
         <TextBlock x:Name="textBlock_Copy21" HorizontalAlignment="Left" Margin="552,440,0,0" TextWrapping="Wrap" Text="Play Realm:" VerticalAlignment="Top" Height="28" Width="131" FontSize="16"/>
         <TextBlock x:Name="textBlock_PlayRealm" HorizontalAlignment="Left" Margin="690,440,0,0" TextWrapping="Wrap" Text="{Binding PlayRealm}" VerticalAlignment="Top" Height="28" Width="278" FontSize="16"/>
+        <Button x:Name="button_cryptzone" Content="" HorizontalAlignment="Left" Margin="194,90,0,0" VerticalAlignment="Top" Height="93" Width="115" BorderThickness="0" Click="button_cryptzone_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush Stretch="Fill"/>
+            </Button.BorderBrush>
+            <Button.Foreground>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="button_dreamville" Content="" HorizontalAlignment="Left" Margin="326,64,0,0" VerticalAlignment="Top" Height="128" Width="115" BorderThickness="0" Click="button_dreamville_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush Stretch="Fill"/>
+            </Button.BorderBrush>
+            <Button.Foreground>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="button_fundDome" Content="" HorizontalAlignment="Left" Margin="256,247,0,0" VerticalAlignment="Top" Height="106" Width="101" BorderThickness="0" Click="button_fundDome_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush Stretch="Fill"/>
+            </Button.BorderBrush>
+            <Button.Foreground>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="button_phantomtown" Content="" HorizontalAlignment="Left" Margin="371,280,0,0" VerticalAlignment="Top" Height="93" Width="90" BorderThickness="0" Click="button_phantomtown_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush Stretch="Fill"/>
+            </Button.BorderBrush>
+            <Button.Foreground>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="button_shockland" Content="" HorizontalAlignment="Left" Margin="123,336,0,0" VerticalAlignment="Top" Height="132" Width="74" BorderThickness="0" Click="button_shockland_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush Stretch="Fill"/>
+            </Button.BorderBrush>
+            <Button.Foreground>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="button_ghostParadise" Content="" HorizontalAlignment="Left" Margin="10,415,0,0" VerticalAlignment="Top" Height="117" Width="90" BorderThickness="0" Click="button_ghostParadise_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush Stretch="Fill"/>
+            </Button.BorderBrush>
+            <Button.Foreground>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="button_playRealm" Content="" HorizontalAlignment="Left" Margin="262,514,0,0" VerticalAlignment="Top" Height="109" Width="90" BorderThickness="0" Click="button_playRealm_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush Stretch="Fill"/>
+            </Button.BorderBrush>
+            <Button.Foreground>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="button_evertwon" Content="" HorizontalAlignment="Left" Margin="107,587,0,0" VerticalAlignment="Top" Height="87" Width="90" BorderThickness="0" Click="button_evertwon_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush Stretch="Fill"/>
+            </Button.BorderBrush>
+            <Button.Foreground>
+                <ImageBrush Stretch="Fill"/>
+            </Button.Foreground>
+        </Button>
 
     </Grid>
 </Page>
