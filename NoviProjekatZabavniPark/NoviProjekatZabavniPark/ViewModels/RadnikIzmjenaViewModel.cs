@@ -103,6 +103,14 @@ namespace NoviProjekatZabavniPark.ViewModels
             }
         }
 
+        public IEnumerable<TipOsoblja> TipoviRadnika
+        {
+            get
+            {
+                return Enum.GetValues(typeof(TipOsoblja)).Cast<TipOsoblja>();
+            }
+        }
+
         public Radnik KliknutiRadnik { get; set; }
             
         public ObservableCollection<Radnik> Radnici
@@ -132,22 +140,23 @@ namespace NoviProjekatZabavniPark.ViewModels
             {
                 Radnici = new ObservableCollection<Radnik>(context.Radnici.ToList<Radnik>());
             }
+
+            //var enum_names = Enum.GetNames(typeof(TipOsoblja));
+            //EnumCol = enum_names;
         }
 
         private void obrisiRadnika(object obj)
         {
-            Radnik rad;
+            Radnik rad, radLista;
+            radLista = Radnici.FirstOrDefault(a => a.KorisnickoIme == KliknutiRadnik.KorisnickoIme);
+
             using (var context = new ZabavniParkDbContext())
             {
                 rad = context.Radnici.Where(a => a.KorisnickoIme == KliknutiRadnik.KorisnickoIme).FirstOrDefault<Radnik>();
-            }
-            using (var context = new ZabavniParkDbContext())
-            {
                 context.Entry(rad).State = Microsoft.Data.Entity.EntityState.Deleted;
-
+                Radnici.Remove(radLista);
                 context.SaveChanges();
             }
-
         }
 
         private void klikNaListu(ItemClickEventArgs args)
@@ -160,6 +169,7 @@ namespace NoviProjekatZabavniPark.ViewModels
             Password = KliknutiRadnik.Sifra;
             RadniStaz = (KliknutiRadnik.RadniStaz).ToString();
             Plata = (KliknutiRadnik.Plata).ToString();
+            TipRadnika = KliknutiRadnik.Tip;
         }
 
         //update radnika
@@ -172,6 +182,8 @@ namespace NoviProjekatZabavniPark.ViewModels
             {
                 rad = context.Radnici.Where(a => a.KorisnickoIme == KliknutiRadnik.KorisnickoIme).FirstOrDefault<Radnik>();
                 radLista = Radnici.FirstOrDefault(r => r.KorisnickoIme == KliknutiRadnik.KorisnickoIme);
+                Radnici.Remove(radLista);
+
             }
 
             if (rad != null)
@@ -181,19 +193,28 @@ namespace NoviProjekatZabavniPark.ViewModels
                 rad.KorisnickoIme = radLista.KorisnickoIme = Username;
                 rad.Sifra = radLista.Sifra = Password;
                 rad.RadniStaz = radLista.RadniStaz = Convert.ToInt32(RadniStaz);
-                rad.Plata = radLista.Plata =Convert.ToDouble(Plata);
+                rad.Plata = radLista.Plata = Convert.ToDouble(Plata);
+                rad.Tip = radLista.Tip = TipRadnika;
 
                 using (var context = new ZabavniParkDbContext())
                 {
                     //Mark entity as modified
                     //EntityEntry<Radnik> r = context.Entry(rad);
                     context.Entry(rad).State = Microsoft.Data.Entity.EntityState.Modified;
+                    Radnici.Add(radLista);
                     context.SaveChanges();
-
                 }
 
                 var message = new MessageDialog("Radnik je uspješno izmijenjen!", "Izmjena radnika");
                 await message.ShowAsync();
+
+                Ime = string.Empty;
+                Prezime = string.Empty; ;
+                Username = string.Empty;
+                Password = string.Empty;
+                Plata = string.Empty; 
+                RadniStaz = string.Empty;
+                //EnumCol = string.Empty;
             }
         }
     }

@@ -26,8 +26,6 @@ namespace NoviProjekatZabavniPark.ViewModels
         #endregion
 
         #region Privatni atributi
-        private static int counter = 0;
-        private int radnikID;
         private string ime;
         private string prezime;
         private TipOsoblja tip;
@@ -38,11 +36,6 @@ namespace NoviProjekatZabavniPark.ViewModels
         #endregion
 
         #region Postavljanje Property-a
-        public int IDRadnika
-        {
-            get { return radnikID; }
-            set { radnikID = value; }
-        }
         public string Ime
         {
             get { return ime; }
@@ -66,8 +59,15 @@ namespace NoviProjekatZabavniPark.ViewModels
             get { return tip; }
             set
             {
-                tip = value;
+                this.tip = value;
                 NotifyPropertyChanged("TipRadnika");
+            }
+        }
+        public IEnumerable<TipOsoblja> TipoviRadnika
+        {
+            get
+            {
+                return Enum.GetValues(typeof(TipOsoblja)).Cast<TipOsoblja>();
             }
         }
         public string Username
@@ -120,7 +120,7 @@ namespace NoviProjekatZabavniPark.ViewModels
         {
             using (var db = new ZabavniParkDbContext())
             {
-                var uneseniRadnik = new Radnik(Ime, Prezime, TipOsoblja.RadnikSalter, Username, Password, Convert.ToInt32(RadniStaz), Convert.ToDouble(Plata));
+                var uneseniRadnik = new Radnik(Ime, Prezime, TipRadnika, Username, Password, Convert.ToInt32(RadniStaz), Convert.ToDouble(Plata));
                 db.Radnici.Add(uneseniRadnik);
                 db.SaveChanges();
 

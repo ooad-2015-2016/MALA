@@ -23,13 +23,10 @@
         <TextBox x:Name="textBoxUsername" Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="565,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
         <TextBox x:Name="textBoxRadniStaz" Text="{Binding RadniStaz, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="565,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
         <TextBox x:Name="textBoxPlata" Text="{Binding Plata, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Left" Margin="565,295,0,0" TextWrapping="Wrap" Width="242" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comboBoxTip" HorizontalAlignment="Left" Margin="565,335,0,0" VerticalAlignment="Top" Width="242">
-            <ComboBoxItem Content="Content = &quot;Radnik na šalteru&quot;"/>
-            <ComboBoxItem Content="Content=&quot;Terenski radnik&quot;"/>
-        </ComboBox>
+        <ComboBox x:Name="comboBoxTip" HorizontalAlignment="Left" Margin="565,335,0,0" VerticalAlignment="Top" ItemsSource="{Binding TipoviRadnika}" SelectedItem="{Binding TipRadnika, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="242"/>
         <Button x:Name="buttonSpasi" Content="Spasi" Command="{Binding Spasi}" HorizontalAlignment="Left" Margin="415,469,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="130"/>
         <Button x:Name="buttonObrisi" Content="Obriši radnika" Command="{Binding Obrisi}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="594,469,0,0"/>
-        <ListView x:Name="listView" ItemsSource="{Binding Radnici, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding KliknutiRadnik}" IsItemClickEnabled="True" HorizontalAlignment="Left" Height="225" Margin="60,135,0,0" VerticalAlignment="Top" Width="175">
+        <ListView x:Name="listView" ItemsSource="{Binding Radnici, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding KliknutiRadnik, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsItemClickEnabled="True" HorizontalAlignment="Left" Height="225" Margin="60,135,0,0" VerticalAlignment="Top" Width="175">
             <Interactivity:Interaction.Behaviors>
                 <Core:EventTriggerBehavior EventName="ItemClick">
                     <Core:InvokeCommandAction Command="{Binding KlikNaListu}" />

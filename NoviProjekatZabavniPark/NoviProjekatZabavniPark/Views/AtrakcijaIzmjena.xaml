@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource AppBarItemForegroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top"
 			Text="Izmjena atrakcije" FontSize="45" Foreground="SlateGray" FontStyle="Normal" />
         <TextBlock x:Name="textBlockListaAtrakcija" HorizontalAlignment="Left" Margin="135,80,0,0" TextWrapping="Wrap" Text="Lista atrakcija:" VerticalAlignment="Top"/>
