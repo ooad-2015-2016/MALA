@@ -25,7 +25,6 @@ namespace NoviProjekatZabavniPark.Views
     /// </summary>
     public sealed partial class KupovinaKarte : Page
     {
-        Posjetilac p;
         public KupovinaKarte()
         {
             this.InitializeComponent();
@@ -36,9 +35,8 @@ namespace NoviProjekatZabavniPark.Views
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            p = e.Parameter as Posjetilac;
-            base.OnNavigatedTo(e);
-            DataContext = new KupovinaKarteViewModel(p);
+            //p = new Posjetilac(e.Parameter as Posjetilac);
+            DataContext = new KupovinaKarteViewModel();
         }
 
         private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)

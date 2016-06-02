@@ -4,6 +4,7 @@ using NoviProjekatZabavniPark.Models;
 using NoviProjekatZabavniPark.Views;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -58,10 +59,21 @@ namespace NoviProjekatZabavniPark.ViewModels
 
         public INavigacija NavigationServis { get; set; }
 
+        ObservableCollection<Korisnik> Korisnici { get; set; }
+
         public LoginViewModel()
         {
             NavigationServis = new NavigationService();
             LoginKorisnik = new RelayCommand<object>(loginKorisnik, mozeLiSePrijaviti);
+            using (var db = new ZabavniParkDbContext())
+            {
+                Korisnici = new ObservableCollection<Korisnik>();
+
+                foreach (Radnik r in db.Radnici)
+                    Korisnici.Add(r);
+                foreach (Posjetilac p in db.Posjetioci)
+                    Korisnici.Add(p);
+            }
         }
 
         private async void loginKorisnik(object obj)
@@ -71,12 +83,7 @@ namespace NoviProjekatZabavniPark.ViewModels
                 var message = new MessageDialog("Nisu uneseni svi podaci!", "Neuspješna prijava");
                 await message.ShowAsync();
             }
-
-            //TODO: Dobavljanje podataka iz baze 
-
-            //using (var db = new ZabavniParkDbContext())
-            //{
-            Korisnik = DataSourcePark.ProvjeraKorisnika(Username, Password);
+            Korisnik = Korisnici.FirstOrDefault(k => k.KorisnickoIme == Username && k.Sifra == Password);
 
             if (Korisnik == null)
             {
@@ -85,7 +92,7 @@ namespace NoviProjekatZabavniPark.ViewModels
             }
             else
             {
-                if (Korisnik is Administrator) { NavigationServis.Navigate(typeof(PocetnaAdmin)); }
+                if (Username == "admin1" && Password == "adminpass") { NavigationServis.Navigate(typeof(PocetnaAdmin)); }
                 else if (Korisnik is Posjetilac) { NavigationServis.Navigate(typeof(PocetnaPosjetilac), Korisnik); }
                 else { NavigationServis.Navigate(typeof(PocetnaRadnik)); }
             }

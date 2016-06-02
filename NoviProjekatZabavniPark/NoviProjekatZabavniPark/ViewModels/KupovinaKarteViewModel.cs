@@ -2,6 +2,7 @@
 using NoviProjekatZabavniPark.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -32,7 +33,6 @@ namespace NoviProjekatZabavniPark.ViewModels
         private string brojKartiStandardOdrasli;
         private string cvcKod;
         private DateTime datumIsteka;
-        Posjetilac posjetilac;
         #endregion
 
         #region Property
@@ -45,6 +45,8 @@ namespace NoviProjekatZabavniPark.ViewModels
                 NotifyPropertyChanged("BrojKartice");
             }
         }
+
+        public List<Karta> KupljeneKarte { get; set; }
         public string BrojKartiDjecijeGold
         {
             get { return brojKartiDjecijeGold; }
@@ -102,14 +104,11 @@ namespace NoviProjekatZabavniPark.ViewModels
         public ICommand KupiKartu { get; set; }
         #endregion
 
-        public KupovinaKarteViewModel(Posjetilac p)
+        public KupovinaKarteViewModel()
         {
             KupiKartu = new RelayCommand<object>(kupiKartu);
             BrojKartiDjecijeGold = BrojKartiOdrasliGold = BrojKartiStandardDjecije = BrojKartiStandardOdrasli = "0";
-            posjetilac = new Posjetilac(p);
         }
-
-
 
         private async void kupiKartu(object obj)
         {
@@ -132,12 +131,11 @@ namespace NoviProjekatZabavniPark.ViewModels
             }
 
             //provjera da li je kartica istekla
-            //if(DateTime.Compare(DatumIsteka, DateTime.Today) < 0)
-            //{
-            //    var message = new MessageDialog("Kartica je istekla!", "Greška pri kupovini karte");
-            //    await message.ShowAsync();
-            //}
-
+            if (DateTime.Compare(DatumIsteka, DateTime.Today) < 0)
+            {
+                var message = new MessageDialog("Kartica je istekla!", "Greška pri kupovini karte");
+                await message.ShowAsync();
+            }
 
             else
             {
@@ -148,36 +146,45 @@ namespace NoviProjekatZabavniPark.ViewModels
                 }
                 else
                 {
-                    //if (int.Parse(BrojKartiDjecijeGold) > 0)
-                    //{
-                    //    Karta k = new Karta(new DateTime(), TipKarte.GoldDjecija);
-                    //    posjetilac.KupljeneKarte.Add(k);
-                    //}
-                    //if (int.Parse(BrojKartiOdrasliGold) > 0)
-                    //{
-                    //    {
-                    //        Karta k = new Karta(new DateTime(), TipKarte.GoldOdrasli);
-                    //        posjetilac.KupljeneKarte.Add(k);
-                    //    }
-                    //}
-                    //if (int.Parse(BrojKartiStandardDjecije) > 0)
-                    //{
-                    //    {
-                    //        Karta k = new Karta(new DateTime(), TipKarte.StandardDjecija);
-                    //        posjetilac.KupljeneKarte.Add(k);
-                    //    }
-                    //}
-                    //if (int.Parse(BrojKartiStandardOdrasli) > 0)
-                    //{
-                    //    {
-                    //        Karta k = new Karta(new DateTime(), TipKarte.StandardOdrasli);
-                    //        posjetilac.KupljeneKarte.Add(k);
-                    //    }
-                    //}
+                    if (int.Parse(BrojKartiDjecijeGold) > 0)
+                    {
+                        Karta k = new Karta(new DateTime(), TipKarte.GoldDjecija);
+                        KupljeneKarte.Add(k);
+                    }
+                    if (int.Parse(BrojKartiOdrasliGold) > 0)
+                    {
+                        {
+                            Karta k = new Karta(new DateTime(), TipKarte.GoldOdrasli);
+                            KupljeneKarte.Add(k);
+                        }
+                    }
+                    if (int.Parse(BrojKartiStandardDjecije) > 0)
+                    {
+                        {
+                            Karta k = new Karta(new DateTime(), TipKarte.StandardDjecija);
+                            KupljeneKarte.Add(k);
+                        }
+                    }
+                    if (int.Parse(BrojKartiStandardOdrasli) > 0)
+                    {
+                        {
+                            Karta k = new Karta(new DateTime(), TipKarte.StandardOdrasli);
+                            KupljeneKarte.Add(k);
+                        }
+                    }
+
+                    using (var db = new ZabavniParkDbContext())
+                    {
+                        ObservableCollection<Posjetilac> Posjetioci = new ObservableCollection<Posjetilac>(db.Posjetioci.ToList<Posjetilac>());
+
+                        //Posjetilac p = Posjetioci.FirstOrDefault(a => a.KorisnickoIme == posjetilac.KorisnickoIme);
+                        //p.KupljeneKarte = posjetilac.KupljeneKarte;
+                    }
                 }
 
                 var message = new MessageDialog("Uspješno ste kupili kartu za Zabavni park MALA!", "Kupovina karte uspješna");
                 BrojKartice = string.Empty;
+                DatumIsteka = DateTime.Now;
                 BrojKartiStandardOdrasli = string.Empty;
                 BrojKartiStandardDjecije = string.Empty;
                 BrojKartiOdrasliGold = string.Empty;

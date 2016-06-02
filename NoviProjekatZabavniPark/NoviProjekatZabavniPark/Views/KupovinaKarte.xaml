@@ -5,7 +5,12 @@
     xmlns:local="using:NoviProjekatZabavniPark.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converter="using:NoviProjekatZabavniPark.Helper"
     mc:Ignorable="d">
+    
+    <Page.Resources>
+        <converter:DateConverter x:Key="theDateConverter"/>
+    </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top"
@@ -22,7 +27,7 @@
         <TextBlock x:Name="textBlockStandardOdrasli" HorizontalAlignment="Left" Margin="480,240,0,0" TextWrapping="Wrap" Text="Odrasli" VerticalAlignment="Top"/>
         <TextBox x:Name="textBoxStandardDjecija" HorizontalAlignment="Left" Margin="560,194,0,0" TextWrapping="Wrap" Text="{Binding BrojKartiStandardDjecije, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBoxBrojKartiStandardOdrasli" HorizontalAlignment="Left" Margin="560,234,0,0" TextWrapping="Wrap" Text="{Binding BrojKartiStandardOdrasli,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
-        <DatePicker HorizontalAlignment="Left" Margin="560,374,0,0" Date="{Binding DatumIsteka, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="560,374,0,0" Date="{Binding DatumIsteka, Converter={StaticResource theDateConverter}}" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="381,380,0,0" TextWrapping="Wrap" Text="Datum isteka kartice:" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="372,481,0,0" TextWrapping="Wrap" Text="All transactions are secured and encrypted and we never store your card information!" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="458,431,0,0" TextWrapping="Wrap" Text="CVC Kod:" VerticalAlignment="Top"/>

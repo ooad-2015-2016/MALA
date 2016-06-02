@@ -31,13 +31,12 @@ namespace NoviProjekatZabavniPark.Views
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(KupovinaKarte), p);
+            this.Frame.Navigate(typeof(KupovinaKarte));
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             p = e.Parameter as Posjetilac;
-            base.OnNavigatedTo(e);
         }
 
         private void buttonWeather_Click(object sender, RoutedEventArgs e)

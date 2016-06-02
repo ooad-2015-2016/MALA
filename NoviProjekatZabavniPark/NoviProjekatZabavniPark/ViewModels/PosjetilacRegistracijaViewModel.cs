@@ -26,7 +26,6 @@ namespace NoviProjekatZabavniPark.ViewModels
         #endregion
 
         #region Privatni atributi
-        private int id;
         private string ime;
         private string prezime;
         private string username;
@@ -129,8 +128,6 @@ namespace NoviProjekatZabavniPark.ViewModels
             //    var poruka = new MessageDialog("Morate biti stariji od 13 godina da bi se registrovali na MALA sistem!", "Greška!");
             //    await poruka.ShowAsync();
             //}
-
-
 
             else
             {
