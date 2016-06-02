@@ -33,7 +33,7 @@ namespace NoviProjekatZabavniPark.Views
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(AtrakcijaUnos), sender);
+            
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)

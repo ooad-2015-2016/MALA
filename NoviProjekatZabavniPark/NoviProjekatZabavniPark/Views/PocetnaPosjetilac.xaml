@@ -7,12 +7,16 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Assets/circus_21.jpg"/>
+        </Grid.Background>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top"
-                   Text="Dobrodošli!" FontSize="45" Foreground="SlateGray" FontStyle="Normal" Margin="485,0,562,0" />
-        <Button x:Name="button" Content="Kupovina karte" HorizontalAlignment="Left" Margin="533,125,0,0" VerticalAlignment="Top" Height="37" Width="142" Click="button_Click"/>
-        <Button x:Name="buttonWeather" Content="Weather" HorizontalAlignment="Left" Margin="533,185,0,0" VerticalAlignment="Top" Height="37" Width="142" Click="buttonWeather_Click"/>
-        <Button x:Name="buttonMap" Content="Pregled mape" HorizontalAlignment="Left" Margin="533,245,0,0" VerticalAlignment="Top" Height="37" Width="142" Click="buttonMap_Click"/>
+                   Text="Dobrodošli!" FontSize="45" Foreground="SlateGray" FontStyle="Normal" Margin="513,49,534,0" />
+        <Button x:Name="button" Content="Kupovina karte" HorizontalAlignment="Left" Margin="512,155,0,0" VerticalAlignment="Top" Height="51" Width="253" Click="button_Click" BorderThickness="2"/>
+        <Button x:Name="buttonWeather" Content="Weather" HorizontalAlignment="Left" Margin="513,230,0,0" VerticalAlignment="Top" Height="50" Width="253" Click="buttonWeather_Click"/>
+        <Button x:Name="buttonMap" Content="Pregled mape" HorizontalAlignment="Left" Margin="512,306,0,0" VerticalAlignment="Top" Height="51" Width="253" Click="buttonMap_Click"/>
+        <Button x:Name="buttonKompas" Content="Kompas" HorizontalAlignment="Left" Margin="512,380,0,0" VerticalAlignment="Top" Height="51" Width="253" Click="buttonMap_Click"/>
     </Grid>
-    
+
 </Page>
