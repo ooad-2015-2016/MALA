@@ -36,7 +36,7 @@
             <Button Content="POTVRDI" Foreground="White" FontSize="25" Name="btnBarcode" Click="btnBarcode_Click"></Button>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Background="White" VerticalAlignment="Center" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="0,4" Height="200">
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="0,4" Height="200">
 
             <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text=".........." Width="119" Foreground="#FFFBF9F9"/>
 

@@ -7,15 +7,18 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock"  HorizontalAlignment="Center" TextWrapping="Wrap"  VerticalAlignment="Top"
-                   Text="Dobrodošli na MALA sistem!" FontSize="45" Foreground="SlateGray" FontStyle="Normal"/>
-        <TextBox x:Name="textBoxUsername" Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="710,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="160"/>
-        <PasswordBox x:Name="passwordBox" Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="710,275,0,0" VerticalAlignment="Top" Height="32" Width="160"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="510,210,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="515,280,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top"/>
-        <Button x:Name="button" Command="{Binding LoginKorisnik}" Content="Login" HorizontalAlignment="Left" Margin="580,380,0,0" VerticalAlignment="Top" Height="32" Width="150"/>
-        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="479,461,0,0" TextWrapping="Wrap" Text="Novi posjetilac?" VerticalAlignment="Top"/>
-        <Button x:Name="button1" Content="Registruj se!"  HorizontalAlignment="Left" Margin="628,454,0,0" VerticalAlignment="Top" Width="106" Click="button1_Click"/>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:///Assets/circus_22.jpg"/>
+        </Grid.Background>
+        <TextBlock x:Name="textBlock" TextWrapping="Wrap"  VerticalAlignment="Top"
+                   Text="Dobrodošli na MALA sistem!" FontSize="45" Foreground="White" FontStyle="Normal" Margin="357,88,357,0"/>
+        <TextBox x:Name="textBoxUsername" Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="660,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="200" Background="{x:Null}" Foreground="White" BorderBrush="Black"/>
+        <PasswordBox x:Name="passwordBox" Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="660,275,0,0" VerticalAlignment="Top" Height="32" Width="200" Foreground="White" Background="{x:Null}" BorderBrush="Black"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="490,208,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" Foreground="White" FontSize="18.667"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="495,280,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Foreground="White" FontSize="18.667"/>
+        <Button x:Name="button" Command="{Binding LoginKorisnik}" Content="Login" HorizontalAlignment="Stretch" Margin="565,380,565,0" VerticalAlignment="Top" Height="32" Foreground="White"/>
+        <TextBlock x:Name="textBlock3" Margin="585,429,586,0" TextWrapping="Wrap" Text="Novi posjetilac?" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="button1" Content="Registruj se!"  HorizontalAlignment="Left" Margin="584,460,0,0" VerticalAlignment="Top" Width="106" Click="button1_Click" Foreground="White"/>
     </Grid>
 </Page>

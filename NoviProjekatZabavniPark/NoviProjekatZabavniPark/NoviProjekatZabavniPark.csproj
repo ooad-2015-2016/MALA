@@ -184,6 +184,7 @@
   <ItemGroup>
     <Content Include="Assets\amusementpark_1x.jpg" />
     <Content Include="Assets\circus_21.jpg" />
+    <Content Include="Assets\circus_22.jpg" />
     <Content Include="Assets\Cryptzone.png" />
     <Content Include="Assets\Dreamwille.png" />
     <Content Include="Assets\Evertown.png" />
