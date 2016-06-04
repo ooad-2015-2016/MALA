@@ -82,7 +82,7 @@ namespace NoviProjekatZabavniPark.Views
                 {
                     textBox3.Text = "10 KM";
                 }
-                var result = writer.Write((object)"Datum: " + textBox1.Text + " Tip karte: " + textBox2.Text + " Guest username: guest Password: MALA");
+                var result = writer.Write(("Datum: " + textBox1.Text + " Tip karte: " + textBox2.Text + " Guest username: guest Password: MALA"));
                 var wb = result.ToBitmap() as WriteableBitmap;
                 imgBarcode.Source = wb;
             }
