@@ -5,7 +5,8 @@
     "Microsoft.CodeAnalysis.CSharp": "1.0.0",
     "Microsoft.Net.Http": "2.2.29",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0"
+    "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+    "ZXing.Net": "0.14.0.1"
   },
   "frameworks": {
     "uap10.0": {}
