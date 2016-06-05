@@ -1,4 +1,4 @@
-![alt tag](https://raw.githubusercontent.com/ooad-2015-2016/MALA/master/MALA%20LOGO.png)
+﻿![alt tag](https://raw.githubusercontent.com/ooad-2015-2016/MALA/master/logo.png)
 
 # MALA 
 
@@ -44,8 +44,27 @@ Ako dođe do kvara ili zatvaranja atrakcije za posjetioce, radnik, koji koristi 
 5. Posjetioci zabavnog parka sa običnom kartom (koriste sve ranije navedene funkcionalnosti mobilne aplikacije)
 6. Posjetioci zabavnog parka sa 'Gold' kartom (pored standardnih funkcionalnosti mobilne aplikacije, ovi posjetioci imaju mogućnost da koriste specijalni ulaz za pristup atrakciji sa smanjenim vremenom čekanja)
 
+## **FINAL INFO**
 
- 
+1. Baza: Local, MySQL
+2. Eksterni uređaj:
+3. Validacija: Validacija je ispoštovana, pogledati:
+	1. LoginViewModel, metoda loginKorisnik (provjerava se da li su uneseni podaci u textboxove, kao i da li su uneseni podaci koji postoje u bazi) 
+           https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/ViewModels/LoginViewModel.cs
+	2. PosjetilacRegistracijaViewModel, metoda unosPosjetioca (provjerava se da li su uneseni podaci u sve textBoxove, kao i da li se sifre u dva textBoxa podudaraju) 
+           https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/ViewModels/PosjetilacRegistracijaViewModel.cs
+	3. KupovinaKarteViewModel, metoda kupiKartu (provjerava se da li je unesen broj kartice, da li je cvc trocifren broj i da li je kartica istekla) 
+           https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/ViewModels/KupovinaKarteViewModel.cs
+4. Eksterni servis: https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/Models/OpenWeatherMapProxy.cs
+                    Poziva se u: NoviProjekatZabavniPark/NoviProjekatZabavniPark/Views/VremenskaPrognoza
+5. Mobilne funkcionalnosti:
+	1. GPS: https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/ViewModels/PregledMapeViewModel.cs
+	2. Magnetometer pametnih telefona za implementaciju kompasa: https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/Views/Kompas.xaml.cs
+6. Prilagođavanje UI-a windows phone uređajima: korištenje StackPanel-a i RowDefinition/ColumnDefinition
+	Primjer: https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/Views/KreiranjeKarte.xaml
+7. Igrica: https://github.com/ooad-2015-2016/MALA/tree/master/MALAIgrica
+8. Izvještaj o radu: https://github.com/ooad-2015-2016/MALA/blob/master/Dnevnik%20rada.docx
+9. HELP: https://github.com/ooad-2015-2016/MALA/blob/master/HELP.txt
 
 
 
