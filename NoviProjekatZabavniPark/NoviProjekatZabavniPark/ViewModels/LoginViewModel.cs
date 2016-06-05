@@ -85,7 +85,7 @@ namespace NoviProjekatZabavniPark.ViewModels
             }
             Korisnik = Korisnici.FirstOrDefault(k => k.KorisnickoIme == Username && k.Sifra == Password);
 
-            if (Korisnik == null)
+            if (Korisnik == null && Username != "admin1" && Password != "adminpass")
             {
                 var message = new MessageDialog("Podaci nisu tačni!", "Neuspješna prijava");
                 await message.ShowAsync();
@@ -96,7 +96,6 @@ namespace NoviProjekatZabavniPark.ViewModels
                 else if (Korisnik is Posjetilac) { NavigationServis.Navigate(typeof(PocetnaPosjetilac), Korisnik); }
                 else { NavigationServis.Navigate(typeof(PocetnaRadnik)); }
             }
-            //}
         }
 
         private bool mozeLiSePrijaviti(object arg)

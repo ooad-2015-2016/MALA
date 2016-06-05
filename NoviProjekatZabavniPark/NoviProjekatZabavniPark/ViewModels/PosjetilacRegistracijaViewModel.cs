@@ -123,34 +123,31 @@ namespace NoviProjekatZabavniPark.ViewModels
                 var poruka = new MessageDialog("Unesene šifre se ne podudaraju", "Greška!");
                 await poruka.ShowAsync();
             }
-            //if ((((DateTime.Today - DatumRodjenja).TotalDays) / 365) < 13)
-            //{
-            //    var poruka = new MessageDialog("Morate biti stariji od 13 godina da bi se registrovali na MALA sistem!", "Greška!");
-            //    await poruka.ShowAsync();
-            //}
 
             else
             {
 
-                Posjetilac = new Posjetilac(Ime, Prezime, DatumRodjenja, Username, Password, EMail, new List<Karta>());
 
-                // ovdje ide kod koji dodaje novog posjetioca u bazu
-                //using (var db = new ZabavniParkDbContext())
-                //{
+                using (var db = new ZabavniParkDbContext())
+                {
+                    Posjetilac = new Posjetilac(Ime, Prezime, DatumRodjenja, Username, Password, EMail, new List<Karta>());
+
+                    db.Posjetioci.Add(Posjetilac);
+                    db.SaveChanges();
 
 
-                var dialog = new MessageDialog("Uspješno ste registrovani na MALA sistem!", "Registracija na MALA sistem");
-                await dialog.ShowAsync();
+                    var dialog = new MessageDialog("Uspješno ste registrovani na MALA sistem!", "Registracija na MALA sistem");
+                    await dialog.ShowAsync();
 
-                //}
 
-                Ime = string.Empty;
-                Prezime = string.Empty;
-                Username = string.Empty;
-                Password = string.Empty;
-                Password2 = string.Empty;
-                DatumRodjenja = DateTime.Today;
-                EMail = string.Empty;
+                    Ime = string.Empty;
+                    Prezime = string.Empty;
+                    Username = string.Empty;
+                    Password = string.Empty;
+                    Password2 = string.Empty;
+                    DatumRodjenja = DateTime.Today;
+                    EMail = string.Empty;
+                }
             }
         }
     }

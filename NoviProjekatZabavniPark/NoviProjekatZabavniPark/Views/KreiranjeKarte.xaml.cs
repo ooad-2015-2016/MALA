@@ -45,27 +45,31 @@ namespace NoviProjekatZabavniPark.Views
             }
         }
 
-        private void btnBarcode_Click(object sender, RoutedEventArgs e)
+        private async void btnBarcode_Click(object sender, RoutedEventArgs e)
         {
-            IBarcodeWriter writer = new BarcodeWriter
-            {
-                Format = BarcodeFormat.CODE_128,
-                Options = new ZXing.Common.EncodingOptions
-                {
-                    Height = 100,
-                    Width = 450
-                }
-            };
+            BarcodeWriter writer = new BarcodeWriter();
+            writer.Format = BarcodeFormat.CODE_128;
+            writer.Options.Height = 100;
+            writer.Options.Width = 450;
+            
+            //{
+            //    Format = BarcodeFormat.CODE_128
+            //    Options = new ZXing.Common.EncodingOptions
+            //    {
+            //        Height = 100,
+            //        Width = 450
+            //    }
+            //};
 
             if (comboBox.SelectedIndex == -1)
             {
                 var message = new MessageDialog("Tip karte nije odabran!");
-                message.ShowAsync();
+                await message.ShowAsync();
             }
-            else 
+            else
             {
                 textBox1.Text = DateTime.Now.Date.ToString();
-                textBox2.Text = comboBox.SelectedItem.ToString();
+                textBox2.Text = ((ComboBoxItem)comboBox.SelectedItem).Content.ToString();
                 if (comboBox.SelectedIndex == 0)
                 {
                     textBox3.Text = "40 KM";
@@ -82,16 +86,17 @@ namespace NoviProjekatZabavniPark.Views
                 {
                     textBox3.Text = "10 KM";
                 }
-                var result = writer.Write(("Datum: " + textBox1.Text + " Tip karte: " + textBox2.Text + " Guest username: guest Password: MALA"));
+                // + " Guest username: guest Password: MALA"
+                var result = writer.Write(("Datum: " + textBox1.Text + " Tip karte: " + textBox2.Text));
                 var wb = result.ToBitmap() as WriteableBitmap;
                 imgBarcode.Source = wb;
             }
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private async void button_Click(object sender, RoutedEventArgs e)
         {
             var message = new MessageDialog("Karta je usješno spremna za izdavanje!");
-            message.ShowAsync();
+            await message.ShowAsync();
             textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";

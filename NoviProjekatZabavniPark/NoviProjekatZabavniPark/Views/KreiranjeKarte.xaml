@@ -28,10 +28,10 @@
         <StackPanel Grid.Row="0" VerticalAlignment="Center" Orientation="Horizontal" Height="46" Margin="0,29,0,28" Grid.ColumnSpan="2">
             <TextBlock Text="Tip karte:    " Foreground="Black" FontSize="25" VerticalAlignment="Center" Margin="10 0 10 0"></TextBlock>
             <ComboBox x:Name="comboBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="258">
-                <ComboBoxItem Content="Gold Adult"/>
-                <ComboBoxItem Content="Gold Kids"/>
-                <ComboBoxItem Content="Standard Adult"/>
-                <ComboBoxItem Content="Standard Kids"/>
+                <ComboBoxItem>Gold Adult</ComboBoxItem>
+                <ComboBoxItem>Gold Kids</ComboBoxItem>
+                <ComboBoxItem>Standard Adult</ComboBoxItem>
+                <ComboBoxItem>Standard Kids</ComboBoxItem>
             </ComboBox>
             <Button Content="POTVRDI" Foreground="White" FontSize="25" Name="btnBarcode" Click="btnBarcode_Click"></Button>
         </StackPanel>
@@ -43,9 +43,9 @@
             <StackPanel Grid.Column="0">
                 <Image x:Name="imgBarcode" Width="200" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </StackPanel>
-            <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="TextBlock" Foreground="White"/>
+           <!-- <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="TextBlock" Foreground="White"/> -->
             <StackPanel Grid.Column="1" Orientation="Vertical" Width="247">
-                <TextBox x:Name="textBox" TextWrapping="Wrap" Text="Jednodnevna karta za boravak u zabavnom parku 'MALA'" Margin="0,0,-164,0" IsReadOnly="True"/>
+                <TextBox x:Name="textBox" TextWrapping="Wrap" Text="Jednodnevna karta za boravak u zabavnom parku 'MALA'" Margin="0,5,-164,0" IsReadOnly="True"/>
                 <TextBox x:Name="textBox1" TextWrapping="Wrap" Text="Datum: " Margin="0,0,-164,0" IsReadOnly="True"/>
                 <TextBox x:Name="textBox2" TextWrapping="Wrap" Text="Tip karte: " Margin="0,0,-164,0" IsReadOnly="True"/>
                 <TextBox x:Name="textBox3" TextWrapping="Wrap" Text="Cijena: " Margin="0,0,-164,0" IsReadOnly="True"/>

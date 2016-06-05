@@ -29,6 +29,11 @@ namespace NoviProjekatZabavniPark.Views
             this.InitializeComponent();
         }
 
+        private void provjeriPosjetioca()
+        {
+            if (p.KorisnickoIme == "guest") button.IsEnabled = false;
+        }
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(KupovinaKarte));
@@ -37,6 +42,7 @@ namespace NoviProjekatZabavniPark.Views
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             p = e.Parameter as Posjetilac;
+            provjeriPosjetioca();
         }
 
         private void buttonWeather_Click(object sender, RoutedEventArgs e)
@@ -44,7 +50,6 @@ namespace NoviProjekatZabavniPark.Views
             this.Frame.Navigate(typeof(VremenskaPrognoza));
         }
               
-
         private void buttonMap_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(PregledMape), p);

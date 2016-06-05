@@ -31,11 +31,6 @@ namespace NoviProjekatZabavniPark.Views
             SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(RadnikUnos), sender);
