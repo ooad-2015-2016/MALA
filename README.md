@@ -48,6 +48,8 @@ Ako dođe do kvara ili zatvaranja atrakcije za posjetioce, radnik, koji koristi 
 
 1. Baza: Local, MySQL
 2. Eksterni uređaj:
+	1. Web cam: https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/ViewModels/PosjetilacRegistracijaViewModel.cs
+	2. Upotreba: Doavanje slike profila prilikom registracije 
 3. Validacija: Validacija je ispoštovana, pogledati:
 	1. LoginViewModel, metoda loginKorisnik (provjerava se da li su uneseni podaci u textboxove, kao i da li su uneseni podaci koji postoje u bazi) 
            https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/ViewModels/LoginViewModel.cs
@@ -55,16 +57,22 @@ Ako dođe do kvara ili zatvaranja atrakcije za posjetioce, radnik, koji koristi 
            https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/ViewModels/PosjetilacRegistracijaViewModel.cs
 	3. KupovinaKarteViewModel, metoda kupiKartu (provjerava se da li je unesen broj kartice, da li je cvc trocifren broj i da li je kartica istekla) 
            https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/ViewModels/KupovinaKarteViewModel.cs
-4. Eksterni servis: https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/Models/OpenWeatherMapProxy.cs
-                    Poziva se u: NoviProjekatZabavniPark/NoviProjekatZabavniPark/Views/VremenskaPrognoza
+4. Eksterni servis: 
+	1. https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/Models/OpenWeatherMapProxy.cs
+	2. Poziva se u: NoviProjekatZabavniPark/NoviProjekatZabavniPark/Views/VremenskaPrognoza
 5. Mobilne funkcionalnosti:
 	1. GPS: https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/ViewModels/PregledMapeViewModel.cs
 	2. Magnetometer pametnih telefona za implementaciju kompasa: https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/Views/Kompas.xaml.cs
-6. Prilagođavanje UI-a windows phone uređajima: korištenje StackPanel-a i RowDefinition/ColumnDefinition
-	Primjer: https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/Views/KreiranjeKarte.xaml
+6. Prilagođavanje UI-a windows phone uređajima: 
+	1. Korištenje StackPanel-a i RowDefinition/ColumnDefinition
+	2. Primjer: https://github.com/ooad-2015-2016/MALA/blob/master/NoviProjekatZabavniPark/NoviProjekatZabavniPark/Views/KreiranjeKarte.xaml
 7. Igrica: https://github.com/ooad-2015-2016/MALA/tree/master/MALAIgrica
 8. Izvještaj o radu: https://github.com/ooad-2015-2016/MALA/blob/master/Dnevnik%20rada.docx
 9. HELP: https://github.com/ooad-2015-2016/MALA/blob/master/HELP.txt
+10. Video koji prikazuje rad aplikacije:
+	1. Video: https://github.com/ooad-2015-2016/MALA/blob/50bd93ea87432a3ae373db9617da21bf1f646921/Prikaz%20rada%20aplikacije.webm
+	2. Rad kompasa na mobitelu:
+	3. Napomene: 
 
 
 

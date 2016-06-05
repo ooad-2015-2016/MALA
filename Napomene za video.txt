@@ -1,0 +1,36 @@
+[1:05] Kao što je moguæe vidjeti, kreiran je barcode. Skeniranjem ovog barcode-a
+koji bi se nalazio na isprintanoj karti, korisnik bi imao moguænost da vidi
+username i password guest acounta (koristeæi ove podatke, posjetioc se može
+prijaviti i pristupiti svim moguænostima aplikacije za posjetioce osim online
+kupovine karata). Pored pomenutog, barcode ima informaciju o tipu karte i na 
+osnovu te informacije, gold posjetioci bi mogli koristiti specijalni ulaz.
+
+[1:20] Izmjena atrakcije:
+Nije demonstrirano u vdeu s obzirom da "ItemClick" nije uspješno dodan na 
+listview u kojem bi trebale biti atrakcije. Razlog za ovo je nemoguænost
+rada sa dizajnerom i blendom na našim laptopima veæ neko vrijeme. Pomenuto bi
+bilo implementirano koristeæi istu logiku koja je korištena za izmjenu radnika
+èiji je rad prikazan u videu. 
+
+[1:36] Udaljenost atrakcija se raèuna u odnosu na našu trenutnu lokaciju.
+Na mapi se ne prikazuje naša lokacija, s obzirom da se mapa odnosi samo na 
+prostor kampusa na kojem se nalazi zamišljeni park "MALA". 
+
+[1:42] Aproksimirano vrijeme èekanja je 0 minuta s obzirom da u parku nema 
+osoba koje bi èekale u redu. U situaciji kada bi park stvarno radio, vrijeme 
+se raèunao kao:
+
+int vrijeme = (int)((a.TrajanjeVoznje + 3) * 
+              ((a.TrenutniBrojPosjetilaca + 1) / a.Kapacitet) + 0.5);
+
++3 predstavlja vrijeme izmeðu dvije vožnje 
+vrijeme se zaokružuje na cijeli broj minuta
+
+[2:36] Guest korisnik nema moguænost online kupovine karata za zabavni park
+
+
+
+
+
+
+
