@@ -1,5 +1,4 @@
-﻿using NoviProjekatZabavniPark.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,29 +21,23 @@ namespace NoviProjekatZabavniPark.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Login : Page
+    public sealed partial class Help : Page
     {
-        public Login()
+        public Help()
         {
             this.InitializeComponent();
-            DataContext = new LoginViewModel();
-            NavigationCacheMode = NavigationCacheMode.Required;
-        }
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
             var currentView = SystemNavigationManager.GetForCurrentView();
-            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            currentView.BackRequested += ThisPage_BackRequested;
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
         {
-            this.Frame.Navigate(typeof(RegistracijaPosjetilac));
-        }
-
-        private void button2_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Help));
+            if (Frame.CanGoBack)
+            {
+                Frame.GoBack();
+                e.Handled = true;
+            }
         }
     }
 }

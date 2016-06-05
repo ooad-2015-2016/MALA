@@ -136,6 +136,9 @@
     <Compile Include="Views\AtrakcijaIzmjena.xaml.cs">
       <DependentUpon>AtrakcijaIzmjena.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Help.xaml.cs">
+      <DependentUpon>Help.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Kompas.xaml.cs">
       <DependentUpon>Kompas.xaml</DependentUpon>
     </Compile>
@@ -193,6 +196,7 @@
     <Content Include="Assets\Phantomtown.png" />
     <Content Include="Assets\Play Realm.png" />
     <Content Include="Assets\preview.jpg" />
+    <Content Include="Assets\Screenshot_1.png" />
     <Content Include="Assets\Shockland.png" />
     <Content Include="Assets\Square150x150Logo.scale-400.png" />
     <Content Include="Assets\Zabavni_park_ETF.jpg" />
@@ -214,6 +218,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\AtrakcijaIzmjena.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Help.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

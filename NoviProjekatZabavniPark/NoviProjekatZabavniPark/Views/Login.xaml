@@ -20,5 +20,13 @@
         <Button x:Name="button" Command="{Binding LoginKorisnik}" Content="Login" HorizontalAlignment="Stretch" Margin="565,380,565,0" VerticalAlignment="Top" Height="32" Foreground="White"/>
         <TextBlock x:Name="textBlock3" Margin="585,429,586,0" TextWrapping="Wrap" Text="Novi posjetilac?" VerticalAlignment="Top" Foreground="White"/>
         <Button x:Name="button1" Content="Registruj se!"  HorizontalAlignment="Left" Margin="584,460,0,0" VerticalAlignment="Top" Width="106" Click="button1_Click" Foreground="White"/>
+        <Button x:Name="button2" Content="HELP" HorizontalAlignment="Left" Margin="959,554,0,0" VerticalAlignment="Top" Foreground="#FFFBFAFA" Click="button2_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Page>

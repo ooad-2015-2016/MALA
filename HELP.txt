@@ -1,0 +1,29 @@
+ZABAVNI PARK MALA
+
+Aplikaciju mogu koristiti tri tip osoba sa razlièitim privilegijama:
+Posjetioci parka (username: iprez1  password:1234)
+Radnici parka (username: aterko1  password: 123)
+Administrator (username: admin1  password: adminpass)
+
+1. Posjetioci parka imaju nekoliko moguænosti. Prije svega, posjetioci parka mogu odabrati opciju pregleda mape 
+zabavnog parka. Na mapi se vidi pozicija svake od atrakcija, a posjetioci mogu da klikom na sliku atrakcije koja
+ih zanima pogledaju detaljne informacije o toj atrakciji. Takoðer, na istoj stranici, posjetioci imaju informaciju 
+o svojoj poziciji i ulici u kojoj se nalaze, te udaljenosti od svake atrakcije posebno izraženu u kilometrima. 
+
+2. Posjetiocima parka se takoðer nudim pristup nekim dodatnim funkcionalnostima kao što su provjeravanje vremenske 
+prognoze za taj dan, te korištenje kompasa.
+
+3. Posjetioci koji su registrovani imaju moguænost kupovine željenog broja karata unosom podataka o svojoj kreditnoj 
+kartici. Informacije o kupljenim kartama se bilježe na korisnikovom profilu i karte mogu biti iskorištene prilikom 
+prve naredne posjete parku. 
+
+4. Radnici parka imaju dvije moguænosti. Prije svega, radnicima na ulazu u park dat je pristup dijelu za kreiranje 
+karata. Potrebno je odabrati vrstu karte pri èemu se kreira karta sa današnjim datumom, cijenom  i informacijom o 
+tipu karte. Na osnovu ovih podataka, kreira se unique barcode èijim skeniranjem korisnik ima moguænost da dobije 
+pristup username-u i password-u guest account-a (guest account ima ranije funkcionalnosti osim moguænosti kupovine karata)
+
+5. Radnici takoðer imaju pristup dijelu za modifikaciju podataka o atrakcijama u bazi (npr. Izmjena statusa atrakcije u 
+sluèaju kvara kako bi posjetioci imali informaciju o tome da je neki rollercoaster zatvoren)
+
+6. Administrator takoðer ima moguænost da modifikuje informacije o atrakcijama. Pored toga, administrator ima privilegiju 
+da dodaje nove radnike i da, po potrebi, modifikuje podatke o njima u bazi. 
