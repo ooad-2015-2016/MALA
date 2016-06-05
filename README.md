@@ -71,8 +71,9 @@ Ako dođe do kvara ili zatvaranja atrakcije za posjetioce, radnik, koji koristi 
 9. HELP: https://github.com/ooad-2015-2016/MALA/blob/master/HELP.txt
 10. Video koji prikazuje rad aplikacije:
 	1. Video: https://github.com/ooad-2015-2016/MALA/blob/50bd93ea87432a3ae373db9617da21bf1f646921/Prikaz%20rada%20aplikacije.webm
-	2. Rad kompasa na mobitelu:
-	3. Napomene: 
+	2. Rad kompasa na mobitelu: https://github.com/ooad-2015-2016/MALA/blob/master/Prikaz%20rada%20kompasa.mp4
+	3. Validacije: 
+	4. Napomene: https://github.com/ooad-2015-2016/MALA/blob/master/Napomene%20za%20video.txt
 
 
 
