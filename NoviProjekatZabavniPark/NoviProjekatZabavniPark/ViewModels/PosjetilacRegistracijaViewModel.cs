@@ -4,10 +4,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Windows.UI.Popups;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace NoviProjekatZabavniPark.ViewModels
 {
@@ -102,12 +105,31 @@ namespace NoviProjekatZabavniPark.ViewModels
         #endregion
 
         public ICommand Dodaj { get; set; }
+        public ICommand Uslikaj { get; set; }
         public Posjetilac Posjetilac { get; set; }
+        public CameraHelper Camera { get; set; }
+        //Negdje privremeno mora biti slika koja ce se prikazati kad se uslika
+        private SoftwareBitmapSource slika;
+        public SoftwareBitmapSource Slika { get { return slika; } set { slika = value; NotifyPropertyChanged("Slika"); } }
+        //CaptureElement previewControl;
 
-        public PosjetilacRegistracijaViewModel()
+        public PosjetilacRegistracijaViewModel(CaptureElement previewControl)
         {
             Dodaj = new RelayCommand<object>(unosPosjetioca);
+            Uslikaj = new RelayCommand<object>(uslikaj, (object parametar) => true);
             DatumRodjenja = DateTime.Now;
+            Camera = new CameraHelper(previewControl);
+            Camera.InitializeCameraAsync();
+        }
+
+        private async void uslikaj(object obj)
+        {
+            await Camera.TakePhotoAsync(SlikanjeGotovo);
+        }
+
+        private void SlikanjeGotovo(SoftwareBitmapSource obj)
+        {
+            Slika = obj;
         }
 
         private async void unosPosjetioca(object obj)
@@ -126,8 +148,6 @@ namespace NoviProjekatZabavniPark.ViewModels
 
             else
             {
-
-
                 using (var db = new ZabavniParkDbContext())
                 {
                     Posjetilac = new Posjetilac(Ime, Prezime, DatumRodjenja, Username, Password, EMail, new List<Karta>());

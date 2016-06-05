@@ -40,7 +40,7 @@ namespace NoviProjekatZabavniPark.Views
         {
             if (Frame.CanGoBack)
             {
-                Frame.GoBack();
+                Frame.Navigate(typeof(PocetnaRadnik));
                 e.Handled = true;
             }
         }
@@ -51,15 +51,6 @@ namespace NoviProjekatZabavniPark.Views
             writer.Format = BarcodeFormat.CODE_128;
             writer.Options.Height = 100;
             writer.Options.Width = 450;
-            
-            //{
-            //    Format = BarcodeFormat.CODE_128
-            //    Options = new ZXing.Common.EncodingOptions
-            //    {
-            //        Height = 100,
-            //        Width = 450
-            //    }
-            //};
 
             if (comboBox.SelectedIndex == -1)
             {
@@ -86,8 +77,7 @@ namespace NoviProjekatZabavniPark.Views
                 {
                     textBox3.Text = "10 KM";
                 }
-                // + " Guest username: guest Password: MALA"
-                var result = writer.Write(("Datum: " + textBox1.Text + " Tip karte: " + textBox2.Text));
+                var result = writer.Write((textBox2.Text + " Guest username: guest Pass: MALA")); 
                 var wb = result.ToBitmap() as WriteableBitmap;
                 imgBarcode.Source = wb;
             }

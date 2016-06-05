@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -27,6 +28,15 @@ namespace NoviProjekatZabavniPark.Views
         public PocetnaPosjetilac()
         {
             this.InitializeComponent();
+            var currentView = SystemNavigationManager.GetForCurrentView();
+            currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            SystemNavigationManager.GetForCurrentView().BackRequested += ThisPage_BackRequested;
+            p = new Posjetilac();
+        }
+        private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+                Frame.Navigate(typeof(Login));
+                e.Handled = true;
         }
 
         private void provjeriPosjetioca()

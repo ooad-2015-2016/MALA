@@ -37,7 +37,7 @@ namespace NoviProjekatZabavniPark.Views
         {
             if (Frame.CanGoBack)
             {
-                Frame.GoBack();
+                Frame.Navigate(typeof(PocetnaRadnik));
                 e.Handled = true;
             }
         }

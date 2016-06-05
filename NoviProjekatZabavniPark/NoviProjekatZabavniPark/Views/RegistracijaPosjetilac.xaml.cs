@@ -27,17 +27,17 @@ namespace NoviProjekatZabavniPark.Views
         public RegistracijaPosjetilac()
         {
             this.InitializeComponent();
-            DataContext = new PosjetilacRegistracijaViewModel();
             var currentView = SystemNavigationManager.GetForCurrentView();
             currentView.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
             currentView.BackRequested += ThisPage_BackRequested;
+            DataContext = new PosjetilacRegistracijaViewModel(PreviewControl);
         }
 
         private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
         {
             if (Frame.CanGoBack)
             {
-                Frame.GoBack();
+                Frame.Navigate(typeof(Login));
                 e.Handled = true;
             }
         }

@@ -35,11 +35,8 @@ namespace NoviProjekatZabavniPark.Views
 
         private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
         {
-            if (Frame.CanGoBack)
-            {
-                Frame.GoBack();
+                Frame.Navigate(typeof(PocetnaAdmin));
                 e.Handled = true;
-            }
         }
     }
 }

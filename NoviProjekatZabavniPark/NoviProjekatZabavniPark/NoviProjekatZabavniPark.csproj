@@ -96,6 +96,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataSource\DataSourcePark.cs" />
+    <Compile Include="Helper\CameraHelper.cs" />
     <Compile Include="Helper\DateConverter.cs" />
     <Compile Include="Helper\INavigacija.cs" />
     <Compile Include="Helper\NavigationService.cs" />

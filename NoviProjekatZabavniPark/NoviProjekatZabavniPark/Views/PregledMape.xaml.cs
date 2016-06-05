@@ -47,11 +47,8 @@ namespace NoviProjekatZabavniPark.Views
 
         private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
         {
-            if (Frame.CanGoBack)
-            {
-                Frame.GoBack();
-                e.Handled = true;
-            }
+            Frame.Navigate(typeof(Login));
+            e.Handled = true;
         }
 
         private void textBlock_Copy6_SelectionChanged(object sender, RoutedEventArgs e)

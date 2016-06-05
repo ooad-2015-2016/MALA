@@ -56,7 +56,7 @@ namespace NoviProjekatZabavniPark.Views
         {
             if (Frame.CanGoBack)
             {
-                Frame.GoBack();
+                Frame.Navigate(typeof(PocetnaAdmin));
                 e.Handled = true;
             }
         }

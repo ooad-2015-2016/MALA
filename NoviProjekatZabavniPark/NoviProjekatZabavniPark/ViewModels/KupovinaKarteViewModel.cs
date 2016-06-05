@@ -32,6 +32,7 @@ namespace NoviProjekatZabavniPark.ViewModels
         private string brojKartiStandardDjecije;
         private string brojKartiStandardOdrasli;
         private string cvcKod;
+        int cvc;
         private DateTime datumIsteka;
         #endregion
 
@@ -108,6 +109,7 @@ namespace NoviProjekatZabavniPark.ViewModels
         {
             KupiKartu = new RelayCommand<object>(kupiKartu);
             BrojKartiDjecijeGold = BrojKartiOdrasliGold = BrojKartiStandardDjecije = BrojKartiStandardOdrasli = "0";
+            DatumIsteka = DateTime.Today;
         }
 
         private async void kupiKartu(object obj)
@@ -120,8 +122,7 @@ namespace NoviProjekatZabavniPark.ViewModels
             }
 
             //provjera da li je cvc kod trocifreni cijeli broj
-            int cvc;
-            if (!int.TryParse(CvcKod, out cvc))
+            else if (!int.TryParse(CvcKod, out cvc))
             {
                 if (!(cvc <= 100 && cvc < 1000))
                 {
@@ -131,57 +132,14 @@ namespace NoviProjekatZabavniPark.ViewModels
             }
 
             //provjera da li je kartica istekla
-            if (DateTime.Compare(DatumIsteka, DateTime.Today) < 0)
-            {
-                var message = new MessageDialog("Kartica je istekla!", "Greška pri kupovini karte");
-                await message.ShowAsync();
-            }
+            //if (DateTime.Compare(DatumIsteka, DateTime.Today) <= 0)
+            //{
+            //    var messageDialog = new MessageDialog("Kartica je istekla!", "Greška pri kupovini karte");
+            //    await messageDialog.ShowAsync();
+            //}
 
             else
             {
-                int brojKarata = 0;
-                if ((!int.TryParse(BrojKartiDjecijeGold, out brojKarata)) || (!int.TryParse(BrojKartiOdrasliGold, out brojKarata)) || (!int.TryParse(BrojKartiStandardDjecije, out brojKarata)) || (!int.TryParse(BrojKartiStandardOdrasli, out brojKarata)))
-                {
-                    var messageDialog = new MessageDialog("Uneseni broj karata nije validan!", "Greška");
-                }
-                else
-                {
-                    if (int.Parse(BrojKartiDjecijeGold) > 0)
-                    {
-                        Karta k = new Karta(new DateTime(), TipKarte.GoldDjecija);
-                        KupljeneKarte.Add(k);
-                    }
-                    if (int.Parse(BrojKartiOdrasliGold) > 0)
-                    {
-                        {
-                            Karta k = new Karta(new DateTime(), TipKarte.GoldOdrasli);
-                            KupljeneKarte.Add(k);
-                        }
-                    }
-                    if (int.Parse(BrojKartiStandardDjecije) > 0)
-                    {
-                        {
-                            Karta k = new Karta(new DateTime(), TipKarte.StandardDjecija);
-                            KupljeneKarte.Add(k);
-                        }
-                    }
-                    if (int.Parse(BrojKartiStandardOdrasli) > 0)
-                    {
-                        {
-                            Karta k = new Karta(new DateTime(), TipKarte.StandardOdrasli);
-                            KupljeneKarte.Add(k);
-                        }
-                    }
-
-                    using (var db = new ZabavniParkDbContext())
-                    {
-                        ObservableCollection<Posjetilac> Posjetioci = new ObservableCollection<Posjetilac>(db.Posjetioci.ToList<Posjetilac>());
-
-                        //Posjetilac p = Posjetioci.FirstOrDefault(a => a.KorisnickoIme == posjetilac.KorisnickoIme);
-                        //p.KupljeneKarte = posjetilac.KupljeneKarte;
-                    }
-                }
-
                 var message = new MessageDialog("Uspješno ste kupili kartu za Zabavni park MALA!", "Kupovina karte uspješna");
                 BrojKartice = string.Empty;
                 DatumIsteka = DateTime.Now;

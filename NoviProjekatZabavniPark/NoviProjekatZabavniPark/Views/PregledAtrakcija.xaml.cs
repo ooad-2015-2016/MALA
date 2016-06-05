@@ -57,7 +57,7 @@ namespace NoviProjekatZabavniPark.Views
             if (textBox_feedback.Text != "")
             {
                 var message = new MessageDialog("Vaš feedback je zabilježen!");
-                message.ShowAsync();
+                await message.ShowAsync();
                 textBox_feedback.Text = "";
             }
         }

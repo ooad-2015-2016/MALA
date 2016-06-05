@@ -14,6 +14,7 @@ namespace NoviProjekatZabavniPark.ViewModels
 {
     public class PregledAtrakcijaViewModel : INotifyPropertyChanged
     {
+        #region Privatni atributi i odgovarajuci Property
         private string naziv;
         public string Naziv
         {
@@ -68,6 +69,7 @@ namespace NoviProjekatZabavniPark.ViewModels
                 OnNotifyPropertyChanged("Cekanje");
             }
         }
+        #endregion
 
         public PregledAtrakcijaViewModel(Atrakcija a)
         {

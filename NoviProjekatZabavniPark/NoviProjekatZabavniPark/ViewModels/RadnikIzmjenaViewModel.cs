@@ -140,9 +140,6 @@ namespace NoviProjekatZabavniPark.ViewModels
             {
                 Radnici = new ObservableCollection<Radnik>(context.Radnici.ToList<Radnik>());
             }
-
-            //var enum_names = Enum.GetNames(typeof(TipOsoblja));
-            //EnumCol = enum_names;
         }
 
         private void obrisiRadnika(object obj)
